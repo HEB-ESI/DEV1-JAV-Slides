@@ -1,4 +1,4 @@
-# HEB-ÉSI DEV1LGJ Développement, langage Java
+# HEB-ÉSI DEV1-LGJ – Développement, langage Java
 
 Slides et matériel pour le cours de langage Java du premier quadrimestre en BAC1 à l'ÉSI, [HEB-ÉSI](http://www.heb.be/esi)
 
@@ -63,7 +63,7 @@ Les slides sont créés via un *Makefile*
 
 ##Contacts  
 Marco Codutti <mcodutti@heb.be>  
-Pierre Bettens | <pbettens@heb.be>
+Pierre Bettens <pbettens@heb.be>
 
 
 
