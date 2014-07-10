@@ -87,7 +87,7 @@
 
 \newcommand{\leconwithtoc}{
 \begin{frame}
-\begin{block}{\center Leçon \thesection}
+\begin{block}{\center Séance \thesection}
   {
   \begin{center}
   \insertsection
@@ -101,7 +101,7 @@
 
 \newcommand{\leconwithtocquote}[1]{
 \begin{frame}
-\begin{block}{\center Leçon \thesection}
+\begin{block}{\center Séance \thesection}
   {
   \begin{center}
   \insertsection
@@ -190,5 +190,45 @@
     \\
   \end{tabular}
 }
+
+% === Image en fullscreen
+% Je ne trouve pas comment faire avec une seule commande qui calcule la position
+\usepackage[absolute,overlay]{textpos}
+\newcommand{\imgfullw}[3]
+{{
+	\usebackgroundtemplate{
+		\includegraphics[keepaspectratio,width=\paperwidth]{#1}}
+    \setbeamertemplate{navigation symbols}{}
+	\setbeamercolor{background canvas}{bg=black}
+	\begin{frame}[plain]{}
+		#2
+		\begin{textblock*}{\linewidth}(0pt,.87\paperheight)
+			\tiny\flushright{\color{gray}\href{#3}{Crédit photo}}
+		\end{textblock*}
+	\end{frame}
+}}
+
+\newcommand{\imgfullh}[3]
+{{
+	\usebackgroundtemplate{
+		\includegraphics[keepaspectratio,height=\paperheight]{#1}}
+    \setbeamertemplate{navigation symbols}{}
+	\setbeamercolor{background canvas}{bg=black}
+	\begin{frame}[plain]{}
+		#2
+		\begin{textblock*}{\linewidth}(0pt,.9\paperheight)
+			\tiny\flushright{\color{gray}\href{#3}{Crédit photo}}
+		\end{textblock*}
+	\end{frame}
+}}
+
+\newcommand{\full}[2][black]{{
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamercolor{background canvas}{bg=#1}
+	\begin{frame}[plain]{}
+		#2
+	\end{frame}
+}}
+
 
 
