@@ -19,7 +19,7 @@ structure des  fichiers LaTeX:
 
 * Pour la version couleur :
     * java1-presentation.tex
-    * java1-presentation-common.tex
+    * java1-presentation-master.tex
     * java.sty
     * toc.tex
     * chapter*.tex
@@ -39,8 +39,8 @@ Pour pouvoir créer les slides, outre *LaTeX*, vous aurez besoin des outils suiv
 * make
 * rubber
 * pdfnup
-* la classe Prosper 
-* @TODO : indiquer les packages LaTeX nécessaires
+* la classe beamer 
+* les packages LaTeX nécessaires se trouvent dans `textlive-latex-recommended`
     * texlive-latex-recommended
     * texlive-lang-french
     * texlive-font-utils texlive-fonts-extra texlive-fonts-recommended
@@ -56,10 +56,13 @@ Les slides sont créés via un *Makefile*
 
 ## Remarques
 
-- Les fichiers .tex et .sty sont en latin1 car en utf8, le package listings pose des problèmes (accents non reconnus)
+Les fichiers .tex et .sty sont en latin1 car en utf8, le package listings pose des problèmes (accents non reconnus).
+
+Pendant la révision des slides les anciennes sources se trouvent dans "old". Le
+pdf « visible » est quant-à lui dans le répertoire pdf qui sera supprimé
+à terme. 
 
 
-(TODO : vérifier si c'est toujours le cas)
 
 ##Contacts  
 Marco Codutti <mcodutti@heb.be>  
