@@ -1,0 +1,187 @@
+% === Cours de Java
+% === Chapitre : Survol 
+
+\subsection{Algorithmes séquentiels (survol)}
+\subsection{Structure générale d'un programme}
+
+\imgfullw{../img/Life_in_a_frame_by_michaelpaleodimos.jpg}
+{}
+{http://michaelpaleodimos.deviantart.com/art/Life-in-a-frame-39596992}
+
+\begin{frame}[fragile]{Structure générale du programme}
+	\texttt{\small\$cat NomClasse.java}
+\begin{Java}
+  public class NomClasse {
+    // insert code here
+  }
+\end{Java}
+\bigskip
+\bigskip
+\emph{Attention} \sigle{Java} est sensible à la casse 
+\end{frame}
+
+\begin{frame}[fragile]{La méthode principale}
+	\texttt{\small\$cat NomClasse.java}
+\begin{Java}
+  public class NomClasse {
+    public static void main(String[] args) {
+      // insert code here     
+    }
+  }
+\end{Java}
+\end{frame}
+
+
+\begin{frame}[fragile]{Les variables}
+Les types disponibles
+\begin{center}
+\begin{tabular}{r|l}
+En Logique & En  Java \\ \hline
+Entier & \java|int| \\ 
+Réel & \java|double| \\ 
+Chaine & \java|String| \\ 
+Caractère & \java|char| \\ 
+Booléen & \java|boolean| \\  
+\end{tabular} 
+\end{center}
+Exemple de déclaration
+\begin{Java}
+   int nb1;
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{L'assignation et les calculs}
+	L'assignation se fait via le symbole 
+	\begin{center}
+		\huge\java|=|
+	\end{center}
+\begin{Java}
+   nb1 = 1;
+\end{Java}
+\bigskip
+Opérateurs :
+\begin{center}
+	\Large
+    \java|+| \java|-| \java|*| \java|/| \java|%|  
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple}
+	\texttt{\small\$cat Moyenne.java}
+\begin{Java}
+  public class Moyenne {
+    public static void main(String[] args) {
+
+      double nombre1;
+      double nombre2;
+      double moyenne;
+
+      nombre1 = 34345;
+      nombre2 = -3213213;
+      moyenne = (nombre1 + nombre2) / 2;    
+      System.out.println(moyenne); 
+    }
+  }
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple}
+	\texttt{\small\$cat Moyenne.java}
+\begin{Java}
+  public class Moyenne {
+    public static void main(String[] args) {
+
+      int nombre1 = 34345;
+      int nombre2 = -321321;
+      double moyenne;
+
+      // division réelle car un des 2 opérandes est réel
+      moyenne = (nombre1 + nombre2) / 2.0;    
+      System.out.println("La moyenne est " + moyenne); 
+    }
+  }
+\end{Java}
+\end{frame}
+
+
+\begin{frame}[fragile]{Lire au clavier}
+	Les applications modernes préfèrent les lectures dans des champs de saisies. 
+	\par Voici une manière de faire
+	\par\emph{Exemple}
+  \begin{Java}
+  import java.util.Scanner;
+  // ...
+  Scanner clavier = new Scanner(System.in);
+  // ...
+  nombre1 = clavier.nextInt();
+  \end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Lire au clavier - Exemple}
+	\texttt{\small\$cat Test.java}
+\begin{Java}
+import java.util.Scanner;
+
+public class Test {
+  public static void main(String[] args) {
+      Scanner clavier = new Scanner(System.in);
+      double nombre1;
+      double nombre2;
+      double moyenne;
+
+      nombre1 = clavier.nextDouble();
+      nombre2 = clavier.nextDouble();
+      moyenne = (nombre1 + nombre2) / 2.0;
+      System.out.println(moyenne);    
+  }
+}
+\end{Java}
+\end{frame}
+
+\begin{frame}{Lire au clavier}
+\begin{center}
+\begin{tabular}{r|l}
+Pour lire\dots & on écrit\dots \\ \hline
+un entier & \java|nextInt()| \\ 
+un réel & \java|nextDouble()| \\ 
+un booléen & \java|nextBoolean()| \\ 
+un mot & \java|next()|\\  
+une ligne & \java|nextLine()|\\  
+un caractère & \java|next().charAt(0)| \\ 
+\end{tabular} 
+\end{center}
+\end{frame}
+
+\subsection{Constantes}
+
+\begin{frame}[fragile]{Constante locale}
+	Une \textbf{constante} s'écrit grâce à \java|final| 
+\par\medskip
+\par\emph{Exemple}
+\begin{Java}
+  final int X = 1;
+  final int Y;
+  Y = 2*X;
+  X = 2; // Erreur : possède déjà une valeur
+  Y = 3; // Idem
+\end{Java}
+\end{frame}
+
+\subsection{Conventions}
+
+\imgfullh{../img/people_think_theyre_different_by_nanfe-d3bzl5i_mirror.jpg}
+{\vspace{19mm}\LARGE\bf\color{brickred} Conventions d'écriture}
+{http://nanfe.deviantart.com/art/people-think-theyre-different-201534678}
+
+\subsection{Commentaires}
+
+\begin{frame}[fragile]{Le commentaire}
+Plusieurs manières d'ajouter un commentaire 
+  \begin{Java}
+  // Commentaire sur une ligne
+  /* Commentaire sur
+     plusieurs lignes */
+  \end{Java}
+\end{frame}
+
+

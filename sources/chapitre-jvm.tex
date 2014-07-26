@@ -1,0 +1,95 @@
+% === Cours de Java
+% === Chapitre : Introduction
+
+\subsection{La machine virtuelle}
+
+\begin{frame}
+	\begin{center}
+		Java est \emph{compilé} puis \emph{interprêté}.
+	\par
+	L'interprêteur Java est la machine virtuelle (\sigle{JVM})
+	\par
+	Le langage de bas niveau interprêté par la \sigle{JVM} est le \emph{\sigle{bytecode}}
+\end{center}
+\end{frame}
+
+\begin{frame}{La machine virtuelle}
+\begin{center}
+\includegraphics[scale=0.8]{../img/java-jvm-jvm2} 
+\end{center}
+\end{frame}
+
+\imgfullh{../img/Sun_and_rain_by_emolawn.jpg}
+{\begin{flushright}\large\bf\color{ghostwhite} Avantages et\\inconvénients\end{flushright}}
+	{http://emolawn.deviantart.com/art/Sun-and-rain-85676638}
+
+
+\begin{frame}[fragile]{Exemple: premier programme}
+Prenons un exemple \textit{(fichier \code{Hello.java})}
+\begin{Java}
+// Mon premier programme
+public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Bonjour !");
+  }
+}
+\end{Java}
+Compilons-le \texttt{\$ javac Hello.java}
+\par
+On obtient la version compilée, le \sigle{bytecode} (\code|Hello.class|)
+\par
+On peut l'exécuter \texttt{\$ java Hello}\\
+\texttt{Bonjour !}
+\end{frame}
+
+\subsection{Les outils de développement}
+
+\imgfullh{../img/righttool-3348965007_b3049c78fe_b.jpg}
+{\vspace{-1cm}\color{cadetgrey}\Large\bf Fourbir ses armes}
+{https://www.flickr.com/photos/ebarney/3348965007/in/photostream/}
+
+
+\begin{frame}{Les outils de développement}
+Les éditions de \sigle{Java}
+\begin{itemize}
+	\item \emph{Java SE} (édition standard)
+	\item \emph{Java ME} (édition mobile - plus léger) 
+	\item \emph{Java EE} (édition entreprise - plus complet)
+\end{itemize}
+\begin{wrapfigure}{r}{17mm}
+	\includegraphics[width=17mm]{../img/java-download.png}
+\end{wrapfigure}
+\bigskip
+Où trouver \code|javac| et \code|java| ?
+\par
+\emph{\sigle{JRE}} (\textit{Java Runtime Environment}) \\
+\emph{\sigle{JDK}} (\textit{Java Development Kit})
+\end{frame}
+
+
+\full[bluepigment]{\centering\Large\bf\color{azuremist}
+	\par\noindent Éditer
+	\par\noindent Compiler
+	\par\noindent Exécuter
+}
+
+\begin{frame}{Les outils de développement}
+ \par{\bf\Huge 1} 
+\begin{itemize}
+\item Un \emph{éditeur avec coloration syntaxique}:
+	\emph{\sigle{gVim}}, \emph{\sigle{Notepad++}}, \emph{\sigle{nano}}, \dots
+\item Gestion manuelle des noms et emplacements des fichiers
+\item Compilation et exécution en ligne de commande
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Les outils de développement}
+ \par{\bf\Huge 2}
+ \begin{itemize}
+	\item Un \textit{\emph{E}nvironnement de \emph{D}éveloppement \emph{I}ntégré} : 
+	\emph{\sigle{Netbeans}}, \emph{\sigle{Eclipse}}, \dots
+  	\item Intègre tout le processus de développement  
+  \end{itemize}
+\end{frame}
+
+
