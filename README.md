@@ -62,6 +62,8 @@ Pendant la révision des slides les anciennes sources se trouvent dans "old". Le
 pdf « visible » est quant-à lui dans le répertoire pdf qui sera supprimé
 à terme. 
 
+Les couleurs utilisées dans les slides sont définies chez
+[latexcolor.com](http://latexcolor.com)
 
 
 ##Contacts  
