@@ -1,0 +1,170 @@
+% === Cours de Java
+% === Chapitre : Survol 
+
+\subsection{Alternatives (survol)}
+
+\imgfullh{../img/The_choice_by_vallo29.jpg}{}{http://vallo29.deviantart.com/art/The-choice-150871274}
+
+\begin{frame}[fragile]{Instructions de choix}
+Le \emph{Si}
+\begin{Java}
+  if ( condition ) {
+    instructions
+  }
+\end{Java}
+\bigskip
+Le \emph{Si-sinon}
+\begin{Java}
+  if ( condition ) {
+    instructions
+  } else {
+    instructions
+  }
+\end{Java} 
+\end{frame}
+
+\begin{frame}[fragile]{Exemple} 
+\begin{Java}
+import java.util.Scanner;
+public class Test {
+  public static void main(String[] args) {
+      Scanner clavier = new Scanner(System.in);
+      int nombre1;
+
+      nombre1 = clavier.nextInt();
+      if (nombre1 < 0) {
+         System.out.println(nombre1 + " est négatif"); 
+      }   
+  }
+}
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple} 
+\begin{Java}
+import java.util.Scanner;
+public class Test {
+  public static void main(String[] args) {
+      Scanner clavier = new Scanner(System.in);
+      int nombre1;
+
+      nombre1 = clavier.nextInt();
+      System.out.println(nombre1 + " est un nombre ");
+      if (nombre1 < 0) {
+         System.out.println("négatif"); 
+      } else {
+         System.out.println("positif");   
+      }
+  }
+}
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Exercice} 
+Comment traduire cet algorithme ?
+\begin{Code}
+MODULE test ()
+    nombre1: Entier
+    LIRE nombre1
+    SI nombre1 > 0 ALORS
+        ECRIRE nombre1, "est positif"
+    SINON
+        SI nombre1 = 0 ALORS
+            ECRIRE nombre1, "est nul"
+        SINON
+            ECRIRE nombre1, "est négatif"
+        FIN SI
+    FIN SI
+FIN MODULE
+\end{Code}
+\end{frame}
+
+\begin{frame}[fragile]{Expressions booléennes} 
+	Les comparateurs
+	\begin{center}
+		\Large
+		\java|<| \; \java|>| \; \java|<=| \; \java|>=| \; \java|==| \; \java|!=|
+	\end{center}
+	Les opérateurs booléens 
+	\begin{center}
+		\Large
+		\java|&&| (et) \: \java{||} (ou) \: \java|!| (non)
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple} 
+\begin{Java}
+import java.util.Scanner;
+public class Exemple {
+  public static void main(String[] args) {
+      Scanner clavier = new Scanner(System.in);
+      int nombre1;
+
+      nombre1 = clavier.nextInt();
+      if ((nombre1 % 2) == 0) {
+         System.out.println("Le nombre est pair");
+      } else {
+         System.out.println("Le nombre est impair"); 
+      }
+  }
+}
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Exemple} 
+\begin{Java}
+import java.util.Scanner;
+public class Exemple {
+  public static void main(String[] args) {
+      Scanner clavier = new Scanner(System.in);
+      int âge;
+
+      âge = clavier.nextInt();
+      if ( âge<21 || âge>=60 ) {
+         System.out.println("Tarif réduit !");
+      }
+  }
+}
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Le \og selon-que\fg} 
+Première forme
+\begin{Java}
+  switch(produit) {
+    case "Coca" : 
+    case "Sprite" : 
+    case "Fanta" :  prixDistributeur=60; break;
+    case "IceTea" : prixDistributeur=70; break;
+    case "Aquarius" : 
+    case "Nalu" :   prixDistributeur=80; break;
+    default :       prixDistributeur=0 break;
+  }
+\end{Java}
+\begin{itemize}
+\item Notez le \java{break}
+\item Possible avec : entiers, caractères et chaines
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Le \og selon-que\fg} 
+Deuxième forme : la logique suivante
+\begin{Code}
+  Selon que 
+    nb > 0 : Écrire "positif"
+    nb = 0 : Écrire "nul"
+    autres : Écrire "négatif"
+  Fin selon que
+\end{Code}
+s'écrit en Java
+\begin{Java}
+  if (nb>0) {
+      System.out.println("positif");
+  } else if (nb==0) {
+      System.out.println("nul");
+  } else {
+      System.out.println("négatif");
+  }  
+\end{Java}
+\end{frame}
+

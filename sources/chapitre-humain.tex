@@ -1,0 +1,73 @@
+\subsection{L'erreur est humaine}
+
+\begin{frame}{Processus d'écriture d'un programme}
+	Édition / compilation / éxécution 
+	\medskip
+	\begin{flushright}
+	\dots~ \textit{et tout va bien}
+\end{flushright}
+\end{frame}
+
+\imgfullw{../img/damsel_by_colinhuttonphoto-d5vpyon.jpg}
+{\vspace{-3cm}\color{deepfuchsia}\Large\bf Quels types d'erreurs ?}
+{http://colinhuttonphoto.deviantart.com/art/Rambur-s-forktail-Ischnura-ramburii-355610327}
+
+\begin{frame}{Quels types d'erreurs ?}
+	Quels types d'erreurs ? 
+	\begin{itemize}
+		\item Les erreurs de \emph{compilation} 
+		\item Les erreurs d'\emph{exécution}
+	\end{itemize}
+\end{frame}
+
+\full[bluepigment]{
+	\texttt{\color{white}
+	public Class Hello\{\\
+		\hspace{1cm}public static void main (string[] args)\{\\
+			\hspace{2cm}System.out.println("Hello");\\
+		\hspace{1cm}\}\\
+	\}\\
+	\vspace{1cm}
+	\color{cadetgrey}
+	\$ javac Hello.java\\
+	Hello.java:1: class, interface, or enum expected\\
+	public Class Hello\\
+	\hspace{1.8cm}\^
+}
+}
+
+\begin{frame}[fragile]{Les erreurs de compilation}
+	\includegraphics[scale=.05]{../img/icon_15706.png}
+	\begin{itemize}
+		\item Compiler souvent
+		\item Apprendre à reconnaitre \emph{rapidement} les erreurs fréquentes
+		\item Lire / comprendre les messages du compilateur
+	\end{itemize}
+\end{frame}
+
+
+\full[cobalt]{
+	\texttt{\color{white}
+	public class Division\{\\
+		\hspace{1cm}...\\
+	\}\\
+	\vspace{1cm}
+	\color{cadetgrey}
+	\$ javac Division.java\\
+	\$ {\color{brickred}java Division}\\
+	Exception in thread "main" java.lang.ArithmeticException: / by zero\\
+	at Division.main(Division.java:7)
+}
+}
+
+
+\begin{frame}{Les erreurs d'exécution}
+	\includegraphics[scale=.05]{../img/icon_15706.png}
+	\begin{itemize}
+		\item Apprendre à reconnaitre \emph{rapidement} les erreurs fréquentes
+		\item \emph{Déboguer} son code; la \href{http://namok.be/blog/?post/2012/03/23/debuguer-son-code-sans-utiliser-ide}{méthode de l'homme} pauvre et le débogueur
+		\item Mettre des tests en \oe uvre
+	\end{itemize}
+\end{frame}
+
+

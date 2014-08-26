@@ -226,13 +226,15 @@
 	\end{frame}
 }}
 
+% Je ne comprend pas bien cette commande ^^ --pbt
 \newcommand{\full}[2][black]{{
 	\setbeamertemplate{navigation symbols}{}
 	\setbeamercolor{background canvas}{bg=#1}
-	\begin{frame}[plain]{}
+	\begin{frame}[plain,containsverbatim]{}
 		#2
 	\end{frame}
 }}
+
 
 % === Pour les images flottantes
 % \begin{wrapfigure}[8]{r}{4cm}
@@ -242,12 +244,13 @@
 
 % === Dénifition de quelques couleurs
 % voir http://latexcolor.com
-\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+%\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
 \definecolor{bluepigment}{rgb}{0.2, 0.2, 0.6}
 \definecolor{azuremist}{rgb}{0.94, 1.0, 1.0}
 \definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
 \definecolor{ghostwhite}{rgb}{0.97, 0.97, 1.0}
 \definecolor{isabelline}{rgb}{0.96, 0.94, 0.93}
 \definecolor{brickred}{rgb}{0.8, 0.25, 0.33}
-
-
+\definecolor{blush}{rgb}{0.87, 0.36, 0.51}
+\definecolor{deepfuchsia}{rgb}{0.76, 0.33, 0.76}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
