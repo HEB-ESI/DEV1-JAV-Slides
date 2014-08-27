@@ -72,5 +72,5 @@ Pierre Bettens <pbettens@heb.be>
 
 
 
-[![CC](cc-by-nc-sa-80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
+[![CC](img/cc-by-nc-sa-80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
 
