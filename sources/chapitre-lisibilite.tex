@@ -1,0 +1,103 @@
+% === Cours de Java
+
+\subsection{Écrire du code lisible}
+
+\full[bluepigment]{
+	\texttt{\color{white}
+		public class h\{public static void main(String[] args)\{System.out.println("Hi");\}\}
+	}
+}
+
+\begin{frame}{Lisibilité du code}
+Un code est \emph{souvent lu};
+  \begin{itemize}
+  \item lorsqu'il est écrit / mis au point;
+  \item correction de bug; 
+  \item évolution du code;
+  \end{itemize}
+\bigskip
+$\Longrightarrow$ \emph{La lisibilité est essentielle}
+\end{frame}
+
+\begin{frame}[fragile]{Lisibilité du code: indentation}
+	\par{\bf\Huge 1}
+	\par \emph{Indenter} correctement son code 
+
+	TODO insérer image de code indenté ou de gens en rang
+\end{frame}
+
+\begin{frame}[fragile]{Lisibilité du code: choix des noms}
+	\par{\bf\Huge 2}
+	\par Bien choisir le \emph{nom des variables}
+	\bigskip
+	\begin{Java}
+  int u=clavier.nextInt(),n=clavier.nextInt(),
+  t=clavier.nextInt();
+  double p=u*n*(1+t/100.0);
+  System.out.println(p);
+	\end{Java}
+\end{frame}
+
+\imgfullh{../img/screenshot-calculprixvente.png}{}{http://pit.namok.be} % ;-)
+
+\begin{frame}[fragile]{Lisibilité du code: décomposition}
+	\par{\bf\Huge 3}
+	\par \emph{Décomposer} les expressions trop longues
+	\bigskip
+	\bigskip
+	\begin{Java}
+  àPayer = prixUnitaireHTVA * (1 + tauxTVA/100.0) * nombreArticles;
+
+  prixUnitaireTTC = prixUnitaireHTVA * (1 + tauxTVA/100.0);                               
+  àPayer = prixUnitaireTTC * nombreArticles;
+	\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Lisibilité du code: constantes}
+	\par{\bf\Huge 4}
+	\par Utiliser des \emph{constantes}
+	\vspace{1.5cm}
+\begin{Java}                                                 
+  final double TAUX_TVA = 0.21;
+\end{Java}
+\end{frame}
+
+\subsection{Écrire du code illisible}
+
+\begin{frame}[fragile]{Illisibilité du code}
+	\par{\bf\Huge\color{brickred} -1} 
+	%\includegraphics[width=70px]{../img/icon_11184.png}
+	\par Surcharger de \emph{commentaires}
+	\vspace{1.5cm}
+	\par\textit{Un commentaire explique ce que le code fait mais pas comment il le fait}
+\end{frame}
+
+% TODO ajouter une image avec interdit 
+% image avec comme texte C'est tout
+% supprimer slide suivant
+
+\imgfullh{../img/rule.jpg}
+	{\vspace{4cm}\LARGE\bf\color{ghostwhite}D'autres règles ?\vspace{-4cm}}
+	{https://www.flickr.com/photos/fuzzhead/7310236/sizes/o/}
+
+\begin{frame}[fragile]{Conventions d'écriture}
+	Conventions d'écriture \sigle{Java}
+\begin{itemize}
+	\item {\footnotesize\href{http://www.oracle.com/technetwork/java/codeconv-138413.html}
+		{http://www.oracle.com/technetwork/java/codeconv-138413.html}}
+\end{itemize} 
+\end{frame}
+
+\subsection{Refactorisation}
+
+\begin{frame}{La refactorisation}
+	\par{\bf Refactorisation}
+	\medskip
+	\par\centering\textit{Improving the design of existing code}
+	\bigskip
+	\begin{flushright}
+		\color{cadetgrey}\sigle{JUnit}\: VCS (git/svn)
+	\end{flushright}
+\end{frame}
+
+
