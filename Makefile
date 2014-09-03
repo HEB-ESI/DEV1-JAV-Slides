@@ -83,7 +83,7 @@ PDF-CHAPITRES   = $(addprefix $(DIST)/$(NOM-COMPLET)-, $(addsuffix .pdf, $(LISTE
 .PHONY: chapter
 .PHONY: all
 
-default: chapter
+default: $(PDF-PROF)
 
 # Nettoye tout
 clean:
@@ -122,9 +122,7 @@ $(DIST)/$(NOM-COMPLET)-$(NOM-CHAPITRE)-%.pdf : $(SRC)/$(NOM-CHAPITRE)-%.tex $(SU
 	rubber --only $(NOM-CHAPITRE)-$* $(RUBBEROPT) $(TEX-COMPLET)
 	mv $(BUILD)/$(NOM-COMPLET).pdf $@
 
-#NOTES est buggé pour l'instant
-#all : $(PDF-COMPLET)  $(PDF-PROF) $(PDF-NOTES)
-all : $(PDF-COMPLET)  $(PDF-PROF)
+all : $(PDF-COMPLET)  $(PDF-PROF) $(PDF-NOTES)
 
 $(PDF-COMPLET) : $(SUPPORT) $(TEX-CHAPITRES) $(TEX-COMPLET) $(TEX-COMMON)
 	@echo "\n====== Version complète étudiant (notes excluses)"
@@ -140,8 +138,9 @@ $(PDF-PROF) : $(SUPPORT) $(TEX-CHAPITRES) $(TEX-PROF) $(TEX-COMMON)
 	cp $(BUILD)/$(NOM-PROF).pdf pdf
 	mv $(BUILD)/$(NOM-PROF).pdf $@
 
+# rubber bugge ici, je fais tout à la main
 $(PDF-NOTES) : $(SUPPORT) $(TEX-CHAPITRES) $(TEX-NOTES) $(TEX-COMMON)
 	@echo "\n======  Version avec uniquement les notes"
-	rubber $(RUBBEROPT) $(TEX-NOTES)
-	cp $(BUILD)/$(NOM-NOTES) pdf
-	mv $(BUILD)/$(NOM-NOTES).pdf $@
+	(cd $(SRC); pdflatex java1-presentation-notes.tex)
+	rm $(SRC)/*.log $(SRC)/*.vrb
+	mv $(SRC)/$(NOM-NOTES).pdf $@
