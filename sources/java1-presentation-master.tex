@@ -1,5 +1,6 @@
 % === Cours de Java
 % === Fichier principal
+\usetheme[secheader]{Madrid}
 \usepackage{java}
 
 \title{Le Langage Java}
@@ -18,53 +19,26 @@
 }
 
 \begin{document}
+
+% ===== Page de titre ======
 \begin{frame}
 \titlepage
 \end{frame}
 
-% ===== Inclusion des différents chapitres =====
+% ===== Table des matières ======
 \include{toc}
 
-% ===== Premier quadrimestre
-% == Séance 1
-\section{Objectifs, évaluations et introduction}
-\leconwithtocquote{\og\ I really hate this darn machine;
-I wish that they would sell it.
-\\It won't do what I want it to,
-but only what I tell it. \fg
-\\Anonyme}
+% ===== Les différentess séances =====
+\include{seance-1}
+\include{seance-2}
+\include{seance-3}
+\include{seance-4}
 
-\include{chapitre-contrat}
-\include{chapitre-programme}
-\include{chapitre-java}
-
-% ==Séance 2
-\section{Développer en \sigle{Java}, premier survol}
-\leconwithtoc
-\include{chapitre-jvm}
-\include{chapitre-survol-seq}
-
-% ==Séance 3
-\section{La gestion des erreurs et le survol des alternatives}
-\leconwithtocquote
-{\og There are two ways to write error-free programs;\\only the third one works.\fg \ Alan J. Perlis}
-\include{chapitre-humain}
-\include{chapitre-survol-alternative}
 
 %\include{chapitre-gram}
 %\include{chapitre-lex}
 
-% ==Séance 4
-\section{Lisibilité et notions de modules}
-\leconwithtocquote
-{\og Any fool can write code that a computer can understand.
-\\Good programmers write code that humans can understand. \fg
-\\Martin Fowler}
-\include{chapitre-lisibilite}
-\include{chapitre-survol-module}
 
-% == Séance 5
-\section{Packages et survol des structures répétitives}
 
 
 
@@ -81,6 +55,7 @@ but only what I tell it. \fg
 %\include{chapitre-instr}
 %\include{chapitre-tableau}
 
+% ===== Crédits =====
 \section*{Annexe}
 \begin{frame}{Crédits}
 Ce document a été produit avec les outils suivants
