@@ -125,7 +125,7 @@ $(DIST)/$(NOM-COMPLET)-$(NOM-CHAPITRE)-%.pdf : $(SRC)/$(NOM-CHAPITRE)-%.tex $(SU
 all : $(PDF-COMPLET)  $(PDF-PROF) $(PDF-NOTES)
 
 $(PDF-COMPLET) : $(SUPPORT) $(TEX-CHAPITRES) $(TEX-COMPLET) $(TEX-COMMON)
-	@echo "\n====== Version complète étudiant (notes excluses)"
+	@echo "\n====== Version complète étudiant (notes exclues)"
 	rubber $(RUBBEROPT) $(TEX-COMPLET)
 	mv $(BUILD)/$(NOM-COMPLET).pdf $@
 	# Il faut reconstruire les chapitres pour être sûr qu'ils aient le bon numéro.
