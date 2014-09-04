@@ -1,36 +1,34 @@
 % === Cours de Java
 
-\section{Organiser le code}
+\subsection{Organiser le code}
 
-\leconwithabstract{Dans une application réelle, la taille des programmes impose une organisation rigoureuse}
+\imgfullw{../img/fruitetlegumes.jpg}
+	{
+		\begin{flushright}
+		\vspace{1cm}
+		\LARGE\bf\color{white}
+		Rangement
+		\vspace{-1cm}
+	\end{flushright}
+	}
+	{https://www.flickr.com/photos/wien/418840561}
 
 \begin{frame}{Le groupement en package}
-L'\emph{API} (Application Programming Interface) désigne la bibliothèque standard Java
-\begin{itemize}
-\item Elle contient des \emph{milliers} de classes
-\item Elles sont regroupées en \emph{package}
-\end{itemize}
+	Toutes les classes de l'\emph{API} Java sont regroupées logiquement \dots 
+	en \emph{package}
+	\bigskip
 \begin{center}
-  %\includegraphics[scale=.6]{../img/package}
+  \includegraphics[scale=.6]{../img/package}
 \end{center}
 \end{frame}
 
 \begin{frame}{La notion de package}
-Un \emph{package}
+Un \emph{package} donne un nom complet à une classe
 \begin{itemize}
-\item Regroupe les classes liées
-\item Permet l'unicité des noms de classe
-  \begin{itemize}
-    \item nom complet / qualifié: {\small \java|monPackage.MaClasse|}
-  \end{itemize} 
-\end{itemize} 
-\bigskip
-Nom d'un package
-  \begin{itemize}
-    \item identifieurs séparés par des points \java|.|
-    \item tout en minuscules
-    \item adresse internet inversée (unicité)
-    \item ex: {\small \java|be.heb.esi.java1|}, {\small \java|org.apache.struts.action|}
+    \item {\java|mon.paquet.MaClasse|},
+    \item {\java|be.heb.esi.java1.MaClasse|}, 
+    \item {\java|java.util.Scanner|},
+	\item {\java|org.apache.struts2.components.Anchor|}
   \end{itemize} 
 \end{frame}
 
@@ -50,48 +48,49 @@ Pour utiliser une classe
   ...
   }
 \end{Java}
-\item Cas particulier : le package \java|java.lang| est importé implicitement
-  \begin{itemize}
-  \item Exemple : on peut tout de suite écrire
-  \begin{Java}
-  double racine = Math.sqrt(1.21);
-  \end{Java}
-  \end{itemize}
 \end{itemize}
+\textbf{Cas particulier} Le package \java|java.lang| est importé implicitement
 \end{frame}
 
 \begin{frame}{Utilisation}
-Comment savoir comment utiliser les classes et méthodes ? En lisant la \emph{javadoc}
-%\begin{center}
-%\includegraphics[scale=.28]{../img/api}
-%\\ \scriptsize{\textit{(http://download.oracle.com/javase/7/docs/api/)}}
-%\end{center}
+Comment savoir comment utiliser les classes et méthodes ? 
+\bigskip
+\begin{flushright}
+	En lisant la \emph{javadoc}
+\end{flushright}
 \end{frame}
+
+\imgfullh{../img/api}{}
+{(http://download.oracle.com/javase/7/docs/api/)}
 
 \begin{frame}{Utilisation}
 On peut y lire le nom du package 
 \begin{center}
-%\includegraphics[scale=.6]{../img/api-package}
+\includegraphics[scale=.6]{../img/api-package}
 \end{center}
 et la description de la méthode
-%\begin{center}
-%\includegraphics[scale=.6]{../img/api-methode}
-%\\{\small \textit{On verra comment produire une \emph{javadoc} similaire pour son code}}
-%\end{center}
+\begin{center}
+\includegraphics[scale=.6]{../img/api-methode}
+\\{\small \textit{On verra comment produire une \emph{javadoc} similaire pour son code}}
+\end{center}
 \end{frame}
 
+\full[bluepigment]{
+	\begin{center}
+		\Large\bf\color{azuremist}
+		Comment créer mes propres \textit{packages} ?
+	\end{center}
+}
+
 \begin{frame}[fragile]{Créer ses packages}
-Pour placer une classe dans un package, la commande est \java|package nom_package;|
-  \begin{itemize}
-  \item Doit être la \emph{première instruction} du fichier 
-  \item Exemple :
+	Commande: \java|package <nom du paquet>|
+	\bigskip
 \begin{Java}
 package be.heb.esi.java1;
 public class Test { 
   // Nom complet : be.heb.esi.java1.Test
 }
 \end{Java}
-  \end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Créer ses packages}
@@ -103,27 +102,21 @@ Qu'est-ce qui va changer en pratique ?
  \end{Java}
 \item L'exécution change : 
  \begin{Java}
- java nomPackage.NomClasse
+ java nom.paquet.NomClasse
  \end{Java}
-\item Contraintes sur l'endroit où placer le \emph{bytecode}
-  \begin{itemize}
-  \item Lié à la notion de \emph{CLASSPATH} 
-  \item Sera détaillé au laboratoire
-  \end{itemize}
 \end{itemize}
+\bigskip
+Cela a une incidence sur l'endroit où placer le \emph{bytecode}
 \end{frame}
 
-\begin{frame}{Réutiliser du code}
-Si on doit coder quelque chose, c'est \emph{peut-être déjà fait}
-\begin{itemize}
-\item $\Longrightarrow$ autant le réutiliser
-  \begin{itemize}
-  \item Gain de temps
-  \item Probablement mieux écrit
-  \end{itemize}
-\item Importance de \emph{connaitre l'API}
-\\(en tout cas les classes principales)
-\end{itemize}
-\end{frame}
+\imgfullh{../img/api}
+{	
+	\color{bluepigment}\Large\bf
+	\colorbox{aliceblue}{%
+		\parbox{.95\linewidth}{%
+		\centering Connaitre l'API,\\ c'est gagner du temps ! }
+	}
+}
+{(http://download.oracle.com/javase/7/docs/api/)}
 
 
