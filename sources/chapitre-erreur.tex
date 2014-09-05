@@ -1,7 +1,12 @@
 % === Cours de Java
 \subsection{Écrire du code robuste}
 
-\subsection{Motivation}
+\imgfullw{../img/sinking_boat_by_msholly.jpg}{
+		\Large\bf\color{aliceblue}
+		\vspace{3.5cm}
+		Environnement défaillant
+	}
+	{http://msholly.deviantart.com/art/sinking-boat-156264295}
 
 \begin{frame}{Motivation}
 Un programme ne tourne pas dans un monde idéal
@@ -34,16 +39,14 @@ public class Affiche {
   }
 }
 \end{Java}
-\begin{itemize}
-\item À priori tout va bien !
-\end{itemize}
 \end{frame}
+
 
 \begin{frame}[fragile]{La gestion des erreurs}
 Et si l'utilisateur entre une lettre ?
 \vspace{-1ex}
 \begin{center}
-%\includegraphics[scale=.65]{../img/erreur1}
+\includegraphics[scale=.65]{../img/erreur1}
 \end{center}
 \vspace{-1ex}
 %\begin{Code}
@@ -57,28 +60,25 @@ Et si l'utilisateur entre une lettre ?
 %	at java.util.Scanner.nextInt(Scanner.java:2067)
 %	at Affiche.main(Affiche.java:7)
 %\end{Code}
-  \begin{itemize}
-  \item Une \emph{exception} est générée
-  \item Le programme s'\emph{arrête brutalement} et affiche un message d'erreur
-  \end{itemize}
 \end{frame}
 
-\begin{frame}{La gestion des erreurs}
-2 inconvénients majeurs
-  \begin{itemize}
-  \item Le message d'erreur est très utile pour le développeur mais pas pour l'utilisateur
-  \item L'arrêt du programme est rarement le comportement souhaité
-  \end{itemize}
-\bigskip
-On aimerait pouvoir \emph{gérer} le problème
-  \begin{itemize}
-  \item Au mieux, le régler
-  \item Au pire, afficher un message plus clair pour l'utilisateur
-  \end{itemize}
-\end{frame}
+\full[bluepigment]{
+	\begin{center}
+		\color{azuremist}\Large\bf
+		Comment (essayer) \\de gérer le problème ? 
+	\end{center}
+}
+
+\imgfullw{../img/puffinwithcatch}{
+	\Huge\bf\color{burntorange}
+	\vspace{3cm}
+	catch
+}
+{https://www.flickr.com/photos/47515486@N05/11845113373/sizes/l}
+
 
 \begin{frame}[fragile]{La gestion des erreurs}
-Possible grâce à l'instruction \java|try catch|
+L'instruction \java|try catch|
   \begin{itemize}
   \item \java{try} : contient les instructions qui \emph{peuvent mal se passer}
   \item \java{catch} : contient le code qui est \emph{en charge} de gérer le problème
@@ -165,10 +165,16 @@ Cas pratique : vérifier les \emph{paramètres}
   \end{itemize}
 \end{frame}
 
+\full[bluepigment]{
+	\begin{center}
+		\color{azuremist}\Large\bf
+		Lancer une exception
+	\end{center}
+}
+
+
 \begin{frame}[fragile]{Confiner les problèmes}
-Nous avons appris à attraper une exception.
-\par
-On peut aussi en créer une
+	\emph{Lancer} une exception
 \begin{Java}[basicstyle=\scriptsize]
   /**
    * Calcule la racine carrée d'un nombre.
@@ -183,11 +189,6 @@ On peut aussi en créer une
     // Traitement normal. On est sûr que le paramètre est OK.
   }
 \end{Java}
-\begin{itemize}
-\item On dit qu'on \emph{lance} une exception
-\\(ici de type \java|IllegalArgumentException|)
-\item Pourra être attrapée via un \java{catch}
-\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Confiner les problèmes}
