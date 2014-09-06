@@ -1,0 +1,220 @@
+% === Cours de Java
+% === Chapitre : Les données
+
+\subsection{Les types et les littéraux}
+
+\full[burntorange]{
+	\begin{center}
+		\Large\color{azuremist}
+		\textit{Java est un langage fortement typé}
+		\begin{flushright}
+			Croyance populaire
+		\end{flushright}
+	\end{center}
+}
+
+\begin{frame}{Les types}
+\emph{Toute donnée a un type}
+\bigskip
+\bigskip
+\par
+Quels types ?
+\begin{itemize}
+  \item \emph{primitifs prédéfinis} : 
+\begin{itemize}
+\item entier, réel, booléen (logique)
+\end{itemize}
+  \item \emph{références prédéfinis} :
+\begin{itemize}
+\item tableaux, String, \dots
+\end{itemize}
+  \item \emph{références définis par le programmeur}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Les types primitifs}
+\vspace{-25pt}
+\begin{center}
+\includegraphics[scale=.75]{../img/primitifs}
+\\\tiny{source : http://www3.ntu.edu.sg/home/ehchua/programming/java/J2\_Basics.html}
+\end{center}
+\end{frame}
+
+\subsection{Les types entiers}
+
+\imgfullw{../img/velo-2649371288_f0d00b8de9_o.jpg}
+{
+	\color{bluepigment}\Large\bf
+	\colorbox{aliceblue}{%
+		\parbox{.95\linewidth}{%
+		\centering Les entiers }
+	}
+}{https://www.flickr.com/photos/13274211@N00/2649371288}
+
+
+\begin{frame}[fragile]{Les types numériques entiers}
+\java|byte|, \java|short|, \java|int| et \java|long| 
+(\java|char| sera vu à part) :
+\begin{itemize}
+\item nombres signés (en complément à 2)
+\item codés sur 8-bit, 16-bit, 32-bit et 64-bit
+\item comprennent donc les valeurs 
+  \begin{itemize}
+  \item -128 à 127
+  \item -32768 à 32767
+  \item -2147483648 à 2147483647
+  \item -9223372036854775808 à 9223372036854775807
+  \end{itemize} 
+\end{itemize}
+\end{frame}
+
+\full[bluepigment]{
+	\begin{center}
+		\Large\bf\color{azuremist}
+		Un \textit{littéral}, c'est la représentation d'une valeur
+	\end{center}
+}
+
+
+\begin{frame}[fragile]{Les littéraux entiers}
+Un littéral numérique \emph{décimal}   
+	\bigskip
+  	\begin{itemize}
+  	\item suite de chiffres
+  	\item \java|_| éventuellement pour la lisibilité
+  	\item le suffixe (\java|l| ou \java|L|) : distingue un \java|int| d'un \java|long|
+  	\item pas de \java|byte| ou \java|short|, un littéral est \java|int| \\
+  		(ou \java|long|)
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}[fragile]{Les littéraux entiers}
+Un littéral numérique \emph{octal}   
+	\bigskip
+  	\begin{itemize}
+  	\item suite de chiffres de 0 à 7
+  	\item précédé de \java|0|
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}[fragile]{Les littéraux entiers}
+Un littéral numérique \emph{hexadécimal}   
+	\bigskip
+  	\begin{itemize}
+  	\item suite de chiffres et lettres a,b,c,d,e,f (minuscules/majuscules)
+  	\item précédé de \java|0x| ou \java|0X|
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}[fragile]{Les littéraux entiers}
+Un littéral numérique \emph{binaire}   
+	\bigskip
+  	\begin{itemize}
+  	\item suite de chiffres 0 et 1
+  	\item précédé de \java|0b| ou \java|0B|
+  \end{itemize} 
+\end{frame}
+
+\begin{frame}[fragile]{Les littéraux entiers}
+\emph{Exemple} La quantité 100 de type \java|int| 
+\begin{itemize}
+\item \java|100|
+\item \java|1_0_0|
+\item \java|0144|
+\item \java|01_44|
+\item \java|0x64|
+\item \java|0b110_0100|
+\end{itemize} 
+\end{frame}
+
+\imgfullw{../img/Apple_Onion_by_SpicyHamster.jpg}{
+		\vspace{4cm}
+		\huge\texttt{\bf char}\\
+		\Large\bf un type numérique particulier
+		\vspace{-4cm}
+}{http://spicyhamster.deviantart.com/art/Apple-Onion-23249088}
+
+\begin{frame}[fragile]{Le type numérique caractère}
+\java|char|
+\begin{itemize}
+\item caractère Unicode codé en UTF16
+\item entier non signé sur 16 bits
+\item assimilé à un entier 
+\item un littéral de type \java|char| \\
+	un \emph{caractère entre \textit{single quote}} 
+\item les séquences d'échappememt
+\end{itemize}
+\end{frame}
+
+\subsection{Les types flottants}
+\imgfullw{../img/sliced_by_tnaotc-d38vol7.jpg}{
+	\color{bluepigment}\Large\bf
+	\colorbox{aliceblue}{%
+		\parbox{.95\linewidth}{%
+		\centering Les pseudo-réels }
+	}
+}{http://tnaotc.deviantart.com/art/Sliced-196313659}
+
+\begin{frame}[fragile]{Les types à virgule flottante}
+\java|float|, \java|double| 
+\begin{itemize}
+\item respectent la norme IEEE754
+\item codés sur (respectivement) 32-bit, et 64-bit
+\item on utilisera plus souvent le type \java|double|
+\item \emph{modélisation} de la notion mathématique
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Les littéraux à virgule flottante}
+\begin{small}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+partie entière & . & partie décimale & E & exposant & suffixe \\
+\hline
+\end{tabular}
+\end{small}
+\bigskip
+\begin{itemize}
+\item 4 parties optionnelles (mais pas ensemble)
+\item en l'absence de suffixe : un double
+\item exemples : \java|1.2E3|, \java|1.F|, \java|.1|, \java|1e-2d|, \java|1f|
+\item contre-exemples : \java|1|, \java|.E1|, \java|E1|
+\end{itemize}
+\end{frame}
+
+\subsection{Les booléens}
+\imgfullw{../img/bw-crayon.jpg}{
+	\color{black}\Large\bf
+	\vspace{7cm}
+	\colorbox{white}{%
+		\parbox{.95\linewidth}{%
+		\centering Les booléens }
+	}
+}{http://xxhayleyxx3.deviantart.com/art/black-white-72421658}
+
+\begin{frame}{Le type booléen}
+\java|boolean|
+\begin{itemize}
+\item appelé aussi \emph{logique}
+\item 2 valeurs : \java|true| (vrai) et \java|false| (faux)
+\end{itemize}
+\end{frame}
+
+\subsection{La chaine de caractères}
+\imgfullh{../img/string-8579869186_8c0ef392c7_h.jpg}{
+	\color{bluepigment}\Large\bf
+	\colorbox{aliceblue}{%
+		\parbox{.95\linewidth}{%
+		\centering La chaine de caractères }
+	}
+}{https://www.flickr.com/photos/lorenzoclick/8579869186}
+
+\begin{frame}[fragile]{La chaine de caractères}
+\java|String|
+\begin{itemize}
+	\item des caractères entre \textit{double quote}
+	\item \java|char| $\neq$ \java|String|
+\end{itemize}
+\end{frame}
+
