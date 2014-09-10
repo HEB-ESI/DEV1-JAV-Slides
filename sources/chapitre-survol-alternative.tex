@@ -65,19 +65,19 @@ public class Test {
 \begin{frame}[fragile]{Exercice} 
 Comment traduire cet algorithme ?
 \begin{Code}
-MODULE test ()
+Module test ()
     nombre1: Entier
-    LIRE nombre1
-    SI nombre1 > 0 ALORS
-        ECRIRE nombre1, "est positif"
-    SINON
-        SI nombre1 = 0 ALORS
-            ECRIRE nombre1, "est nul"
-        SINON
-            ECRIRE nombre1, "est négatif"
-        FIN SI
-    FIN SI
-FIN MODULE
+    Lire nombre1
+    Si nombre1 > 0 Alors
+        Afficher nombre1, "est positif"
+    Sinon
+        Si nombre1 = 0 Alors
+            Afficher nombre1, "est nul"
+        Sinon
+            Afficher nombre1, "est négatif"
+        Fin Si
+    Fin Si
+Fin Module
 \end{Code}
 \end{frame}
 
@@ -157,9 +157,9 @@ Première forme
 Deuxième forme : la logique suivante
 \begin{Code}
   Selon que 
-    nb > 0 : Écrire "positif"
-    nb = 0 : Écrire "nul"
-    autres : Écrire "négatif"
+    nb > 0 : Afficher "positif"
+    nb = 0 : Afficher "nul"
+    autres : Afficher "négatif"
   Fin selon que
 \end{Code}
 s'écrit en Java
