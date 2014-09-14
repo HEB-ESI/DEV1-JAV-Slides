@@ -142,8 +142,20 @@ Un littéral numérique \emph{binaire}
 \item assimilé à un entier 
 \item un littéral de type \java|char| \\
 	un \emph{caractère entre \textit{single quote}} 
-\item les séquences d'échappememt
+\item les séquences d'échappement
 \end{itemize}
+\note[item]{{\textbackslash}n (linefield), 
+{\textbackslash}r (carriage return), 
+{\textbackslash}t (tabulation),
+{\textbackslash}b (backspace), 
+{\textbackslash}', 
+{\textbackslash}",
+{\textbackslash}{\textbackslash}}
+\note[item]{Par exemple : '{\textbackslash}n', 
+'{\textbackslash}{\textbackslash}',
+'{\textbackslash}''}
+\note[item]{Pour utiliser le \href{http://unicode-table.com/}{code Unicode}}
+\note[item]{Par exemple : '{\textbackslash}u0F40' pour le KA tibétain}
 \end{frame}
 
 \subsection{Les types flottants}
@@ -163,6 +175,8 @@ Un littéral numérique \emph{binaire}
 \item on utilisera plus souvent le type \java|double|
 \item \emph{modélisation} de la notion mathématique
 \end{itemize}
+\note[item]{Capacité limitée (out of range possible)}
+\note[item]{Précision limitée (cfr. $10^{-30}$ et $(1+10^{-30})-1$)}
 \end{frame}
 
 
