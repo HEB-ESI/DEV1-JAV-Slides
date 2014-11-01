@@ -135,28 +135,35 @@ Un littéral numérique \emph{binaire}
 }{http://spicyhamster.deviantart.com/art/Apple-Onion-23249088}
 
 \begin{frame}[fragile]{Le type numérique caractère}
-\java|char|
-\begin{itemize}
-\item caractère Unicode codé en UTF16
-\item entier non signé sur 16 bits
-\item assimilé à un entier 
-\item un littéral de type \java|char| \\
-	un \emph{caractère entre \textit{single quote}} 
-\item les séquences d'échappement
-\end{itemize}
-\note[item]{{\textbackslash}n (linefield), 
-{\textbackslash}r (carriage return), 
-{\textbackslash}t (tabulation),
-{\textbackslash}b (backspace), 
-{\textbackslash}', 
-{\textbackslash}",
-{\textbackslash}{\textbackslash}}
-\note[item]{Par exemple : '{\textbackslash}n', 
-'{\textbackslash}{\textbackslash}',
-'{\textbackslash}''}
-\note[item]{Pour utiliser le \href{http://unicode-table.com/}{code Unicode}}
-\note[item]{Par exemple : '{\textbackslash}u0F40' pour le KA tibétain}
+	\java|char|
+	\begin{itemize}
+		\item caractère Unicode codé en UTF16
+		\item entier non signé sur 16 bits
+		\item assimilé à un entier 
+		\item un littéral de type \java|char| \\
+		un \emph{caractère entre \textit{single quote}} 
+		\item les séquences d'échappement
+			{\textbackslash}n \,, 
+			{\textbackslash}t \,,
+			{\textbackslash}' \,, 
+			{\textbackslash}" 
+	\end{itemize}
+	\note[item]
+		{{\textbackslash}n (linefield), 
+		{\textbackslash}r (carriage return), 
+		{\textbackslash}t (tabulation),
+		{\textbackslash}b (backspace), 
+		{\textbackslash}', 
+		{\textbackslash}",
+		{\textbackslash}{\textbackslash}}
+	\note[item]{Par exemple : '{\textbackslash}n', 
+		'{\textbackslash}{\textbackslash}',
+		'{\textbackslash}''}
+	\note[item]{Pour utiliser le \href{http://unicode-table.com/}{code Unicode}}
+	\note[item]{Par exemple : '{\textbackslash}u0F40' pour le KA tibétain}
 \end{frame}
+
+
 
 \subsection{Les types flottants}
 \imgfullw{../img/sliced_by_tnaotc-d38vol7.jpg}{
