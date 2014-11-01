@@ -296,7 +296,10 @@ Un tableau peut être un paramètre d'une méthode.
 \begin{frame}[fragile]{Tableau et méthode}
 	En \sigle{Java}, \textbf{passage de paramètre par valeur}. 
 	\par\bigskip
-	Pour un tableau, la valeur représente le tableau, pas ses éléments
+	\begin{center}
+	Pour un tableau, cela signifie qu'on ne peut pas modifier le tableau 
+	dans son ensemble mais qu'on pourra modifier ses éléments.	
+	\end{center}
 \end{frame}
 
 \begin{frame}[fragile]{Tableau et méthode}
@@ -316,6 +319,20 @@ Un tableau peut être un paramètre d'une méthode.
   \end{Java}
   \end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]{Tableau et méthode}
+  \emph{Exemple}
+  \begin{Java}
+  public static void méthodeFausse( double[] réels) {
+       double[] réelsDePassage = {4.2, -7, Math.PI};
+       réels = réelsDePassage; // INUTILE
+  }
+  \end{Java}
+  \bigskip
+  Quel que soit l'appel, le tableau que l'on passe en paramètre ne sera pas 
+  modifié
+\end{frame}
+
 
 \note{
 	\par Différencier passage de paramètre par valeur et en entrée-sortie. 
