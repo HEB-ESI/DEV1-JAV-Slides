@@ -166,14 +166,14 @@
 \begin{frame}{Plan de tests - Exemple}
 	\emph{Exemple}
 	\medskip
-	\\\java|public static int max(int[] tab) {...}| 
-	\\qui calcule la valeur maximale d'un tableau
+	\\\java|public static int max(int n1, int n2, int n3) {...}| 
+	\\qui calcule la valeur maximale de trois nombres
 	\begin{itemize}
 		\item Que tester en plus du cas général ?
   			\begin{itemize}
   			\item Le maximum est la première/dernière valeur
   			\item Le tableau ne contient qu'une seule valeur
-  			\item Le tableau ne contient que des nombres négatifs
+  			\item Présence de nombres négatifs
   			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -184,13 +184,12 @@
 	\\\bigskip
 	\begin{tabular}{|c|l|c|l|}
 \hline
-\# & tab & résultat & ce qui est testé\\
+\# & nombres & résultat & ce qui est testé\\
 \hline
-1 & $[1,3,0,2]$ & $3$ & cas général\\
-2 & $[1,-3,-4,-2]$ & $1$ & maximum au début\\
-3 & $[1,3,4,11]$ & $11$ & maximum à la fin\\
-4 & $[-1,-3,-4,-2]$ & $-1$ & que des négatifs\\
-5 & $[1]$ & $1$ & tableau de taille 1\\
+1 & $1,3,0,$ & $3$ & cas général\\
+2 & $1,-3,-4$ & $1$ & maximum au début\\
+3 & $1,3,11$ & $11$ & maximum à la fin\\
+4 & $-1,-3,-4$ & $-1$ & que des négatifs\\
 \hline
 	\end{tabular}
 	\end{center}
@@ -264,8 +263,8 @@ La classe de test contient \emph{une méthode} de test \emph{par cas}
 	\begin{Java}
 @Test
 public void max_cas1() {
-  int[] tab = {1,3,0,2};
-  assertEquals( 3, MaClasse.max(tab) );
+  int n1 = 1, n2 = 3, n3 = 0;
+  assertEquals( 3, MaClasse.max(n1, n2, n3) );
 }
 	\end{Java}
 	{\normalsize
@@ -319,14 +318,17 @@ public void max_cas1() {
 	\emph{Exemple}
 \begin{Java}
 package be.heb.esi.java1;
-
 public class Outil {
-  public static int max(int[] tab) {
+  public static int max(int n1, int n2, int n3) {
     int max = 0;
-    for(int i=0; i<tab.length; i++) {
-      if (tab[i]>max) {
-        max = tab[i];
-      }
+    if (n1 > max){
+    	max = n1;
+    }
+    if (n2 > max){
+    	max = n2;
+    }
+    if (n3 > max){
+    	max = n3;
     }
     return max;
   }
@@ -338,19 +340,19 @@ public class Outil {
 	\emph{Exemple} (suite) 
 \begin{Java}
 package be.heb.esi.java1;
+
 import org.junit.Test; 
 import static org.junit.Assert.*; 
 
 public class OutilTest {
   @Test public void max_cas1() {
-    int [] tab = {1,3,0,2};
-    assertEquals( 3, Outil.max(tab) );
+    assertEquals(3, Outil.max(1, 3, 0));
   }
 
   @Test public void max_cas4() {
-    int [] tab = {-1,-3,-4,-2};
-    assertEquals( -1, Outil.max(tab) );
+    assertEquals(-1, Outil.max(-1, -3, -4));
   }
+
   // + plus les cas 2, 3 et 5
 }
 \end{Java}
