@@ -47,7 +47,7 @@
 	\par En logique, si \java|tab| est un tableau de $N$ entiers
      \begin{Java}
   pour i de 1 à N faire
-     afficher tab[i]
+     écrire tab[i]
   fin pour
      \end{Java}
 \end{frame}
@@ -141,16 +141,11 @@
 		int[] entiers = new int[] {0x2A, 021, -5};
 		String[] noms = new String[] 
 		    {"Victoria", "Melanie", "Melanie",  "Emma", "Geri"}
-		
-		double[] réels;
-		réels = new double[] {4.2, -1};
 	\end{Java}
 	\bigskip
-	{\small
 	\emph{Remarque}
 	\\Par défaut, les éléments sont initialisés à \java|0| (numériques) 
 	ou \java|false| (booléens)
-}
 \end{frame}
 
 \begin{frame}[fragile]{Création et initialisation}
@@ -162,9 +157,6 @@
     \begin{Java}
 		int[] entiers = {0x2A, 021, -5};
 		double[] pseudoRéels = {4.5, 1E-4, -4.12, Math.PI}
-		
-		double[] réels;
-		réels = {4.2, -1}; // FAUX
     \end{Java}
 \end{frame}
 
@@ -296,10 +288,7 @@ Un tableau peut être un paramètre d'une méthode.
 \begin{frame}[fragile]{Tableau et méthode}
 	En \sigle{Java}, \textbf{passage de paramètre par valeur}. 
 	\par\bigskip
-	\begin{center}
-	Pour un tableau, cela signifie qu'on ne peut pas modifier le tableau 
-	dans son ensemble mais qu'on pourra modifier ses éléments.	
-	\end{center}
+	Pour un tableau, la valeur représente le tableau, pas ses éléments
 \end{frame}
 
 \begin{frame}[fragile]{Tableau et méthode}
@@ -320,23 +309,9 @@ Un tableau peut être un paramètre d'une méthode.
   \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Tableau et méthode}
-  \emph{Exemple}
-  \begin{Java}
-  public static void méthodeFausse( double[] réels) {
-       double[] réelsDePassage = {4.2, -7, Math.PI};
-       réels = réelsDePassage; // INUTILE
-  }
-  \end{Java}
-  \bigskip
-  Quel que soit l'appel, le tableau que l'on passe en paramètre ne sera pas 
-  modifié
-\end{frame}
-
-
 \note{
 	\par Différencier passage de paramètre par valeur et en entrée-sortie. 
-	Comparer la situation en alogrithmique et en java
+	Comparer la situation en algorithmique et en java
 }
 
 \begin{frame}[fragile]{Tableau et méthode}
