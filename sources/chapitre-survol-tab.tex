@@ -141,11 +141,16 @@
 		int[] entiers = new int[] {0x2A, 021, -5};
 		String[] noms = new String[] 
 		    {"Victoria", "Melanie", "Melanie",  "Emma", "Geri"}
+
+		double[] réels;
+		réels = new double[] {4.2, -1};
 	\end{Java}
 	\bigskip
+	\small{
 	\emph{Remarque}
 	\\Par défaut, les éléments sont initialisés à \java|0| (numériques) 
 	ou \java|false| (booléens)
+}
 \end{frame}
 
 \begin{frame}[fragile]{Création et initialisation}
@@ -157,6 +162,9 @@
     \begin{Java}
 		int[] entiers = {0x2A, 021, -5};
 		double[] pseudoRéels = {4.5, 1E-4, -4.12, Math.PI}
+
+		double[] réels;
+		réels = {4.2, -1}; // FAUX
     \end{Java}
 \end{frame}
 
