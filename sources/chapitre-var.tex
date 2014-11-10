@@ -1,7 +1,7 @@
 % === Cours de Java
 % === Chapitre : Les données
-
-\section{Variables locales}
+%%%
+%\section{Variables locales}
 
 %%%
 %\subsection{Présentation}
@@ -50,123 +50,132 @@
 %%%
 \subsection{Déclaration}
 
-%todo
 \begin{frame}[fragile]{Déclaration}
-	Déclaration locale à un \emph{bloc}
+	Une varibale déclarée dans un \emph{bloc} \ldots 
+	\\\hspace{1cm}est locale à ce \emph{bloc}		
+	\bigskip
 	\begin{grammaire}
 	\nterm{Block} :
     \term{\{} \nterm{BlockStatements}\opt \term{\}}
 
-\nterm{BlockStatements} :
-    \nterm{BlockStatement}
-    \nterm{BlockStatements}  \nterm{BlockStatement}
-
-\nterm{BlockStatement} :
+	\nterm{BlockStatement} :
     \nterm{LocalVariableDeclarationStatement}
     \nterm{Statement}
-\end{grammaire}
-Peut-on mélanger déclarations et instructions ?
+	\end{grammaire}
 \end{frame}
 
 \begin{frame}[fragile]{Déclaration}
-\par {\small (règles légèrement simplifiées)}
-\begin{grammaire}
-\nterm{LocalVariableDeclarationStatement} :
-    \term{final}\opt \nterm{Type} \nterm{VariableDeclarators} \term{;}
-
-\nterm{VariableDeclarators} :
-    \nterm{VariableDeclarator}
-    \nterm{VariableDeclarators} \term{,} \nterm{VariableDeclarator}
-
-\nterm{VariableDeclarator} :
-    \nterm{Identifier}
-    \nterm{Identifier} \term{=} \nterm{Expression}
-\end{grammaire}
-\begin{itemize}
-\item \emph{Exemples} :
-\begin{itemize}
-\item \java|int i;|
-\item \java|String nom, prénom;|
-\item \java|boolean ok=true, fini;|
-\item \java|char lettre, chiffre='1';| 
-\end{itemize}
-\end{itemize}
+	\textbf{Déclaration}
+	\par 
+	\verb$<type> <identifier> [= expression]$
+	\bigskip
+	\par
+	\emph{Exemples} :
+	\begin{itemize}
+		\item \java|int i;|
+		\item \java|String nom, prénom;|
+		\item \java|boolean ok=true, fini;|
+		\item \java|char lettre, chiffre='1';| 
+	\end{itemize}
 \end{frame}
 
+
+%%%
 \subsection{Conventions sur les noms}
 
 \begin{frame}{Nom d'une variable}
-Quel nom peut-on choisir ? Différence entre
-  \begin{itemize}
-  \item Ce qui est permis par \sigle{Java}
-  \item Les conventions supplémentaires
-  \end{itemize}
-\bigskip
-Règles \emph{imposées} par la grammaire
-\begin{itemize}
-\item Longueur illimitée
-\item Composé de \textit{lettres}, de \textit{chiffres}, \java|$| et \java|_| %$
-\\(internationalisation)
-\item Ne commence pas par un chiffre
-\item $\neq$ \nterm{keyword} ou \nterm{litteral}
-\item Ex valides : \java|nom|, \java|Nom|, \java|Nom23|, \java|Unpeu2touT|%$
-\item Ex invalides : \java|2main|, \java|le total|, \java|for|, \java|true|, \java|12|
-\end{itemize}
+	\textbf{\textit{Identifier}}
+	\par\bigskip
+	Quel nom peut-on choisir ? 
+	\begin{itemize}
+  		\item Règles \sigle{Java}
+			\\\textit{javaletter}, \$,\_, \sout{1}
+  		\item Conventions 
+			\\\textit{mixedCase}, noms explicites
+  	\end{itemize}
+	\begin{flushright}
+		\LARGE\bf\color{brickred} \$ \_ \,
+	\end{flushright}
 \end{frame}
 
-\begin{frame}[fragile]{Nom d'une variable}
-Conventions \emph{supplémentaires}
-\begin{itemize}
-\item Utilisées dans le monde entier
-\begin{itemize}
-\item Eviter \java|$| et \java|_| %$
-\item Commence par une minuscule
-\item Plusieurs mots accollés $\Rightarrow$ les suivants commencent par une majuscule ({\it mixedcase})
-\item Noms explicites (sauf abréviations courantes)
-\item Articles omis
-\end{itemize} 
-\item Autres recommandations de \sout{\sigle{Sun}} \sigle{Oracle}
-\begin{itemize}
-\item Déclarer en début de bloc
-\item Une déclaration par ligne
-\end{itemize} 
-\end{itemize}
-\end{frame}
+\note{
+	Règles \emph{imposées} par la grammaire
+	\begin{itemize}
+		\item Longueur illimitée
+		\item Composé de \textit{lettres}, de \textit{chiffres}, 
+			\java|$| et \java|_| %$
+		\\(internationalisation)
+		\item Ne commence pas par un chiffre
+		\item $\neq$ \nterm{keyword} ou \nterm{litteral}
+		\item Ex valides : \java|nom|, \java|Nom|, \java|Nom23|, 
+			\java|Unpeu2touT|%$
+		\item Ex invalides : \java|2main|, \java|le total|, \java|for|, 
+			\java|true|, \java|12|
+	\end{itemize}	
+}
 
+\note{
+	Conventions \emph{supplémentaires}
+	\begin{itemize}
+		\item Utilisées dans le monde entier
+		\begin{itemize}
+			\item Eviter \java|$| et \java|_| %$
+			\item Commence par une minuscule
+			\item Plusieurs mots accollés $\Rightarrow$ les suivants commencent par une majuscule ({\it mixedcase})
+			\item Noms explicites (sauf abréviations courantes)
+			\item Articles omis
+		\end{itemize} 
+		\item Autres recommandations de \sout{\sigle{Sun}} \sigle{Oracle}
+		\begin{itemize}
+			\item Déclarer en début de bloc
+			\item Une déclaration par ligne
+		\end{itemize} 
+	\end{itemize}
+}
+
+
+%%%
 \subsection{Valeur initiale}
 
 \begin{frame}[fragile]{Valeur initiale}
-On peut indiquer une \emph{valeur initiale} 
-\\(par \emph{défaut}, \emph{aucune} valeur n'est assignée)
-\begin{itemize}
-\item N'importe quelle expression calculable à cet endroit là (à l'exécution)
-\item Exemple
-\begin{Java}
-int poidsKilo = 20; // Un poids en kilos
-int poidsGramme = 1000*poidsKilo; // L'équivalent en grammes
-\end{Java}  
-\item Exemple
-\begin{Java}
-int poidsKilo; // Un poids en kilos
-int poidsGramme = 1000*poidsKilo; // erreur à la COMPILATION
-\end{Java}  
-\end{itemize} 
+	\textbf{Initialisation}
+	\par\medskip
+	\begin{itemize}
+		\item Par défaut les variables \emph{ne} sont \emph{pas} initialisées
+		\item N'importe quelle expression calculable à cet endroit là (à l'exécution)
+	\end{itemize}
 \end{frame}
 
+
+\begin{frame}[fragile]{Valeur initiale}
+	\textbf{Exemple}
+	\begin{Java}
+int poidsKilo = 20; // Un poids en kilos
+int poidsGramme = 1000*poidsKilo; // L'équivalent en grammes
+	\end{Java}  
+	\medskip
+	\begin{Java}
+int poidsKilo; // Un poids en kilos
+int poidsGramme = 1000*poidsKilo; // erreur à la COMPILATION
+	\end{Java}  
+\end{frame}
+
+%%%
 \subsection{Le concept de <<portée>>}
 
 \begin{frame}{Scope (portée) d'une variable locale}
-Définition : Le \emph{\textit{scope}} (\emph{portée}) d'une variable indique la portion du programme où elle \textit{existe}
-\par\medskip
-Le \textit{scope} d'une variable locale est
-\begin{itemize}
-\item le \textit{block} de sa déclaration (entre \java|\{\}|)
-\item dès sa propre initialisation
-\end{itemize} 
+	\textbf{Définition} Le \emph{\textit{scope}} (\emph{portée}) d'une 
+	variable indique la portion du programme où elle \textit{existe}
+	\par\bigskip
+	Le \textit{scope} d'une variable locale est
+	\begin{itemize}
+		\item le \textit{block} de sa déclaration (entre \java|\{\}|)
+		\item dès sa propre initialisation
+	\end{itemize} 
 \end{frame}
 
 \begin{frame}[fragile]{Scope (portée) d'une variable locale}
-\emph{Exemples} : bon ou pas ?
+	\emph{Exemples} : bon ou pas ?
 \begin{Java}
 {
    int x = y; 
@@ -186,25 +195,26 @@ Le \textit{scope} d'une variable locale est
 \end{Java}
 \end{frame}
 
+%%%
 \subsection{Constantes}
 
 \begin{frame}[fragile]{Constante}
-Clause \java|final| $\Rightarrow$ constante
-\begin{itemize}
-\item Valeur donnée
-\begin{itemize}
-\item Soit à la déclaration 
-\item Soit par assignation ultérieure
-\end{itemize} 
-\begin{Java}
+	\pa\par
+	{\large \java|final|}
+	\par\bigskip
+	Valeur donnée
+	\begin{itemize}
+		\item Soit à la déclaration 
+		\item Soit par assignation ultérieure
+	\end{itemize} 
+	\bigskip
+	\begin{Java}
   final int X = 1;
   final int Y;
   Y = 2*X;
   X = 2; // Erreur : possède déjà une valeur
   Y = 3; // Idem
-\end{Java}
-\item Pourquoi une constante au lieu d'un littéral ?
-\end{itemize} 
+	\end{Java}
 \end{frame}
 
 \begin{frame}[fragile]{Constante}
