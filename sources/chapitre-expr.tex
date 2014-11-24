@@ -234,48 +234,48 @@ Comment évaluer ?
 \end{itemize} 
 \end{frame}
 
-\begin{frame}[fragile]{Résumé}
-Voici les règles qui résument tout ceci
-\begin{grammaire}
-\nterm{Expression} :
-    \nterm{ConditionalOrExpression}
+%\begin{frame}[fragile]{Résumé}
+%Voici les règles qui résument tout ceci
+%\begin{grammaire}
+%\nterm{Expression} :
+%    \nterm{ConditionalOrExpression}
 
-\nterm{ConditionalOrExpression} :
-    \nterm{ConditionalAndExpression}
-    \nterm{ConditionalOrExpression}  \term{||} \nterm{ConditionalAndExpression}
+%\nterm{ConditionalOrExpression} :
+%    \nterm{ConditionalAndExpression}
+%    \nterm{ConditionalOrExpression}  \term{||} %\nterm{ConditionalAndExpression}
 
-\nterm{ConditionalAndExpression} :
-    \nterm{AdditiveExpression}
-    \nterm{ConditionalAndExpression} \term{&&} \nterm{AdditiveExpression}
+%\nterm{ConditionalAndExpression} :
+%    \nterm{AdditiveExpression}
+%    \nterm{ConditionalAndExpression} \term{&&} \nterm{AdditiveExpression}
 
-\nterm{AdditiveExpression} :
-    \nterm{MultiplicativeExpression}
-    \nterm{AdditiveExpression} \term{+} \nterm{MultiplicativeExpression}
-    \nterm{AdditiveExpression} \term{-} \nterm{MultiplicativeExpression}
-\end{grammaire} 
-\end{frame}
+%\nterm{AdditiveExpression} :
+%    \nterm{MultiplicativeExpression}
+%    \nterm{AdditiveExpression} \term{+} \nterm{MultiplicativeExpression}
+%    \nterm{AdditiveExpression} \term{-} \nterm{MultiplicativeExpression}
+%\end{grammaire} 
+%\end{frame}
 
-\begin{frame}[fragile]{Résumé}
-\begin{grammaire}
-\nterm{MultiplicativeExpression} :
-    \nterm{UnaryExpression}
-    \nterm{MultiplicativeExpression} \term{*} \nterm{UnaryExpression}
-    \nterm{MultiplicativeExpression} \term{/} \nterm{UnaryExpression}
-    \nterm{MultiplicativeExpression} \term{%} \nterm{UnaryExpression}
+%\begin{frame}[fragile]{Résumé}
+%\begin{grammaire}
+%\nterm{MultiplicativeExpression} :
+%    \nterm{UnaryExpression}
+%    \nterm{MultiplicativeExpression} \term{*} \nterm{UnaryExpression}
+%    \nterm{MultiplicativeExpression} \term{/} \nterm{UnaryExpression}
+%    \nterm{MultiplicativeExpression} \term{%} \nterm{UnaryExpression}
 
-\nterm{UnaryExpression} :
-    \term{+} \nterm{UnaryExpression}
-    \term{-} \nterm{UnaryExpression}
-    \term{!} \nterm{UnaryExpression}
-    \nterm{Literal}
-    \term{(} \nterm{Expression} \term{)}
-    \nterm{Identifier}
-\end{grammaire} 
-\begin{itemize}
-\item On y voit la priorité et l'associativité des opérateurs
-\item Pas suffisant pour intégrer toutes les contraintes additionnelles (par exemple ?)
-\end{itemize} 
-\end{frame}
+%\nterm{UnaryExpression} :
+%    \term{+} \nterm{UnaryExpression}
+%    \term{-} \nterm{UnaryExpression}
+%    \term{!} \nterm{UnaryExpression}
+%    \nterm{Literal}
+%    \term{(} \nterm{Expression} \term{)}
+%    \nterm{Identifier}
+%\end{grammaire} 
+%\begin{itemize}
+%\item On y voit la priorité et l'associativité des opérateurs
+%\item Pas suffisant pour intégrer toutes les contraintes additionnelles (par exemple ?)
+%\end{itemize} 
+%\end{frame}
 
 \subsection{Les expressions relationnelles}
 
@@ -304,16 +304,18 @@ Opérateurs d'\emph{égalité} : \java|==| et \java|!=|
 \bigskip
 Type primitif : les \emph{valeurs} sont comparées
 \begin{center}
-%\includegraphics[scale=.5]{../img/java-logi-egal1} 
+\includegraphics[scale=.5]{../img/java-logi-egal1} 
 \end{center}
+
 On a : \java|a==c| mais \java|a!=b| et \java|b!=c|
 \end{frame}
 
 \begin{frame}[fragile]{Égalité de valeurs}
 Type référence : les \emph{références} sont comparées
 \begin{center}
-%\includegraphics[scale=.5]{../img/java-logi-egal2} 
+\includegraphics[scale=.5]{../img/java-logi-egal2} 
 \end{center}
+
 On a : \java|a!=b|, \java|a!=c| mais \java|a==d|
 \end{frame}
 
