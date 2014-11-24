@@ -142,7 +142,8 @@
 	\par\medskip
 	\begin{itemize}
 		\item Par défaut les variables \emph{ne} sont \emph{pas} initialisées
-		\item N'importe quelle expression calculable à cet endroit là (à l'exécution)
+		\item Initialisation avec n'importe quelle expression calculable à cet 
+			endroit là (à l'exécution)
 	\end{itemize}
 \end{frame}
 
@@ -156,7 +157,7 @@ int poidsGramme = 1000*poidsKilo; // L'équivalent en grammes
 	\medskip
 	\begin{Java}
 int poidsKilo; // Un poids en kilos
-int poidsGramme = 1000*poidsKilo; // erreur à la COMPILATION
+int poidsGramme = 1000*poidsKilo; // Erreur à la COMPILATION
 	\end{Java}  
 \end{frame}
 
@@ -218,15 +219,16 @@ int poidsGramme = 1000*poidsKilo; // erreur à la COMPILATION
 \end{frame}
 
 \begin{frame}[fragile]{Constante}
-Convention de nom différente
-\begin{itemize}
-\item Tout mettre en \emph{majuscules}
-\item Utiliser \java|_|  pour séparer les mots
-\end{itemize} 
-\emph{Exemples}
-\begin{Java}
-  final double PI = 3.1415;
-  final int TAUX_TVA = 21;
-\end{Java}
+	Convention de nom différente
+	\begin{itemize}
+		\item Tout mettre en \emph{majuscules}
+		\item Utiliser \java|_|  pour séparer les mots
+	\end{itemize} 
+	\bigskip
+	\emph{Exemples}
+	\begin{Java}
+	final double PI = 3.1415;
+	final int TAUX_TVA = 21;
+	\end{Java}
 \end{frame}
 
