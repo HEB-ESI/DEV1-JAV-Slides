@@ -35,6 +35,8 @@
 	\end{center}
 \end{frame}
 
+
+
 \subsection{Dans les expressions}
 \leconwithtocinside
 
@@ -103,25 +105,29 @@ byte b = 2; short s = 1; char c = '3'; int i = 4;
 \end{frame}
 
 
-%\subsection{Lors d'une assignation (et d'un return)}
-%\leconwithtocinside
+
+\subsection{Lors d'une assignation (et d'un return)}
+\leconwithtocinside
 
 \begin{frame}[fragile]{Conversion lors d'une assignation}
-Que se passe-t-il lors d'une \emph{assignation} ?
-\begin{itemize}
-\item Adapte le type de l'expression au type de la variable
-\item Opérateurs : \java|=|, \java|+=|, \java|-=|, \java|*=|, \java|/=|, \java|%=|
-\item Permet la \emph{conversion élargissante} déjà vue
-\item Mais aussi la \emph{conversion arrondissante} 
-\end{itemize}
+	\includegraphics[width=30px]{../img/icon_14383_map.png}
+	\;{\Large\bf Assignation}
+	\bigskip
+	\begin{itemize}
+		\item Adapte le type de l'expression au type de la variable
+		\item Opérateurs : \java|=|, \java|+=|, \java|-=|, 
+			\java|*=|, \java|/=|, \java|%=|
+		\item Permet la \emph{conversion élargissante}
+		\item Mais aussi la \emph{conversion arrondissante} 
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'une assignation}
-Conversion arrondissante de type primitif
-\\(\textit{narrowing primitive conversion})
-\begin{center}
-\begin{itemize}
-\item schéma général
+	\includegraphics[width=30px]{../img/icon_66582_group.png}
+	\;{\bf Conversion arrondissante de type primitif}
+	\\\hspace{35px}(\textit{narrowing primitive conversion})
+	\bigskip
+	\begin{center}
 \begin{tabular}{lllllll}
 \java|double| & & & & & &\\
 \hfill$\hookrightarrow$ & \java|float| & & & & &\\
@@ -130,32 +136,31 @@ Conversion arrondissante de type primitif
 & & & \hfill$\hookrightarrow$ & \java|short| & $\longleftrightarrow$ & \java|char|\\
 & & & & \hfill$\hookrightarrow$ & \java|byte| & $\swarrow\nearrow$ \\
 \end{tabular}
-\item \`A chaque étape : \emph{perte de précision} possible
-\end{itemize}
-\end{center}
+	\end{center}
+	\par \`A chaque étape : \emph{perte de précision} possible
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'une assignation}
-Dans le cadre d'une assignation
-\begin{itemize}
-\item Elles ne sont pas toutes permises
-\item \emph{si et seulement si}
-\begin{itemize}
-\item La variable est de type \java|byte|, \java|short|, ou \java|char|
-\item L'expression est 
-\begin{itemize}
-\item constante 
-\item de type \java|byte|, \java|short|, \java|char| ou \java|int|
-\item sa valeur est représentable dans le type de la variable
-\end{itemize}
-\end{itemize}
-\end{itemize}
-\medskip
-Si ce n'est pas le cas, erreur à la compilation
+	Dans le cadre d'une assignation
+	\begin{itemize}
+		\item Elles ne sont pas toutes permises
+		\item \emph{si et seulement si}
+		\begin{itemize}
+			\item La variable est de type \java|byte|, \java|short|, ou \java|char|
+			\item L'expression est 
+			\begin{itemize}
+				\item constante 
+				\item de type \java|byte|, \java|short|, \java|char| ou \java|int|
+				\item sa valeur est représentable dans le type de la variable
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	\medskip
+	Si ce n'est pas le cas, erreur à la compilation
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'une assignation}
-\emph{Exercice} : identifiez les instructions correctes
+	\emph{Exercice} : identifiez les instructions correctes
 \begin{Java}
 long l1 = 12; 
 long l2 = 'a'+1; 
@@ -172,57 +177,62 @@ a = a+1;
 \end{Java}
 \end{frame}
 
+
 \begin{frame}[fragile]{Conversion de la valeur de retour}
-Situation similaire pour la \emph{valeur de retour} d'une méthode
-\begin{itemize}
-\item Le type de l'expression accompagnant l'instruction \java|return| doit pouvoir être ramené au \nterm{ResultType}
-\item Assimilable à une assignation $\Longrightarrow$ mêmes règles
-\item \emph{Exemple}
+	Situation similaire pour la \emph{valeur de retour} d'une méthode
+	\begin{itemize}
+		\item Le type de l'expression accompagnant l'instruction \java|return| doit pouvoir être ramené au \nterm{ResultType}
+	\end{itemize} 
+	\par \medskip 
+	\emph{Exemple}
 \begin{Java}
 public static long add( int opérandeGauche, int opérandeDroite) {
     return opérandeGauche + opérandeDroite;
 }
 \end{Java} 
-\end{itemize} 
 \end{frame}
+
+
 
 \subsection{Lors d'un appel de méthode}
 \leconwithtocinside
 
 \begin{frame}[fragile]{Conversion lors d'un appel de méthode}
-Conversion des \emph{paramètres} effectifs
-\begin{itemize}
-\item \emph{Conversion élargissante} possible
-\item \emph{Exemple} : avec la méthode suivante
-\begin{Java}
-public static int add( int opérandeGauche, int opérandeDroite) {
-    return opérandeGauche + opérandeDroite;
-}
-\end{Java}
-les arguments lors de l'appel peuvent être \java|byte|, \java|short|, \java|char| ou encore \java|int|
-\end{itemize} 
+	\includegraphics[width=30px]{../img/icon_14383_map.png}
+	\;{\Large\bf Appel de méthode}
+	\bigskip
+	\begin{itemize}
+		\item Conversion des \emph{paramètres} effectifs
+		\item \emph{Conversion élargissante} possible
+	\end{itemize} 
+	\par \emph{Exemple}
+	\begin{Java}
+	public static int add( int opérandeGauche, int opérandeDroite) {
+    	return opérandeGauche + opérandeDroite;
+	}
+	\end{Java}
+	\small{les arguments lors de l'appel peuvent être \java|byte|, \java|short|, 
+	\java|char| ou encore \java|int|}
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'un appel de méthode}
-Difficulté liée à la \emph{surcharge}
-\begin{itemize}
-\item S'il existe plusieurs méthodes avec le même nom, il peut y avoir plusieurs candidates pour un appel
-\item \emph{Exemple}
-\begin{Java}
-public static int max(long op1, long op2) {...}
-public static int max(int op1, int op2) {...}
-\end{Java}
-Quelle méthode est choisie avec cet appel ?
-\begin{Java}
-short s1=1, s2=2;
-max(s1,s2);
-\end{Java}
-\end{itemize} 
+	Attention à la \emph{surcharge} (\textit{overloading})
+	\\\bigskip
+	\emph{Exemple}
+	\begin{Java}
+	public static int max(long op1, long op2) {...}
+	public static int max(int op1, int op2) {...}
+	\end{Java}
+	Quelle méthode est choisie avec cet appel ?
+	\begin{Java}
+	short s1=1, s2=2;
+	max(s1,s2);
+	\end{Java}
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'un appel de méthode}
-\emph{Exemple}
-\begin{Java}
+	\emph{Exemple}
+	\begin{Java}
 public static double op( double opérandeGauche, double opérandeDroite) {
     return opérandeGauche * opérandeDroite;
 }
@@ -230,68 +240,173 @@ public static double op( double opérandeGauche, double opérandeDroite) {
 public static int op( int opérandeGauche, int opérandeDroite) {
     return opérandeGauche / opérandeDroite;
 }
-\end{Java}
-\begin{itemize}
-\item Que retourne \java|op(3.,2.)| ?
-\item Que retourne \java|op(3,2)| ?
-\item Que retourne \java|op(3.,2)| ?
-\end{itemize} 
+	\end{Java}
+	\begin{itemize}
+		\item Que retourne \java|op(3.,2.)| ?
+		\item Que retourne \java|op(3,2)| ?
+		\item Que retourne \java|op(3.,2)| ?
+	\end{itemize} 
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'un appel de méthode}
-Cas particulier
-\begin{itemize}
-\item Parfois, il n'y a pas de méthode plus spécifique. 
-\item \emph{Exemple}
-\begin{Java}
-public static int max( int op1, long op2 ) {...}
-public static int max( long op1, int op2 ) {...}
-\end{Java}
-Accepté mais certains appels seront ambigus
-\\(erreur à la compilation)
-\begin{itemize}
-\item \java|max(1,2L)| // 1ère méthode
-\item \java|max(1L,2)| // 2ème méthode
-\item \java|max(1,2)|  // ambigu
-\end{itemize}
-\end{itemize} 
+	Cas particulier
+	\begin{itemize}
+		\item Parfois, il n'y a pas de méthode plus spécifique. 
+		\item \emph{Exemple}
+	\begin{Java}
+	public static int max( int op1, long op2 ) {...}
+	public static int max( long op1, int op2 ) {...}
+	\end{Java}
+	Accepté mais certains appels seront ambigus
+	\\(erreur à la compilation)
+	\begin{itemize}
+		\item \java|max(1,2L)| // 1ère méthode
+		\item \java|max(1L,2)| // 2ème méthode
+		\item \java|max(1,2)|  // ambigu
+	\end{itemize}
+	\end{itemize} 
 \end{frame}
+
+
 
 \subsection{Avec les chaines de caractères}
 \leconwithtocinside
 
 \begin{frame}[fragile]{Conversion en chaines de caractères}
-Opérateur \java|+| avec un opérande de type \java|String|
-\\$\Rightarrow$ l'autre opérande converti en \java|String|
-\begin{itemize}
-\item \emph{Exemples}
-\begin{Java}
-System.out.println("1+1 = "+2);
-String s = "Pi = " + 3.1415;
-\end{Java}
-\item Que donnera ceci ?
-\begin{Java}
-System.out.println("1"+2+3);
-System.out.println(1+2+"3");
-\end{Java}
-\end{itemize}
+	\includegraphics[width=30px]{../img/icon_14383_map.png}
+	\;{\Large\bf Chaine}
+	\bigskip\par
+	Opérateur \java|+| avec un opérande de type \java|String|
+	\bigskip\par \emph{Exemples}
+	\begin{itemize}	
+		\item
+	\begin{Java}
+	System.out.println("1+1 = "+2);
+	String s = "Pi = " + 3.1415;
+	\end{Java}
+		\item Que donnera ceci ?
+	\begin{Java}
+	System.out.println("1"+2+3);
+	System.out.println(1+2+"3");
+	\end{Java}
+	\end{itemize}
 \end{frame}
+
+
+
 
 \subsection{Le casting}
 \leconwithtocinside
 
 \begin{frame}[fragile]{Le \textit{casting}}
-On peut imposer une conversion que le compilateur ne ferait pas.
-\begin{itemize}
-\item C'est la \emph{conversion explicite}
-\item Valeur convertie dans le type explicité par le casting
-\begin{grammaire}
-\nterm{Casting} :
-  \term{(} \nterm{Type} \term{)} \nterm{Expression}
-\end{grammaire}
-\item Grammaticalement, c'est assimilé à un opérateur
-\end{itemize}
+	\includegraphics[width=30px]{../img/icon_14383_map.png}
+	\;{\Large\bf\it Casting}
+	\bigskip\par
+	Conversion \emph{explicite}
+	\medskip
+	\begin{grammaire}
+	\nterm{Casting} :
+		\term{(} \nterm{Type} \term{)} \nterm{Expression}
+	\end{grammaire}
 \end{frame}
+
+\begin{frame}{Le \textit{casting}}
+	\includegraphics[width=30px]{../img/icon_66582_group.png}
+	\bigskip
+	\begin{itemize}
+		\item \emph{élargissante}
+		\item \emph{arrondissante}
+		\item \emph{(un)boxing}
+		\item \emph{identique}
+  \end{itemize}
+\end{frame}
+
+\note{
+	\begin{itemize}
+  		\item conversion dans le type que possède déjà l'expression 
+		\item par facilité (si on n'est pas sûr)
+		\item parfois nécessaire pour aider le compilateur (cf. OO)
+		\item permise aussi dans les autres contextes car simplifie les règles
+	\end{itemize}
+}
+
+\begin{frame}[fragile]{Le \textit{casting}}
+	Remarques sur les conversions \emph{arrondissantes}
+	\begin{itemize}
+		\item Aucune contrainte, on tronque
+	\end{itemize}
+	\bigskip
+	\par\emph{Exemple}
+	\\\java{byte b = (byte) 256;}
+  	\medskip
+  	\begin{itemize}
+  		\item 256 = 
+		\begin{tabular}{|c|c|c|c|}
+		\hline
+		0 & 0 & 1 & 0 \\
+		\hline
+		\end{tabular}
+		(\java|int| codé sur 4 bytes)
+		\medskip
+		\item $\Longrightarrow$ b = 
+		\begin{tabular}{|c|}
+		\hline
+		0 \\
+		\hline
+		\end{tabular}
+		= 0
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Le \textit{casting}}
+	Ne \emph{peut pas} être utilisé pour
+	\medskip
+	\begin{itemize}
+		\item Convertir en chaine
+		\begin{itemize}
+  			\item \java|(String) monEntier| \emph{interdit}
+  			\item Écrire \java|""+monEntier| à la place
+  		\end{itemize}
+		\medskip
+		\item Convertir une chaine qui contient un numérique
+  		\begin{itemize}
+  			\item \java|(int) "12"| \emph{interdit}
+  			\item Écrire \java|Integer.parseInt("12")| à la place
+  		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Exemples de \textit{casting}}
+	\emph{Exemples}
+\begin{Java}
+int entier = (int) 5; 
+int entier = (int) 5l; 
+int entier = (int) 12000000000000000000000l; 
+    // erreur à la compilation ...
+int entier = (int) 1200000000000L;  // Accepté mais...
+double réel = (double) 12; 
+String mot = (String) 12; // erreur à la compilation 
+int entier = (int) "12";  // erreur à la compilation 
+String mot = (String) "mot"; 
+boolean b = (boolean) 1;  // erreur à la compilation 
+int entier = (byte) 500-400;   
+byte entier = (byte) 500-400; // erreur à la compilation
+byte entier = (byte) (500-400);
+int entier = (byte) (190-(byte)100);
+\end{Java}
+\end{frame}
+
+
+
+
+\imgfullh{../img/stop__by_poisongirl_sts-d2nr150.jpg}{
+	\begin{flushright}
+		\vspace{6cm}
+		\color{white}
+		\Large\bf
+		Rappel des règles\\ de priorité
+	\end{flushright}
+}{http://poisongirl-sts.deviantart.com/art/Stop-160824708}
 
 \begin{frame}[fragile]{Tableau des priorités et associativités}
 \begin{center}
@@ -314,112 +429,34 @@ faible  & assignations & \java|=|, \java|+=|, \java|-=|, \java|*=|, \java|/=|, \
 \end{center}
 \end{frame}
 
-\begin{frame}{Le \textit{casting}}
-Quelles sont les conversions permises ?
-\begin{itemize}
-\item \emph{élargissante}
-\item \emph{arrondissante}
-\item \emph{(un)boxing}
-\item \emph{identique}
-  \begin{itemize}
-  \item conversion dans le type que possède déjà l'expression 
-  \item par facilité (si on n'est pas sûr)
-  \item parfois nécessaire pour aider le compilateur (cf. OO)
-  \item permise aussi dans les autres contextes car simplifie les règles
-  \end{itemize}
-\end{itemize}
-\end{frame}
 
-\begin{frame}[fragile]{Le \textit{casting}}
-Remarques sur les conversions \emph{arrondisantes}
-\begin{itemize}
-\item aucune contrainte
-\item si d'un type entier vers un autre type entier 
-  \begin{itemize}
-  \item on prend les octets de poids faible
-  \item $\Longrightarrow$ valeur convertie peut être fort différente
-  \end{itemize}\medskip
-\item \emph{Exemple} : \java{byte b = (byte) 256;}
-  \medskip
-  \begin{itemize}
-  \item 256 = 
-\begin{tabular}{|c|c|c|c|}
-\hline
-0 & 0 & 1 & 0 \\
-\hline
-\end{tabular}
-(\java|int| codé sur 4 bytes)
-  \medskip
-  \item $\Longrightarrow$ b = 
-\begin{tabular}{|c|}
-\hline
-0 \\
-\hline
-\end{tabular}
-= 0
-  \end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Le \textit{casting}}
-Ne \emph{peut pas} être utilisé pour
-\medskip
-\begin{itemize}
-\item Convertir en chaine
-  \begin{itemize}
-  \item \java|(String) monEntier| \emph{interdit}
-  \item Écrire \java|""+monEntier| à la place
-  \end{itemize}
-\medskip
-\item Convertir une chaine qui contient un numérique
-  \begin{itemize}
-  \item \java|(int) "12"| \emph{interdit}
-  \item Écrire \java|Integer.parseInt("12")| à la place
-  \end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Exemples de \textit{casting}}
-\begin{Java}
-int entier = (int) 5; 
-int entier = (int) 5l; 
-int entier = (int) 12000000000000000000000l; 
-    // erreur à la compilation ...
-int entier = (int) 1200000000000L;  // Accepté mais...
-double réel = (double) 12; 
-String mot = (String) 12; // erreur à la compilation 
-int entier = (int) "12";  // erreur à la compilation 
-String mot = (String) "mot"; 
-boolean b = (boolean) 1;  // erreur à la compilation 
-int entier = (byte) 500-400;   
-byte entier = (byte) 500-400; // erreur à la compilation
-byte entier = (byte) (500-400);
-int entier = (byte) (190-(byte)100);
-\end{Java}
-\end{frame}
 
 \subsection{Récapitulatif}
 
 \begin{frame}{Récapitulatif}
-Il y a \emph{8 sortes} de conversions
-\begin{itemize}
-\item Élargissante / arrondissante de type primitif
-\item Conversion en chaine de caractères
-\item Conversion identique
-\item \shaded{Boxing / Unboxing}
-\item \shaded{Élargissante / arrondissante de type référence}
-\end{itemize}
+	\includegraphics[width=40px]{../img/icon_66582_group.png}
+	\;Il y a \emph{8 sortes} de conversions
+	\bigskip
+	\begin{itemize}
+		\item Élargissante / arrondissante de type primitif
+		\item Conversion en chaine de caractères
+		\item Conversion identique
+		\item \shaded{Boxing / Unboxing}
+		\item \shaded{Élargissante / arrondissante de type référence}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Récapitulatif}
-Il y a \emph{5 contextes} de conversion
-\begin{itemize}
-\item La promotion (calcul) numérique
-\item L'assignation
-\item Le casting
-\item La chaine de caractères
-\item L'appel de méthode
-\end{itemize}
+	\includegraphics[width=40px]{../img/icon_14383_map.png}
+	\;Il y a \emph{5 contextes} de conversion
+	\bigskip
+	\begin{itemize}
+		\item La promotion (calcul) numérique
+		\item L'assignation
+		\item Le casting
+		\item La chaine de caractères
+		\item L'appel de méthode
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Récapitulatif}
