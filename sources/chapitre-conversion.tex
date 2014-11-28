@@ -1,57 +1,59 @@
 %\section{Les conversions}
 
+\imgfullw{../img/newborn-butterfly}{
+	\begin{flushright}
+	\LARGE\bf\color{azuremist}
+	\vspace{2.2cm}
+	Conversions
+	\end{flushright}
+}{http://closer-to-heaven.deviantart.com/art/Newborn-82797380}
+
 \subsection{Présentation}
 
-\begin{frame}[fragile]{Que sait-on déjà ?}
-\sigle{Java} est fortement typé; les types doivent correspondre
-  \begin{itemize}
-  \item Ex: Lors d'une assignation, la valeur doit être du type de la variable
+\begin{frame}[fragile]{Conversions}
+	\sigle{Java} impose que les types correspondent. 
+	\\Parfois le compilateur 
+	convertit implicitement.
+	\par\medskip 
+	\emph{Quels sont les règles précises ?}
+	\bigskip
+	\begin{itemize}
+		\item[{\includegraphics[width=10px]{../img/icon_2783_check.png}}]
+  			\java|double d = 1;| 
+		\item[{\includegraphics[width=10px]{../img/icon_2909_delete.png}}]
+			\java|int i = 1.0;| 
   \end{itemize}
-\medskip
-Parfois, le compilateur convertit pour nous
-  \begin{itemize}
-  \item Ex: \java|double d = 1;| (conversion de \java|int| vers \java|double|)
-  \end{itemize}
-\medskip
-Mais souvent ce n'est pas le cas
-  \begin{itemize}
-  \item Ex: \java|int i = 1.0;| (refusé par le compilateur)
-  \end{itemize}
-\medskip
-Quelles sont les \emph{règles précises} ?
 \end{frame}
 
 \begin{frame}[fragile]{Contextes et sortes de conversions}
-Il y a \emph{8 groupes} (sortes) de conversions.
-\\\medskip
-Peuvent être utilisées dans \emph{5 contextes} (éléments de programmes) différents 
-\begin{center}
-\begin{tabular}{c|c}
- & \emph{8 sortes} \\ \hline
-\emph{5 contextes} & en fonction du contexte seulement \\
-            & certaines sortes seront permises \\
-\end{tabular}
-\end{center}
+	\begin{center}
+		\includegraphics[width=50px]{../img/icon_66582_group.png}
+		\hspace{3cm}
+		\includegraphics[width=50px]{../img/icon_14383_map.png}
+		\\\vspace{5mm}
+		{\large\bf 8 groupes \hspace{1.4cm} 5 contextes}
+	\end{center}
 \end{frame}
 
 \subsection{Dans les expressions}
 \leconwithtocinside
 
 \begin{frame}[fragile]{Les conversions dans les expressions}
-Il existe des conversions implicites dans les expressions
-\begin{itemize}
-\item Uniquement pour des expressions \emph{numériques}
-\item Adapte le type des opérandes à ceux attendus par l'opérateur
-\item Conversion la plus fréquente : \\\emph{élargissante de type primitif}
-\end{itemize}
+	\includegraphics[width=30px]{../img/icon_14383_map.png}
+	\;{\Large\bf Expressions}
+	\bigskip
+	\begin{itemize}
+		\item Expressions \emph{numériques}
+		\item Adapte le type des opérandes 
+		\item Conversion \emph{élargissante de type primitif}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Les conversions dans les expressions}
-Conversion élargissante de type primitif
-\\(\textit{widening primitive conversion})
-\begin{itemize}
-\item Vers un type plus général 
-\end{itemize}
+	\includegraphics[width=30px]{../img/icon_66582_group.png}
+	\;{\bf Conversion élargissante de type primitif}
+	\\\hspace{35px}(\textit{widening primitive conversion})
+	\bigskip
 \begin{small}
 \begin{center}
 \begin{tabular}{llllll}
@@ -64,84 +66,45 @@ Conversion élargissante de type primitif
 \end{tabular}
 \end{center}
 \end{small}
-\begin{itemize}
-\item entier vers réel : perte de précision possible
-\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]{Les conversions dans les expressions}
-Cas des opérateurs \emph{binaires}
-\begin{itemize}
-\item Opérateurs : \java|+|, \java|-|, \java|*|, \java|/|, \java|%|, \java|<|, \java|>|, \java|<=|, \java|>=|, \java|==|, \java|!=|
-\item Si opérandes de types différents \\$\Longrightarrow$ on \textit{élargit} le moins large
-\item \emph{Exemples}
-\begin{Java}
+	\begin{itemize}
+		\item Opérateurs binaires, opérateurs unaires
+		\item Le moins large et au minimum \java|int|
+	\end{itemize}	
+\end{frame}
+
+\note{
+	Cas des opérateurs \emph{binaires}
+	\\ Si opérandes de types différents \\$\Longrightarrow$ on \textit{élargit} le moins large
+	\\ On élargit au minimum vers \java|int|
+	\\Car les opérateurs n'existent pas en dessous
+}
+
+
+\begin{frame}[fragile]{Les conversions dans les expressions}
+	\emph{Exemples}
+	\begin{Java}
 System.out.println( 7 / 2. )   
 System.out.println( 7. / 2. )   
-System.out.println( 7. + 2 )    
-System.out.println( 7.f + 2. )    
 System.out.println( 1 <= 1.0 )    
-\end{Java} 
-\end{itemize} 
-\end{frame}
-
-\begin{frame}[fragile]{Les conversions dans les expressions}
-Cas des opérateurs \emph{binaires} (suite)
-\begin{itemize}
-\item On élargit au minimum vers \java|int|
-\item Car les opérateurs n'existent pas en dessous
-\item \emph{Exemples}
-\begin{Java}
-short s = 1;
-char c = '3';
-int i = 4;
+byte b = 2; short s = 1; char c = '3'; int i = 4;
 ... s + i ... 
 ... s + 5L ... 
 ... c - s ... 
-... 2 * i ... 
 ... 2 <= i ... 
-\end{Java} 
-\end{itemize} 
-\end{frame}
-
-\begin{frame}[fragile]{Les conversions dans les expressions}
-\emph{Cas des opérateurs unaires}
-\begin{itemize}
-\item Opérateurs : \java|+|, \java|-|
-\item Ainsi que l'indice d'un tableau
-\item \java|byte|, \java|short|, \java|char| $\longrightarrow$ \java|int|
-\item Exemples
-\begin{Java}
-short s = 1;
-byte b = 2;
 ... +s ... 
 ... -b ... 
 ... -'A' ... 
 ... t[s] ...
 ... t['1'] ...
-\end{Java} 
-\end{itemize}
+	\end{Java}
 \end{frame}
 
-\begin{frame}[fragile]{Les conversions dans les expressions}
-Remarque sur \java|++|
-\begin{itemize}
-\item Existe pour tous les types numériques
-\item \emph{Exemple}
-\begin{Java}
-char c = 'a';
-c = c+1; // assignation impossible
-\end{Java} 
-ne se comporte pas comme 
-\begin{Java}
-char c = 'a';
-c++;    //  c vaut 'b'
-\end{Java} 
-\end{itemize} 
-\end{frame}
 
-\subsection{Lors d'une assignation (et d'un return)}
-\leconwithtocinside
+%\subsection{Lors d'une assignation (et d'un return)}
+%\leconwithtocinside
 
 \begin{frame}[fragile]{Conversion lors d'une assignation}
 Que se passe-t-il lors d'une \emph{assignation} ?
