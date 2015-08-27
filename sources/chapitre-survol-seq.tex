@@ -29,6 +29,14 @@
     }
   }
 \end{Java}
+\emph{Exemple}
+\begin{Java}
+  public class NomClasse {
+    public static void main(String[] args) {
+      System.out.println("Bonjour !");     
+    }
+  }
+\end{Java}
 \end{frame}
 
 
@@ -39,8 +47,7 @@ Les types disponibles
 En Algorithmique & En  Java \\ \hline
 Entier & \java|int| \\ 
 Réel & \java|double| \\ 
-Chaine & \java|String| \\ 
-Caractère & \java|char| \\ 
+Chaine & \java|char|, \java|String| \\ 
 Booléen & \java|boolean| \\  
 \end{tabular} 
 \end{center}
@@ -70,38 +77,38 @@ Opérateurs :
 	\texttt{\small\$cat Moyenne.java}
 \begin{Java}
   public class Moyenne {
-    public static void main(String[] args) {
 
-      double nombre1;
-      double nombre2;
+    public static double moyenne(double nombre1, double nombre2) {
+        return (nombre1 + nombre2) / 2;
+    }
+    
+    public static void main(String[] args) {
       double moyenne;
 
-      nombre1 = 34345;
-      nombre2 = -3213213;
-      moyenne = (nombre1 + nombre2) / 2;    
+      moyenne = moyenne(34345, -3213213);    
       System.out.println(moyenne); 
     }
   }
 \end{Java}
 \end{frame}
 
-\begin{frame}[fragile]{Exemple}
-	\texttt{\small\$cat Moyenne.java}
-\begin{Java}
-  public class Moyenne {
-    public static void main(String[] args) {
+%\begin{frame}[fragile]{Exemple}
+	%\texttt{\small\$cat Moyenne.java}
+%\begin{Java}
+  %public class Moyenne {
+    %public static void main(String[] args) {
 
-      int nombre1 = 34345;
-      int nombre2 = -321321;
-      double moyenne;
+      %int nombre1 = 34345;
+      %int nombre2 = -321321;
+      %double moyenne;
 
-      // division réelle car un des 2 opérandes est réel
-      moyenne = (nombre1 + nombre2) / 2.0;    
-      System.out.println("La moyenne est " + moyenne); 
-    }
-  }
-\end{Java}
-\end{frame}
+      %// division réelle car un des 2 opérandes est réel
+      %moyenne = (nombre1 + nombre2) / 2.0;    
+      %System.out.println("La moyenne est " + moyenne); 
+    %}
+  %}
+%\end{Java}
+%\end{frame}
 
 
 \begin{frame}[fragile]{Lire au clavier}
@@ -124,17 +131,19 @@ Opérateurs :
 import java.util.Scanner;
 
 public class Test {
-  public static void main(String[] args) {
+    public static double moyenne(double nombre1, double nombre2) {
+        return (nombre1 + nombre2) / 2;
+    }
+    
+    public static void main(String[] args) {
       Scanner clavier = new Scanner(System.in);
-      double nombre1;
-      double nombre2;
+      double nombre1, nombre2;
       double moyenne;
-
       nombre1 = clavier.nextDouble();
       nombre2 = clavier.nextDouble();
-      moyenne = (nombre1 + nombre2) / 2.0;
-      System.out.println(moyenne);    
-  }
+      moyenne = moyenne(nombre1, nombre2);    
+      System.out.println(moyenne); 
+    }
 }
 \end{Java}
 \end{frame}
