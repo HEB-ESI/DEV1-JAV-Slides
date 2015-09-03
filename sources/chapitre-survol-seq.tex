@@ -2,23 +2,12 @@
 % === Chapitre : Survol 
 
 \subsection{Algorithmes séquentiels (survol)}
-\subsection{Structure générale d'un programme}
+%\subsection{Structure générale d'un programme}
 
 \imgfullw{../img/Life_in_a_frame_by_michaelpaleodimos.jpg}
 {}
 {http://michaelpaleodimos.deviantart.com/art/Life-in-a-frame-39596992}
 
-\begin{frame}[fragile]{Structure générale du programme}
-	\texttt{\small\$cat NomClasse.java}
-\begin{Java}
-  public class NomClasse {
-    // insert code here
-  }
-\end{Java}
-\bigskip
-\bigskip
-\emph{Attention} \sigle{Java} est sensible à la casse 
-\end{frame}
 
 \begin{frame}[fragile]{La méthode principale}
 	\texttt{\small\$cat NomClasse.java}
@@ -29,14 +18,7 @@
     }
   }
 \end{Java}
-\emph{Exemple}
-\begin{Java}
-  public class NomClasse {
-    public static void main(String[] args) {
-      System.out.println("Bonjour !");     
-    }
-  }
-\end{Java}
+
 \end{frame}
 
 
@@ -71,6 +53,92 @@ Opérateurs :
 	\Large
     \java|+| \java|-| \java|*| \java|/| \java|%|  
 \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Méthode}
+	Une méthode est l'équivalent de votre \textit{algorithme} 
+	au cours d'algorithmique
+	\begin{center}
+	\includegraphics[scale=.6]{../img/methode}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Définition d'une méthode}
+	\textbf{Syntaxe}
+	\bigskip
+\begin{Java}
+public static <typeRetour> nomMéthode ([typeDonnée1 nomDonnée1, 
+		typeDonnée2 nomDonnée2, ...]) { 
+    <<typeRetour> résultat>; 
+    // instructions
+    <return résultat>;  
+}
+\end{Java}
+\bigskip
+Si la méthode ne retourne rien \texttt{void}
+\end{frame}
+
+\begin{frame}[fragile]{Définition d'une méthode}
+\emph{Exemple} : la valeur absolue
+\begin{Java}
+public static int absolu ( int nb ) {  
+    int abs;
+    if (nb<0) {
+        abs = -nb;
+    } else {
+        abs = nb;
+    }
+    return abs;
+}
+\end{Java}
+\begin{itemize}
+\item Exemples d'appels dans la même classe
+\begin{Java}
+   int résultat = absolu(4);
+   int écart = -10;
+   int écartAbsolu = absolu(écart);
+\end{Java}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Définition d'une méthode}
+\emph{Exemple} :
+\begin{Java}
+public static void présenter (String nomPgm) {
+   System.out.println("Programme "+nomPgm);
+} 
+\end{Java}
+\begin{itemize}
+\item Exemple d'appel dans la même classe
+\begin{Java}
+   présenter("moyenne de 2 nombres");
+\end{Java}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Définition d'une méthode}
+	\emph{Exemple} : la moyenne de 2 réels
+
+\begin{Java}
+// Méthode qui calcule la moyenne de 2 nombres
+// Données : 
+// 	nb1 : le premier nombre (un réel)
+// 	nb2 : le second nombre (un réel)
+// Résultat : un réel qui représente la moyenne des 2 nombres
+
+public static double moyenne ( double nb1, double nb2 ) {  
+    double moyenne = (nb1 + nb2) / 2.0;
+    return moyenne;
+}
+\end{Java}
+
+	\begin{itemize}
+		\item Appel possible (si dans la même classe)
+\begin{Java}
+  double cote = moyenne(34345, -3213213);
+\end{Java}
+	\end{itemize}
+	
 \end{frame}
 
 \begin{frame}[fragile]{Exemple}
@@ -121,7 +189,7 @@ Opérateurs :
   // ...
   Scanner clavier = new Scanner(System.in);
   // ...
-  nombre1 = clavier.nextInt();
+  nombre1 = clavier.nextDouble();
   \end{Java}
 \end{frame}
 
@@ -162,6 +230,25 @@ un caractère & \java|next().charAt(0)| \\
 \end{center}
 \end{frame}
 
+\begin{frame}[fragile]{Définition d'une méthode de lecture}
+\emph{Exemple} :
+\begin{Java}
+public static int lireEntier () {
+    Scanner clavier = new Scanner(System.in);
+    int nb;
+    System.out.println("Entrez un nombre entier!");
+    nb = clavier.nextInt();
+    return nb;
+}
+\end{Java}
+\begin{itemize}
+\item Exemple d'appel dans la même classe
+\begin{Java}
+   int nb = lireEntier();
+\end{Java}
+\end{itemize}
+\end{frame}
+
 \subsection{Constantes}
 
 \begin{frame}[fragile]{Constante locale}
@@ -200,16 +287,4 @@ Pour une constante :
 
 Dans tous les cas : être explicite
 \end{frame}
-
-\subsection{Commentaires}
-
-\begin{frame}[fragile]{Le commentaire}
-Plusieurs manières d'ajouter un commentaire 
-  \begin{Java}
-  // Commentaire sur une ligne
-  /* Commentaire sur
-     plusieurs lignes */
-  \end{Java}
-\end{frame}
-
 

@@ -34,9 +34,15 @@ public class Test {
       int nombre1;
 
       nombre1 = clavier.nextInt();
+      System.out.println(négatif(nombre1));
+  }
+
+  public static String négatif(int nombre1){     
+  	   String chaine = "";
       if (nombre1 < 0) {
-         System.out.println(nombre1 + " est négatif"); 
+         chaine = nombre1 + " est négatif"; 
       }   
+      return chaine;
   }
 }
 \end{Java}
@@ -51,12 +57,17 @@ public class Test {
       int nombre1;
 
       nombre1 = clavier.nextInt();
-      System.out.println(nombre1 + " est un nombre ");
-      if (nombre1 < 0) {
-         System.out.println("négatif"); 
+      System.out.println(positifOuNégatif(nombre1));
+  }
+
+  public static String positifOuNégatif(int nombre){     
+      String chaine = nombre + " est un nombre ";
+      if (nombre < 0) {
+         chaine = chaine + "négatif"; 
       } else {
-         System.out.println("positif");   
+         chaine = chaine + "positif";   
       }
+      return chaine;
   }
 }
 \end{Java}
@@ -65,18 +76,19 @@ public class Test {
 \begin{frame}[fragile]{Exercice} 
 Comment traduire cet algorithme ?
 \begin{Code}
-Algorithme test ()
-    nombre1: Entier
-    Demander nombre1
+Algorithme test (nombre1 : entier) \longrightarrow chaine
+	chaineAfficher : chaine
+	chaineAfficher \longleftarrow nombre1, "est "    
     Si nombre1 > 0 Alors
-        Afficher nombre1, "est positif"
+        chaineAfficher \longleftarrow chaineAfficher + "positif"
     Sinon
         Si nombre1 = 0 Alors
-            Afficher nombre1, "est nul"
+            chaineAfficher \longleftarrow chaineAfficher + "nul"
         Sinon
-            Afficher nombre1, "est négatif"
+            chaineAfficher \longleftarrow chaineAfficher + "négatif"
         Fin Si
     Fin Si
+    Retourner chaineAfficher
 Fin Algorithme
 \end{Code}
 \end{frame}
@@ -85,21 +97,21 @@ Fin Algorithme
 L'exemple précédant s'écrirait mieux (extrait) :
 \begin{Code}
     Si nombre1 > 0 Alors
-        Afficher nombre1, "est positif"
-    SinonSi nombre1 = 0 Alors
-        Afficher nombre1, "est nul"
+        chaineAfficher \longleftarrow chaineAfficher + "positif"
+    Sinon Si nombre1 = 0 Alors
+        chaineAfficher \longleftarrow chaineAfficher + "nul"
     Sinon
-        Afficher nombre1, "est négatif"
+        chaineAfficher \longleftarrow chaineAfficher + "négatif"
     Fin Si
 \end{Code}
 ce qui donnerait en Java
 \begin{Java}
   if (nb>0) {
-      System.out.println("positif");
+      chaineAfficher = chaineAfficher + "positif";
   } else if (nb==0) {
-      System.out.println("nul");
+      chaineAfficher = chaineAfficher + "nul";
   } else {
-      System.out.println("négatif");
+      chaineAfficher = chaineAfficher + "négatif";
   }  
 \end{Java}
 \end{frame}
@@ -121,11 +133,7 @@ ce qui donnerait en Java
 \begin{Java}
 import java.util.Scanner;
 public class Exemple {
-  public static void main(String[] args) {
-      Scanner clavier = new Scanner(System.in);
-      int nombre1;
-
-      nombre1 = clavier.nextInt();
+  public static void afficherParité(int nombre1){
       if ((nombre1 % 2) == 0) {
          System.out.println("Le nombre est pair");
       } else {
@@ -140,11 +148,7 @@ public class Exemple {
 \begin{Java}
 import java.util.Scanner;
 public class Exemple {
-  public static void main(String[] args) {
-      Scanner clavier = new Scanner(System.in);
-      int âge;
-
-      âge = clavier.nextInt();
+  public static void afficherTarifRéduit(int âge){
       if ( âge<21 || âge>=60 ) {
          System.out.println("Tarif réduit !");
       }
