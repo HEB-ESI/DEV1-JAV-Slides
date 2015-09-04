@@ -39,15 +39,7 @@ Exemple de déclaration
 \end{Java}
 \end{frame}
 
-\begin{frame}[fragile]{L'assignation et les calculs}
-	L'assignation se fait via le symbole 
-	\begin{center}
-		\huge\java|=|
-	\end{center}
-\begin{Java}
-   nb1 = 1;
-\end{Java}
-\bigskip
+\begin{frame}[fragile]{Les calculs}
 Opérateurs :
 \begin{center}
 	\Large
@@ -69,9 +61,8 @@ Opérateurs :
 \begin{Java}
 public static <typeRetour> nomMéthode ([typeDonnée1 nomDonnée1, 
 		typeDonnée2 nomDonnée2, ...]) { 
-    <<typeRetour> résultat>; 
     // instructions
-    <return résultat>;  
+    return <résultat>;  
 }
 \end{Java}
 \bigskip
@@ -79,26 +70,27 @@ Si la méthode ne retourne rien \texttt{void}
 \end{frame}
 
 \begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} : la valeur absolue
+	\emph{Exemple} : la moyenne de 2 réels
+
 \begin{Java}
-public static int absolu ( int nb ) {  
-    int abs;
-    if (nb<0) {
-        abs = -nb;
-    } else {
-        abs = nb;
-    }
-    return abs;
+// Méthode qui calcule la moyenne de 2 nombres
+// Données : 
+// 	nb1 : le premier nombre (un réel)
+// 	nb2 : le second nombre (un réel)
+// Résultat : un réel qui représente la moyenne des 2 nombres
+
+public static double moyenne ( double nb1, double nb2 ) {  
+    return (nb1 + nb2) / 2.0;
 }
 \end{Java}
-\begin{itemize}
-\item Exemples d'appels dans la même classe
+
+	\begin{itemize}
+		\item Appel possible (si dans la même classe)
 \begin{Java}
-   int résultat = absolu(4);
-   int écart = -10;
-   int écartAbsolu = absolu(écart);
+  double cote = moyenne(34345, -3213213);
 \end{Java}
-\end{itemize}
+	\end{itemize}
+	
 \end{frame}
 
 \begin{frame}[fragile]{Définition d'une méthode}
@@ -116,35 +108,15 @@ public static void présenter (String nomPgm) {
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Définition d'une méthode}
-	\emph{Exemple} : la moyenne de 2 réels
-
-\begin{Java}
-// Méthode qui calcule la moyenne de 2 nombres
-// Données : 
-// 	nb1 : le premier nombre (un réel)
-// 	nb2 : le second nombre (un réel)
-// Résultat : un réel qui représente la moyenne des 2 nombres
-
-public static double moyenne ( double nb1, double nb2 ) {  
-    double moyenne = (nb1 + nb2) / 2.0;
-    return moyenne;
-}
-\end{Java}
-
-	\begin{itemize}
-		\item Appel possible (si dans la même classe)
-\begin{Java}
-  double cote = moyenne(34345, -3213213);
-\end{Java}
-	\end{itemize}
-	
-\end{frame}
 
 \begin{frame}[fragile]{Exemple}
 	\texttt{\small\$cat Moyenne.java}
 \begin{Java}
   public class Moyenne {
+  
+    public static void présenter (String nomPgm) {
+      System.out.println("Programme "+nomPgm);
+    } 
 
     public static double moyenne(double nombre1, double nombre2) {
         return (nombre1 + nombre2) / 2;
@@ -153,6 +125,7 @@ public static double moyenne ( double nb1, double nb2 ) {
     public static void main(String[] args) {
       double moyenne;
 
+	  présenter("qui calcule la moyenne de 2 nombres");
       moyenne = moyenne(34345, -3213213);    
       System.out.println(moyenne); 
     }
@@ -177,6 +150,38 @@ public static double moyenne ( double nb1, double nb2 ) {
   %}
 %\end{Java}
 %\end{frame}
+
+\begin{frame}[fragile]{L'assignation}
+	L'assignation se fait via le symbole 
+	\begin{center}
+		\huge\java|=|
+	\end{center}
+\begin{Java}
+   nb1 = 1;
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Définition d'une méthode}
+\emph{Exemple} : Calculer la vitesse (en km/h) d'un véhicule dont on donne la
+durée du parcours (en secondes) et la distance parcourue (en mètres).
+\begin{Java}
+public static double vitesseKMH ( double distanceM, double duréeS ) {  
+    double distanceKM;
+    doouble duréeH;
+    distanceKM = distanceM/1000;
+    duréeH = duréeS/3600;
+    return distanceKM/duréeH;
+}
+\end{Java}
+\begin{itemize}
+\item Exemples d'appels dans la même classe
+\begin{Java}
+   double vitesse = vitesseKMH(1000, 3600);
+   double vitesseLumière = vitesseKMH(300000000, 1);
+   double vitesseSon = vitesseKMH(340, 1);
+\end{Java}
+\end{itemize}
+\end{frame}
 
 
 \begin{frame}[fragile]{Lire au clavier}

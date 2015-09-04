@@ -76,16 +76,16 @@ public class Test {
 \begin{frame}[fragile]{Exercice} 
 Comment traduire cet algorithme ?
 \begin{Code}
-Algorithme test (nombre1 : entier) \longrightarrow chaine
+Algorithme test (nombre1 : entier) -> chaine
 	chaineAfficher : chaine
-	chaineAfficher \longleftarrow nombre1, "est "    
+	chaineAfficher -> nombre1, "est "    
     Si nombre1 > 0 Alors
-        chaineAfficher \longleftarrow chaineAfficher + "positif"
+        chaineAfficher -> chaineAfficher + "positif"
     Sinon
         Si nombre1 = 0 Alors
-            chaineAfficher \longleftarrow chaineAfficher + "nul"
+            chaineAfficher -> chaineAfficher + "nul"
         Sinon
-            chaineAfficher \longleftarrow chaineAfficher + "négatif"
+            chaineAfficher -> chaineAfficher + "négatif"
         Fin Si
     Fin Si
     Retourner chaineAfficher
@@ -97,11 +97,11 @@ Fin Algorithme
 L'exemple précédant s'écrirait mieux (extrait) :
 \begin{Code}
     Si nombre1 > 0 Alors
-        chaineAfficher \longleftarrow chaineAfficher + "positif"
+        chaineAfficher <- chaineAfficher + "positif"
     Sinon Si nombre1 = 0 Alors
-        chaineAfficher \longleftarrow chaineAfficher + "nul"
+        chaineAfficher <- chaineAfficher + "nul"
     Sinon
-        chaineAfficher \longleftarrow chaineAfficher + "négatif"
+        chaineAfficher <- chaineAfficher + "négatif"
     Fin Si
 \end{Code}
 ce qui donnerait en Java
