@@ -1,0 +1,3363 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.20)  3 SEP 2015 15:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**java1-presentation-prof.tex
+(./java1-presentation-prof.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+(/usr/share/texmf/tex/latex/beamer/base/beamer.cls
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty
+Package: beamerbasercs 2012/11/13 (rcs-revision cb16a617839f)
+)
+Document Class: beamer 2012/10/15 development version 3.24 A class for typesett
+ing presentations (rcs-revision 24853e6b98cf)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasemodes.sty
+Package: beamerbasemodes 2012/04/15 (rcs-revision cc6557182d97)
+\beamer@tempbox=\box26
+\beamer@tempcount=\count79
+\c@beamerpauses=\count80
+
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasedecode.sty
+Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
+\beamer@slideinframe=\count81
+\beamer@minimum=\count82
+)
+\beamer@commentbox=\box27
+\beamer@modecount=\count83
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+\headheight=\dimen102
+\headdp=\dimen103
+\footheight=\dimen104
+\sidebarheight=\dimen105
+\beamer@tempdim=\dimen106
+\beamer@finalheight=\dimen107
+\beamer@animht=\dimen108
+\beamer@animdp=\dimen109
+\beamer@animwd=\dimen110
+\beamer@leftmargin=\dimen111
+\beamer@rightmargin=\dimen112
+\beamer@leftsidebar=\dimen113
+\beamer@rightsidebar=\dimen114
+\beamer@boxsize=\dimen115
+\beamer@vboxoffset=\dimen116
+\beamer@descdefault=\dimen117
+\beamer@descriptionwidth=\dimen118
+\beamer@lastskip=\skip41
+\beamer@areabox=\box28
+\beamer@animcurrent=\box29
+\beamer@animshowbox=\box30
+\beamer@sectionbox=\box31
+\beamer@logobox=\box32
+\beamer@linebox=\box33
+\beamer@sectioncount=\count84
+\beamer@subsubsectionmax=\count85
+\beamer@subsectionmax=\count86
+\beamer@sectionmax=\count87
+\beamer@totalheads=\count88
+\beamer@headcounter=\count89
+\beamer@partstartpage=\count90
+\beamer@sectionstartpage=\count91
+\beamer@subsectionstartpage=\count92
+\beamer@animationtempa=\count93
+\beamer@animationtempb=\count94
+\beamer@xpos=\count95
+\beamer@ypos=\count96
+\beamer@showpartnumber=\count97
+\beamer@currentsubsection=\count98
+\beamer@coveringdepth=\count99
+\beamer@sectionadjust=\count100
+\beamer@tocsectionnumber=\count101
+
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoptions.sty
+Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip42
+\beamer@paperheight=\skip43
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen129
+\pgf@y=\dimen130
+\pgf@xa=\dimen131
+\pgf@ya=\dimen132
+\pgf@xb=\dimen133
+\pgf@yb=\dimen134
+\pgf@xc=\dimen135
+\pgf@yc=\dimen136
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count110
+\pgfsyssoftpath@bigbuffer@items=\count111
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen137
+\pgfmath@count=\count112
+\pgfmath@box=\box35
+\pgfmath@toks=\toks20
+\pgfmath@stack@operand=\toks21
+\pgfmath@stack@operation=\toks22
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen138
+\pgf@picmaxx=\dimen139
+\pgf@picminy=\dimen140
+\pgf@picmaxy=\dimen141
+\pgf@pathminx=\dimen142
+\pgf@pathmaxx=\dimen143
+\pgf@pathminy=\dimen144
+\pgf@pathmaxy=\dimen145
+\pgf@xx=\dimen146
+\pgf@xy=\dimen147
+\pgf@yx=\dimen148
+\pgf@yy=\dimen149
+\pgf@zx=\dimen150
+\pgf@zy=\dimen151
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen152
+\pgf@path@lasty=\dimen153
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen154
+\pgf@shorten@start@additional=\dimen155
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count114
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen156
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen157
+\pgf@pt@y=\dimen158
+\pgf@pt@temp=\dimen159
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen160
+\pgf@sys@shading@range@num=\count115
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box39
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count116
+\XC@countmixins=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count120
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `implicit' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen162
+\Fld@menulength=\count122
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count123
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaserequires.sty
+Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
+
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasecompatibility.sty
+Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasefont.sty
+Package: beamerbasefont 2012/09/19  (rcs-revision 733629cd0c6c)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks23
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetranslator.sty
+Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
+
+(/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
+.tex))) (/usr/share/texmf/tex/latex/beamer/base/beamerbasemisc.sty
+Package: beamerbasemisc 2012/02/24  (rcs-revision 2ff5461be705)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetwoscreens.sty
+Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoverlay.sty
+Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
+\beamer@argscount=\count126
+\beamer@lastskipcover=\skip44
+\beamer@trivlistdepth=\count127
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetitle.sty
+Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasesection.sty
+Package: beamerbasesection 2012/11/11  (rcs-revision 0056eef6f17f)
+\c@lecture=\count128
+\c@part=\count129
+\c@section=\count130
+\c@subsection=\count131
+\c@subsubsection=\count132
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframe.sty
+Package: beamerbaseframe 2012/09/13  (rcs-revision dcd846607320)
+\beamer@framebox=\box40
+\beamer@frametitlebox=\box41
+\beamer@zoombox=\box42
+\beamer@zoomcount=\count133
+\beamer@zoomframecount=\count134
+\beamer@frametextheight=\dimen165
+\c@subsectionslide=\count135
+\beamer@frametopskip=\skip45
+\beamer@framebottomskip=\skip46
+\beamer@frametopskipautobreak=\skip47
+\beamer@framebottomskipautobreak=\skip48
+\beamer@envbody=\toks24
+\framewidth=\dimen166
+\c@framenumber=\count136
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty
+Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
+\beamer@verbatimfileout=\write4
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframesize.sty
+Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
+\beamer@splitbox=\box43
+\beamer@autobreakcount=\count137
+\beamer@autobreaklastheight=\dimen167
+\beamer@frametitletoks=\toks25
+\beamer@framesubtitletoks=\toks26
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframecomponents.sty
+Package: beamerbaseframecomponents 2012/09/13  (rcs-revision dcd846607320)
+\beamer@footins=\box44
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasecolor.sty
+Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasenotes.sty
+Package: beamerbasenotes 2010/05/01  (rcs-revision efa082c6111d)
+\beamer@frameboxcopy=\box45
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetoc.sty
+Package: beamerbasetoc 2012/10/02  (rcs-revision 5ed0f4010e8a)
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetemplates.sty
+Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
+\beamer@sbttoks=\toks27
+
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseauxtemplates.sty
+Package: beamerbaseauxtemplates 2012/05/01  (rcs-revision 67c48b3b652d)
+
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaseboxes.sty
+Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
+\bmb@box=\box46
+\bmb@colorbox=\box47
+\bmb@boxshadow=\box48
+\bmb@boxshadowball=\box49
+\bmb@boxshadowballlarge=\box50
+\bmb@temp=\dimen168
+\bmb@dima=\dimen169
+\bmb@dimb=\dimen170
+\bmb@prevheight=\dimen171
+)
+\beamer@blockheadheight=\dimen172
+))
+(/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
+Package: beamerbaselocalstructure 2012/11/13  (rcs-revision ddfba79dac19)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks28
+)
+\c@figure=\count138
+\c@table=\count139
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty
+Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
+\beamer@section@min@dim=\dimen173
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
+Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks29
+\ex@=\dimen174
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen175
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
+\dotsspace@=\muskip11
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks30
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks31
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks32
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks34
+\thm@bodyfont=\toks35
+\thm@headfont=\toks36
+\thm@notefont=\toks37
+\thm@headpunct=\toks38
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks39
+)
+\c@theorem=\count152
+)
+(/usr/share/texmf/tex/latex/beamer/base/beamerbasethemes.sty
+Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
+))
+(/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
+Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty
+Package: beamerfontthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedefault.st
+y
+Package: beamercolorthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.st
+y
+Package: beamerinnerthemedefault 2012/05/01  (rcs-revision 67c48b3b652d)
+\beamer@dima=\dimen183
+\beamer@dimb=\dimen184
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
+y
+Package: beamerouterthemedefault 2012/10/02  (rcs-revision 5ed0f4010e8a)
+))) (./java1-presentation-master.tex
+(/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemeMadrid.sty
+Package: beamerthemeMadrid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemewhale.sty
+Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemeorchid.sty
+Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemerounded.st
+y
+Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemeinfolines.
+sty
+Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
+)) (./java.sty (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2013/12/30 v2.6g French support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+LaTeX Info: Redefining \textlatin on input line 137.
+\babel@savecnt=\count153
+\U@D=\dimen185
+)
+\FB@interchartokenstateORI=\count154
+Package babel Info: Making : an active character on input line 244.
+Package babel Info: Making ; an active character on input line 245.
+Package babel Info: Making ! an active character on input line 246.
+Package babel Info: Making ? an active character on input line 247.
+\FB@Mht=\dimen186
+\std@mcc=\count155
+\dec@mcc=\count156
+\listindentFB=\skip57
+\labelwidthFB=\skip58
+\leftmarginFB=\skip59
+\parindentFFN=\dimen187
+))
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks40
+\inpenc@posthook=\toks41
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip60
+\UL@hook=\toks42
+\UL@height=\dimen188
+\UL@pe=\count157
+\UL@pixel=\dimen189
+\ULC@box=\box55
+Package: ulem 2012/05/18
+\ULdepth=\dimen190
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count158
+\lst@gtempboxa=\box56
+\lst@token=\toks43
+\lst@length=\count159
+\lst@currlwidth=\dimen191
+\lst@column=\count160
+\lst@pos=\count161
+\lst@lostspace=\dimen192
+\lst@width=\dimen193
+\lst@newlines=\count162
+\lst@lineno=\count163
+\lst@maxwidth=\dimen194
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count164
+\lst@skipnumbers=\count165
+\lst@framebox=\box57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count166
+\FV@InFile=\read2
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count167
+\FV@StepNumber=\count168
+\FV@OutFile=\write5
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count169
+\mult@box=\box59
+\multicol@leftmargin=\dimen195
+\c@unbalance=\count170
+\c@collectmore=\count171
+\doublecol@number=\count172
+\multicoltolerance=\count173
+\multicolpretolerance=\count174
+\full@width=\dimen196
+\page@free=\dimen197
+\premulticols=\dimen198
+\postmulticols=\dimen199
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box60
+\last@line=\box61
+\mult@rightbox=\box62
+\mult@grightbox=\box63
+\mult@gfirstbox=\box64
+\mult@firstbox=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\c@columnbadness=\count175
+\c@finalcolumnbadness=\count176
+\last@try=\dimen200
+\multicolovershoot=\dimen201
+\multicolundershoot=\dimen202
+\mult@nat@firstbox=\box83
+\colbreak@box=\box84
+\multicol@sort@counter=\count177
+) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2014/01/03 v1.7j
+
+Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+\TP@textbox=\box85
+\TP@holdbox=\box86
+\TPHorizModule=\dimen203
+\TPVertModule=\dimen204
+\TP@margin=\dimen205
+\TP@absmargin=\dimen206
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen207
+\TP@ox=\dimen208
+\TP@oy=\dimen209
+\TP@tbargs=\toks44
+\TP@prevdepth=\dimen210
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen211
+\WF@size=\dimen212
+\c@WF@wrappedlines=\count178
+\WF@box=\box87
+\WF@everypar=\toks45
+Package: wrapfig 2003/01/31  v 3.6
+))
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lowercase' on input line 21.
+
+(./java1-presentation-prof.aux (./toc.aux) (./seance-1.aux) (./seance-2.aux)
+(./seance-3.aux) (./seance-4.aux) (./seance-5.aux) (./seance-6.aux)
+(./seance-7.aux) (./seance-8.aux) (./seance-9.aux) (./seance-10.aux)
+(./seance-11.aux))
+\openout1 = `java1-presentation-prof.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(14.09984pt, 335.99568pt, 14.09984pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=335.99568pt
+* \textheight=244.6939pt
+* \oddsidemargin=-58.17015pt
+* \evensidemargin=-58.17015pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=14.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen213
+\scratchbox=\box88
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen214
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks47
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box89
+Package hyperref Info: Link coloring OFF on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count185
+)
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
+
+(./java1-presentation-prof.out) (./java1-presentation-prof.out)
+\@outlinefile=\write6
+\openout6 = `java1-presentation-prof.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 21.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 21.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 21.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 21.
+
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
+onary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliograph
+y-dictionary/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment
+-dictionary/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dict
+ionary/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dic
+tionary/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
+tionary/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \includegraphics on input line 21.
+LaTeX Info: Redefining \degres on input line 21.
+LaTeX Info: Redefining \dots on input line 21.
+
+
+Package frenchb.ldf Warning: Setting StandardEnumerateEnv=true for
+(frenchb.ldf)                compatibility with enumerate package,
+(frenchb.ldf)                 on input line 21.
+
+LaTeX Info: Redefining \up on input line 21.
+\c@lstlisting=\count186
+(./java1-presentation-prof.nav)
+
+LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 26.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\openout2 = `toc.aux'.
+
+ (./toc.tex
+(./java1-presentation-prof.toc) (./java1-presentation-prof.toc
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 9.
+)
+(./java1-presentation-prof.toc) (./java1-presentation-prof.toc)
+(./java1-presentation-prof.toc) (./java1-presentation-prof.toc)
+(./java1-presentation-prof.toc) (./java1-presentation-prof.toc)
+(./java1-presentation-prof.toc) (./java1-presentation-prof.toc
+Overfull \hbox (0.49988pt too wide) detected at line 53
+ []\T1/cmss/m/n/8 10 
+ []
+
+) (./java1-presentation-prof.toc
+Overfull \hbox (0.49988pt too wide) detected at line 61
+ []\T1/cmss/m/n/8 11 
+ []
+
+) (./java1-presentation-prof.toc) [2
+
+
+])
+\openout2 = `seance-1.aux'.
+
+ (./seance-1.tex
+(./java1-presentation-prof.toc) [3
+
+
+
+] (./chapitre-contrat.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 5.
+
+<../img/goal_by_zi3000.jpg, id=414, 752.8125pt x 529.98pt>
+File: ../img/goal_by_zi3000.jpg Graphic file (type jpg)
+
+<use ../img/goal_by_zi3000.jpg>
+Package pdftex.def Info: ../img/goal_by_zi3000.jpg used on input line 5.
+(pdftex.def)             Requested size: 364.19536pt x 256.40112pt.
+ [4
+
+ <../img/goal_by_zi3000.jpg>] [5
+
+] [6
+
+]
+<../img/etapes-SI.jpeg, id=460, 599.23875pt x 302.12875pt>
+File: ../img/etapes-SI.jpeg Graphic file (type jpg)
+
+<use ../img/etapes-SI.jpeg>
+Package pdftex.def Info: ../img/etapes-SI.jpeg used on input line 21.
+(pdftex.def)             Requested size: 335.99568pt x 169.40761pt.
+ [7
+
+ <../img/etapes-SI.jpeg>] [8
+
+] [9
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 48.
+
+
+<../img/OMG_Spaghetti_O__s_by_billyunderscorebwa.jpg, id=534, 240.9pt x 182.682
+5pt>
+File: ../img/OMG_Spaghetti_O__s_by_billyunderscorebwa.jpg Graphic file (type jp
+g)
+ <use ../img/OMG_Spaghetti_O__s_by_billyunderscorebwa.jpg>
+Package pdftex.def Info: ../img/OMG_Spaghetti_O__s_by_billyunderscorebwa.jpg us
+ed on input line 48.
+(pdftex.def)             Requested size: 364.19536pt x 276.20845pt.
+ [10
+
+ <../img/OMG_Spaghetti_O__s_by_billyunderscorebwa.jpg>] [11
+
+]) (./chapitre-programme.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 10.
+
+<../img/coffeemug.jpg, id=571, 468.24937pt x 355.3275pt>
+File: ../img/coffeemug.jpg Graphic file (type jpg)
+
+<use ../img/coffeemug.jpg>
+Package pdftex.def Info: ../img/coffeemug.jpg used on input line 10.
+(pdftex.def)             Requested size: 364.19536pt x 276.379pt.
+ [12
+
+ <../img/coffeemug.jpg>] [13
+
+] [14
+
+] [15
+
+] [16
+
+]
+[17
+
+] <../img/java-jvm-compil.jpg, id=682, 374.39874pt x 232.87pt>
+File: ../img/java-jvm-compil.jpg Graphic file (type jpg)
+
+<use ../img/java-jvm-compil.jpg>
+Package pdftex.def Info: ../img/java-jvm-compil.jpg used on input line 55.
+(pdftex.def)             Requested size: 131.04152pt x 81.5057pt.
+
+<../img/java-jvm-interp.jpg, id=683, 346.29375pt x 219.82124pt>
+File: ../img/java-jvm-interp.jpg Graphic file (type jpg)
+
+<use ../img/java-jvm-interp.jpg>
+Package pdftex.def Info: ../img/java-jvm-interp.jpg used on input line 55.
+(pdftex.def)             Requested size: 121.20462pt x 76.93858pt.
+ [18
+
+ <../img/java-jvm-compil.jpg> <../img/java-jvm-interp.jpg>] [19
+
+]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <29.86> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 64.
+ [20
+
+]) (./chapitre-java.tex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 10.
+
+<../img/java-jvm-jvm1.pdf, id=728, 275.0275pt x 139.52126pt>
+File: ../img/java-jvm-jvm1.pdf Graphic file (type pdf)
+
+<use ../img/java-jvm-jvm1.pdf>
+Package pdftex.def Info: ../img/java-jvm-jvm1.pdf used on input line 10.
+(pdftex.def)             Requested size: 220.0223pt x 111.61714pt.
+ [21
+
+ <../img/java-jvm-jvm1.pdf>] [22
+
+]
+<../img/java-jvm-jvm2.pdf, id=765, 397.485pt x 209.78375pt>
+File: ../img/java-jvm-jvm2.pdf Graphic file (type pdf)
+
+<use ../img/java-jvm-jvm2.pdf>
+Package pdftex.def Info: ../img/java-jvm-jvm2.pdf used on input line 23.
+(pdftex.def)             Requested size: 317.98842pt x 167.82721pt.
+ [23
+
+ <../img/java-jvm-jvm2.pdf>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 27.
+
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 27.
+
+<../img/true-evolution.jpg, id=799, 501.875pt x 501.875pt>
+File: ../img/true-evolution.jpg Graphic file (type jpg)
+
+<use ../img/true-evolution.jpg>
+Package pdftex.def Info: ../img/true-evolution.jpg used on input line 27.
+(pdftex.def)             Requested size: 364.19536pt x 364.2138pt.
+ [24
+
+ <../img/true-evolution.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 42.
+ [25
+
+]
+<../img/icon_39938.png, id=835, 100.375pt x 100.375pt>
+File: ../img/icon_39938.png Graphic file (type png)
+
+<use ../img/icon_39938.png>
+Package pdftex.def Info: ../img/icon_39938.png used on input line 53.
+(pdftex.def)             Requested size: 50.18736pt x 50.18736pt.
+ [26
+
+ <../img/icon_39938.png>] [27
+
+]))
+\openout2 = `seance-2.aux'.
+
+ (./seance-2.tex (./java1-presentation-prof.toc)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <6> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 4.
+ [28
+
+
+
+] (./chapitre-jvm.tex [29
+
+]
+File: ../img/java-jvm-jvm2.pdf Graphic file (type pdf)
+
+<use ../img/java-jvm-jvm2.pdf>
+Package pdftex.def Info: ../img/java-jvm-jvm2.pdf used on input line 20.
+(pdftex.def)             Requested size: 317.98842pt x 167.82721pt.
+ [30
+
+]
+<../img/Sun_and_rain_by_emolawn.jpg, id=974, 2826.56pt x 1887.05pt>
+File: ../img/Sun_and_rain_by_emolawn.jpg Graphic file (type jpg)
+
+<use ../img/Sun_and_rain_by_emolawn.jpg>
+Package pdftex.def Info: ../img/Sun_and_rain_by_emolawn.jpg used on input line 
+24.
+(pdftex.def)             Requested size: 409.12907pt x 273.14662pt.
+ [31
+
+ <../img/Sun_and_rain_by_emolawn.jpg>]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 32.
+ [32
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)) [33
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 57.
+
+<../img/righttool-3348965007_b3049c78fe_b.jpg, id=1019, 1027.84pt x 770.88pt>
+File: ../img/righttool-3348965007_b3049c78fe_b.jpg Graphic file (type jpg)
+
+<use ../img/righttool-3348965007_b3049c78fe_b.jpg>
+Package pdftex.def Info: ../img/righttool-3348965007_b3049c78fe_b.jpg used on i
+nput line 57.
+(pdftex.def)             Requested size: 364.18784pt x 273.14662pt.
+ [34
+
+ <../img/righttool-3348965007_b3049c78fe_b.jpg>]
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 75.
+
+<../img/java-download.png, id=1024, 137.51375pt x 122.4575pt>
+File: ../img/java-download.png Graphic file (type png)
+
+<use ../img/java-download.png>
+Package pdftex.def Info: ../img/java-download.png used on input line 75.
+(pdftex.def)             Requested size: 48.36967pt x 43.07378pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 75
+.
+
+[35
+
+ <../img/java-download.png>] [36
+
+] [37
+
+] [38
+
+]) (./chapitre-survol-intro.tex
+<../img/Life_in_a_frame_by_michaelpaleodimos.jpg, id=1119, 807.015pt x 702.625p
+t>
+File: ../img/Life_in_a_frame_by_michaelpaleodimos.jpg Graphic file (type jpg)
+ <use ../img/Life_in_a_frame_by_michaelpaleodimos.jpg>
+Package pdftex.def Info: ../img/Life_in_a_frame_by_michaelpaleodimos.jpg used o
+n input line 9.
+(pdftex.def)             Requested size: 364.19536pt x 317.08963pt.
+ [39
+
+ <../img/Life_in_a_frame_by_michaelpaleodimos.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [40
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [41
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 5.
+LaTeX Font Info:    No file OMScmss.fd. on input line 5.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 5.
+
+) [42
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [43
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[44
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 6.
+
+) [45
+
+]) (./chapitre-humain.tex [46
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 13.
+
+
+<../img/damsel_by_colinhuttonphoto-d5vpyon.jpg, id=1321, 685.56125pt x 1027.84p
+t>
+File: ../img/damsel_by_colinhuttonphoto-d5vpyon.jpg Graphic file (type jpg)
+ <use ../img/damsel_by_colinhuttonphoto-d5vpyon.jpg>
+Package pdftex.def Info: ../img/damsel_by_colinhuttonphoto-d5vpyon.jpg used on 
+input line 13.
+(pdftex.def)             Requested size: 364.19536pt x 546.03867pt.
+ [47
+
+ <../img/damsel_by_colinhuttonphoto-d5vpyon.jpg>] [48
+
+] [49
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/icon_15706.png, id=1358, 1204.5pt x 1204.5pt>
+File: ../img/icon_15706.png Graphic file (type png)
+
+<use ../img/icon_15706.png>
+Package pdftex.def Info: ../img/icon_15706.png used on input line 2.
+(pdftex.def)             Requested size: 60.22852pt x 60.22852pt.
+) [50
+
+ <../img/icon_15706.png>] [51
+
+]
+File: ../img/icon_15706.png Graphic file (type png)
+
+<use ../img/icon_15706.png>
+Package pdftex.def Info: ../img/icon_15706.png used on input line 71.
+(pdftex.def)             Requested size: 60.22852pt x 60.22852pt.
+ [52
+
+]))
+\openout2 = `seance-3.aux'.
+
+ (./seance-3.tex
+(./java1-presentation-prof.toc) [53
+
+
+
+] (./chapitre-survol-seq.tex
+File: ../img/Life_in_a_frame_by_michaelpaleodimos.jpg Graphic file (type jpg)
+
+<use ../img/Life_in_a_frame_by_michaelpaleodimos.jpg>
+Package pdftex.def Info: ../img/Life_in_a_frame_by_michaelpaleodimos.jpg used o
+n input line 9.
+(pdftex.def)             Requested size: 364.19536pt x 317.08963pt.
+ [54
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [55
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [56
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [57
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/methode.jpg, id=1550, 415.5525pt x 89.33376pt>
+File: ../img/methode.jpg Graphic file (type jpg)
+
+<use ../img/methode.jpg>
+Package pdftex.def Info: ../img/methode.jpg used on input line 5.
+(pdftex.def)             Requested size: 249.33342pt x 53.60065pt.
+) [58
+
+ <../img/methode.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [59
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [60
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [61
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [62
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [63
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [64
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb)
+Overfull \vbox (6.79301pt too high) detected at line 217
+ []
+
+[65
+
+] [66
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [67
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[68
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 271.
+
+
+<../img/people_think_theyre_different_by_nanfe-d3bzl5i_mirror.jpg, id=1862, 573
+.14125pt x 357.335pt>
+File: ../img/people_think_theyre_different_by_nanfe-d3bzl5i_mirror.jpg Graphic 
+file (type jpg)
+
+<use ../img/people_think_theyre_different_by_nanfe-d3bzl5i_mirror.jpg>
+Package pdftex.def Info: ../img/people_think_theyre_different_by_nanfe-d3bzl5i_
+mirror.jpg used on input line 271.
+(pdftex.def)             Requested size: 438.12805pt x 273.14662pt.
+ [69
+
+ <../img/people_think_theyre_different_by_nanfe-d3bzl5i_mirror.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [70
+
+]))
+\openout2 = `seance-4.aux'.
+
+ (./seance-4.tex
+(./java1-presentation-prof.toc)
+Overfull \vbox (1.29433pt too high) detected at line 9
+ []
+
+[71
+
+
+
+] (./chapitre-lisibilite.tex [72
+
+] [73
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[74
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [75
+
+]
+<../img/screenshot-calculprixvente.png, id=2030, 964.60374pt x 603.25375pt>
+File: ../img/screenshot-calculprixvente.png Graphic file (type png)
+
+<use ../img/screenshot-calculprixvente.png>
+Package pdftex.def Info: ../img/screenshot-calculprixvente.png used on input li
+ne 39.
+(pdftex.def)             Requested size: 436.76118pt x 273.14662pt.
+ [76
+
+ <../img/screenshot-calculprixvente.png>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [77
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[78
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [79
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 78.
+
+<../img/rule.jpg, id=2120, 1096.095pt x 717.68124pt>
+File: ../img/rule.jpg Graphic file (type jpg)
+ <use ../img/rule.jpg>
+Package pdftex.def Info: ../img/rule.jpg used on input line 78.
+(pdftex.def)             Requested size: 417.17271pt x 273.14662pt.
+
+[80
+
+ <../img/rule.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [81
+
+] [82
+
+])
+(./chapitre-javadoc.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 9.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 9.
+
+<../img/explosion-paint.jpg, id=2180, 903.375pt x 903.375pt>
+File: ../img/explosion-paint.jpg Graphic file (type jpg)
+
+<use ../img/explosion-paint.jpg>
+Package pdftex.def Info: ../img/explosion-paint.jpg used on input line 9.
+(pdftex.def)             Requested size: 364.19536pt x 364.19696pt.
+ [83
+
+ <../img/explosion-paint.jpg>] [84
+
+]
+[85
+
+] [86
+
+] [87
+
+] [88
+
+]
+File: ../img/icon_15706.png Graphic file (type png)
+ <use ../img/icon_15706.png>
+Package pdftex.def Info: ../img/icon_15706.png used on input line 80.
+(pdftex.def)             Requested size: 51.19144pt x 51.18597pt.
+ [89
+
+]
+
+Package hyperref Warning: Suppressing link with empty target on input line 90.
+
+
+<../img/mur-cerisierjapon-9580504952_080b2591db_o.jpg, id=2297, 1672.2475pt x 1
+129.21875pt>
+File: ../img/mur-cerisierjapon-9580504952_080b2591db_o.jpg Graphic file (type j
+pg)
+ <use ../img/mur-cerisierjapon-9580504952_080b2591db_o.jpg>
+Package pdftex.def Info: ../img/mur-cerisierjapon-9580504952_080b2591db_o.jpg u
+sed on input line 90.
+(pdftex.def)             Requested size: 404.48611pt x 273.14662pt.
+
+[90
+
+ <../img/mur-cerisierjapon-9580504952_080b2591db_o.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [91
+
+] [92
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[93
+
+] <../img/javadoc-resume.pdf, id=2388, 394.273pt x 70.664pt>
+File: ../img/javadoc-resume.pdf Graphic file (type pdf)
+
+<use ../img/javadoc-resume.pdf>
+Package pdftex.def Info: ../img/javadoc-resume.pdf used on input line 154.
+(pdftex.def)             Requested size: 236.56561pt x 42.39871pt.
+
+<../img/javadoc-detail.pdf, id=2389, 362.15298pt x 219.219pt>
+File: ../img/javadoc-detail.pdf Graphic file (type pdf)
+
+<use ../img/javadoc-detail.pdf>
+Package pdftex.def Info: ../img/javadoc-detail.pdf used on input line 154.
+(pdftex.def)             Requested size: 217.29346pt x 131.5324pt.
+ [94
+
+ <../img/javadoc-resume.pdf> <../img/javadoc-detail.pdf
+
+pdfTeX warning: pdflatex (file ../img/javadoc-detail.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [95
+
+]
+<../img/javadoc-html.pdf, id=2459, 390.25798pt x 267.39899pt>
+File: ../img/javadoc-html.pdf Graphic file (type pdf)
+
+<use ../img/javadoc-html.pdf>
+Package pdftex.def Info: ../img/javadoc-html.pdf used on input line 188.
+(pdftex.def)             Requested size: 273.17871pt x 187.17801pt.
+
+Overfull \vbox (3.90265pt too high) detected at line 188
+ []
+
+[96
+
+ <../img/javadoc-html.pdf>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [97
+
+] [98
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [99
+
+]
+<../img/icon_39938_transwhite.png, id=2581, 240.9pt x 240.9pt>
+File: ../img/icon_39938_transwhite.png Graphic file (type png)
+
+<use ../img/icon_39938_transwhite.png>
+Package pdftex.def Info: ../img/icon_39938_transwhite.png used on input line 24
+6.
+(pdftex.def)             Requested size: 50.18768pt x 50.18614pt.
+ [100
+
+ <../img/icon_39938_transwhite.png>]))
+\openout2 = `seance-5.aux'.
+
+ (./seance-5.tex (./java1-presentation-prof.toc) [101
+
+
+
+]
+(./chapitre-package.tex
+<../img/fruitetlegumes.jpg, id=2631, 411.136pt x 308.352pt>
+File: ../img/fruitetlegumes.jpg Graphic file (type jpg)
+
+<use ../img/fruitetlegumes.jpg>
+Package pdftex.def Info: ../img/fruitetlegumes.jpg used on input line 14.
+(pdftex.def)             Requested size: 364.19536pt x 273.15263pt.
+ [102
+
+ <../img/fruitetlegumes.jpg>]
+<../img/package.jpg, id=2635, 493.845pt x 228.855pt>
+File: ../img/package.jpg Graphic file (type jpg)
+ <use ../img/package.jpg>
+Package pdftex.def Info: ../img/package.jpg used on input line 23.
+(pdftex.def)             Requested size: 296.30928pt x 137.31404pt.
+
+[103
+
+ <../img/package.jpg>] [104
+
+] [105
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [106
+
+]
+[107
+
+] <../img/api.pdf, id=2763, 1008.568pt x 573.34201pt>
+File: ../img/api.pdf Graphic file (type pdf)
+ <use ../img/api.pdf>
+Package pdftex.def Info: ../img/api.pdf used on input line 69.
+(pdftex.def)             Requested size: 480.506pt x 273.14662pt.
+
+[108
+
+ <../img/api.pdf>]
+<../img/api-package.pdf, id=2773, 142.93399pt x 67.452pt>
+File: ../img/api-package.pdf Graphic file (type pdf)
+
+<use ../img/api-package.pdf>
+Package pdftex.def Info: ../img/api-package.pdf used on input line 81.
+(pdftex.def)             Requested size: 85.76105pt x 40.4715pt.
+
+<../img/api-methode.pdf, id=2774, 513.92pt x 154.97899pt>
+File: ../img/api-methode.pdf Graphic file (type pdf)
+
+<use ../img/api-methode.pdf>
+Package pdftex.def Info: ../img/api-methode.pdf used on input line 81.
+(pdftex.def)             Requested size: 308.35437pt x 92.9881pt.
+
+Overfull \vbox (0.31708pt too high) detected at line 81
+ []
+
+[109
+
+ <../img/api-package.pdf> <../img/api-methode.pdf
+
+pdfTeX warning: pdflatex (file ../img/api-methode.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>] [110
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [111
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[112
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 125.
+
+File: ../img/api.pdf Graphic file (type pdf)
+<use ../img/api.pdf>
+Package pdftex.def Info: ../img/api.pdf used on input line 125.
+(pdftex.def)             Requested size: 480.506pt x 273.14662pt.
+ [113
+
+] [114
+
+]
+File: ../img/icon_39938_transwhite.png Graphic file (type png)
+ <use ../img/icon_39938_transwhite.png>
+Package pdftex.def Info: ../img/icon_39938_transwhite.png used on input line 14
+1.
+(pdftex.def)             Requested size: 50.18768pt x 50.18614pt.
+
+[115
+
+]) (./chapitre-data.tex [116
+
+] [117
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/primitifs.pdf, id=2929, 331.63899pt x 185.493pt>
+File: ../img/primitifs.pdf Graphic file (type pdf)
+
+<use ../img/primitifs.pdf>
+Package pdftex.def Info: ../img/primitifs.pdf used on input line 4.
+(pdftex.def)             Requested size: 248.72862pt x 139.1194pt.
+) [118
+
+ <../img/primitifs.pdf>]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 52.
+
+<../img/velo-2649371288_f0d00b8de9_o.jpg, id=2964, 803.0pt x 803.0pt>
+File: ../img/velo-2649371288_f0d00b8de9_o.jpg Graphic file (type jpg)
+
+<use ../img/velo-2649371288_f0d00b8de9_o.jpg>
+Package pdftex.def Info: ../img/velo-2649371288_f0d00b8de9_o.jpg used on input 
+line 52.
+(pdftex.def)             Requested size: 364.19536pt x 364.20155pt.
+ [119
+
+ <../img/velo-2649371288_f0d00b8de9_o.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [120
+
+] [121
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [122
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [123
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [124
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [125
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [126
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 135.
+
+<../img/Apple_Onion_by_SpicyHamster.jpg, id=3146, 869.2475pt x 567.11874pt>
+File: ../img/Apple_Onion_by_SpicyHamster.jpg Graphic file (type jpg)
+
+<use ../img/Apple_Onion_by_SpicyHamster.jpg>
+Package pdftex.def Info: ../img/Apple_Onion_by_SpicyHamster.jpg used on input l
+ine 135.
+(pdftex.def)             Requested size: 364.19536pt x 237.61711pt.
+ [127
+
+ <../img/Apple_Onion_by_SpicyHamster.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [128
+
+] [129
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 175.
+
+<../img/sliced_by_tnaotc-d38vol7.jpg, id=3189, 4015.0pt x 3011.25pt>
+File: ../img/sliced_by_tnaotc-d38vol7.jpg Graphic file (type jpg)
+
+<use ../img/sliced_by_tnaotc-d38vol7.jpg>
+Package pdftex.def Info: ../img/sliced_by_tnaotc-d38vol7.jpg used on input line
+ 175.
+(pdftex.def)             Requested size: 364.19536pt x 273.11441pt.
+ [130
+
+ <../img/sliced_by_tnaotc-d38vol7.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [131
+
+] [132
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [133
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 215.
+
+<../img/bw-crayon.jpg, id=3261, 144.54pt x 108.1641pt>
+File: ../img/bw-crayon.jpg Graphic file (type jpg)
+
+<use ../img/bw-crayon.jpg>
+Package pdftex.def Info: ../img/bw-crayon.jpg used on input line 215.
+(pdftex.def)             Requested size: 364.19536pt x 272.55511pt.
+ [134
+
+ <../img/bw-crayon.jpg>] [135
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 232.
+
+<../img/string-8579869186_8c0ef392c7_h.jpg, id=3294, 481.8pt x 221.628pt>
+File: ../img/string-8579869186_8c0ef392c7_h.jpg Graphic file (type jpg)
+
+<use ../img/string-8579869186_8c0ef392c7_h.jpg>
+Package pdftex.def Info: ../img/string-8579869186_8c0ef392c7_h.jpg used on inpu
+t line 232.
+(pdftex.def)             Requested size: 593.80144pt x 273.14662pt.
+ [136
+
+ <../img/string-8579869186_8c0ef392c7_h.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [137
+
+]))
+\openout2 = `seance-6.aux'.
+
+ (./seance-6.tex
+(./java1-presentation-prof.toc) [138
+
+
+
+] (./chapitre-survol-alternative.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 8.
+
+<../img/The_choice_by_vallo29.jpg, id=3363, 740.0448pt x 491.436pt>
+File: ../img/The_choice_by_vallo29.jpg Graphic file (type jpg)
+
+<use ../img/The_choice_by_vallo29.jpg>
+Package pdftex.def Info: ../img/The_choice_by_vallo29.jpg used on input line 8.
+
+(pdftex.def)             Requested size: 411.33951pt x 273.14662pt.
+ [139
+
+ <../img/The_choice_by_vallo29.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+(./java1-presentation-prof.vrb) [140
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+Overfull \vbox (0.76175pt too high) detected at line 49
+ []
+
+[141
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+Overfull \vbox (22.69922pt too high) detected at line 74
+ []
+
+[142
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [143
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+Overfull \vbox (4.08678pt too high) detected at line 117
+ []
+
+[144
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [145
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[146
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [147
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[148
+
+]) (./chapitre-erreur.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 9.
+
+<../img/sinking_boat_by_msholly.jpg, id=3624, 231.264pt x 173.448pt>
+File: ../img/sinking_boat_by_msholly.jpg Graphic file (type jpg)
+
+<use ../img/sinking_boat_by_msholly.jpg>
+Package pdftex.def Info: ../img/sinking_boat_by_msholly.jpg used on input line 
+9.
+(pdftex.def)             Requested size: 364.19536pt x 273.16086pt.
+ [149
+
+ <../img/sinking_boat_by_msholly.jpg>] [150
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [151
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb <../img/erreur1.pdf, id=3687, 507.496pt x 183.0
+84pt>
+File: ../img/erreur1.pdf Graphic file (type pdf)
+ <use ../img/erreur1.pdf>
+Package pdftex.def Info: ../img/erreur1.pdf used on input line 5.
+(pdftex.def)             Requested size: 329.86848pt x 119.00317pt.
+) [152
+
+ <../img/erreur1.pdf>] [153
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 77.
+
+<../img/puffinwithcatch.jpg, id=3726, 1027.84pt x 910.40125pt>
+File: ../img/puffinwithcatch.jpg Graphic file (type jpg)
+
+<use ../img/puffinwithcatch.jpg>
+Package pdftex.def Info: ../img/puffinwithcatch.jpg used on input line 77.
+(pdftex.def)             Requested size: 364.19536pt x 322.59041pt.
+ [154
+
+ <../img/puffinwithcatch.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [155
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [156
+
+]
+[157
+
+] [158
+
+] [159
+
+] [160
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [161
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [162
+
+]))
+\openout2 = `seance-7.aux'.
+
+ (./seance-7.tex
+(./java1-presentation-prof.toc) [163
+
+
+
+] (./chapitre-tests.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 9.
+
+<../img/crash_test_dummy_by_relanis.jpg, id=3971, 180.675pt x 135.50626pt>
+File: ../img/crash_test_dummy_by_relanis.jpg Graphic file (type jpg)
+
+<use ../img/crash_test_dummy_by_relanis.jpg>
+Package pdftex.def Info: ../img/crash_test_dummy_by_relanis.jpg used on input l
+ine 9.
+(pdftex.def)             Requested size: 364.19536pt x 273.1725pt.
+ [164
+
+ <../img/crash_test_dummy_by_relanis.jpg>] [165
+
+] [166
+
+] [167
+
+] [168
+
+] [169
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[170
+
+] [171
+
+] [172
+
+]
+<../img/aph__planning_a_move_by_yiangillium-d46irib.jpg, id=4118, 803.0pt x 533
+.995pt>
+File: ../img/aph__planning_a_move_by_yiangillium-d46irib.jpg Graphic file (type
+ jpg)
+ <use ../img/aph__planning_a_move_by_yiangillium-d46irib.jpg>
+Package pdftex.def Info: ../img/aph__planning_a_move_by_yiangillium-d46irib.jpg
+ used on input line 114.
+(pdftex.def)             Requested size: 410.76212pt x 273.14662pt.
+ [173
+
+ <../img/aph__planning_a_move_by_yiangillium-d46irib.jpg>] [174
+
+] [175
+
+] [176
+
+] [177
+
+]
+[178
+
+] [179
+
+] [180
+
+] [181
+
+] [182
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 235.
+
+<../img/puzzle-face-croped.jpg, id=4302, 2848.6425pt x 2501.345pt>
+File: ../img/puzzle-face-croped.jpg Graphic file (type jpg)
+
+<use ../img/puzzle-face-croped.jpg>
+Package pdftex.def Info: ../img/puzzle-face-croped.jpg used on input line 235.
+(pdftex.def)             Requested size: 364.19536pt x 319.7665pt.
+ [183
+
+ <../img/puzzle-face-croped.jpg>]
+[184
+
+] [185
+
+] <../img/junit.jpeg, id=4346, 566.115pt x 269.005pt>
+File: ../img/junit.jpeg Graphic file (type jpg)
+
+<use ../img/junit.jpeg>
+Package pdftex.def Info: ../img/junit.jpeg used on input line 258.
+(pdftex.def)             Requested size: 283.05681pt x 134.50217pt.
+ [186
+
+ <../img/junit.jpeg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [187
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [188
+
+]
+<../img/icon_15449.png, id=4433, 1204.5pt x 1204.5pt>
+File: ../img/icon_15449.png Graphic file (type png)
+
+<use ../img/icon_15449.png>
+Package pdftex.def Info: ../img/icon_15449.png used on input line 307.
+(pdftex.def)             Requested size: 50.18768pt x 50.17513pt.
+
+<../img/icon_53620.png, id=4435, 1204.5pt x 1204.5pt>
+File: ../img/icon_53620.png Graphic file (type png)
+
+<use ../img/icon_53620.png>
+Package pdftex.def Info: ../img/icon_53620.png used on input line 307.
+(pdftex.def)             Requested size: 50.18768pt x 50.17513pt.
+ [189
+
+ <../img/icon_15449.png> <../img/icon_53620.png>] [190
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [191
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[192
+
+] [193
+
+]
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 374.
+
+<../img/junit-result.png, id=4565, 1264.725pt x 891.33pt>
+File: ../img/junit-result.png Graphic file (type png)
+
+<use ../img/junit-result.png>
+Package pdftex.def Info: ../img/junit-result.png used on input line 374.
+(pdftex.def)             Requested size: 364.19536pt x 256.6702pt.
+ [194
+
+ <../img/junit-result.png>] [195
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [196
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [197
+
+]
+[198
+
+] [199
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [200
+
+]))
+\openout2 = `seance-8.aux'.
+
+ (./seance-8.tex
+(./java1-presentation-prof.toc) [201
+
+
+
+] (./chapitre-survol-boucle.tex
+<../img/looptheloop.jpg, id=4703, 307.3884pt x 255.354pt>
+File: ../img/looptheloop.jpg Graphic file (type jpg)
+
+<use ../img/looptheloop.jpg>
+Package pdftex.def Info: ../img/looptheloop.jpg used on input line 14.
+(pdftex.def)             Requested size: 364.19536pt x 302.55415pt.
+ [202
+
+ <../img/looptheloop.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [203
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+Overfull \vbox (11.73048pt too high) detected at line 56
+ []
+
+[204
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [205
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[206
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [207
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[208
+
+] [209
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [210
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [211
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [212
+
+]))
+\openout2 = `seance-9.aux'.
+
+
+(./seance-9.tex (./java1-presentation-prof.toc) [213
+
+
+
+]
+(./chapitre-survol-tab.tex [214
+
+]
+<../img/color-bucket-12641657814_c8de7afa1e_k.jpg, id=5028, 616.704pt x 411.035
+63pt>
+File: ../img/color-bucket-12641657814_c8de7afa1e_k.jpg Graphic file (type jpg)
+ <use ../img/color-bucket-12641657814_c8de7afa1e_k.jpg>
+Package pdftex.def Info: ../img/color-bucket-12641657814_c8de7afa1e_k.jpg used 
+on input line 24.
+(pdftex.def)             Requested size: 409.8207pt x 273.14662pt.
+ [215
+
+ <../img/color-bucket-12641657814_c8de7afa1e_k.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/tab-pres.pdf, id=5032, 527.9725pt x 138.5175pt>
+File: ../img/tab-pres.pdf Graphic file (type pdf)
+
+<use ../img/tab-pres.pdf>
+Package pdftex.def Info: ../img/tab-pres.pdf used on input line 6.
+(pdftex.def)             Requested size: 184.79314pt x 48.48184pt.
+) [216
+
+ <../img/tab-pres.pdf>] [217
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [218
+
+] [219
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[220
+
+] [221
+
+] [222
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [223
+
+] [224
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [225
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [226
+
+]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <35.83> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 179.
+
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 179.
+
+<../img/a_bath_in_a_bucket.jpg, id=5240, 803.0pt x 602.25pt>
+File: ../img/a_bath_in_a_bucket.jpg Graphic file (type jpg)
+
+<use ../img/a_bath_in_a_bucket.jpg>
+Package pdftex.def Info: ../img/a_bath_in_a_bucket.jpg used on input line 179.
+(pdftex.def)             Requested size: 364.20155pt x 273.14662pt.
+ [227
+
+ <../img/a_bath_in_a_bucket.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [228
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [229
+
+]
+<../img/plantationmai-2013-bw.jpg, id=5303, 718.685pt x 963.6pt>
+File: ../img/plantationmai-2013-bw.jpg Graphic file (type jpg)
+
+<use ../img/plantationmai-2013-bw.jpg>
+Package pdftex.def Info: ../img/plantationmai-2013-bw.jpg used on input line 22
+8.
+(pdftex.def)             Requested size: 203.71976pt x 273.14662pt.
+ [230
+
+ <../img/plantationmai-2013-bw.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+(./java1-presentation-prof.vrb) [231
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [232
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [233
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [234
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [235
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [236
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [237
+
+] [238
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[239
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [240
+
+]))
+\openout2 = `seance-10.aux'.
+
+ (./seance-10.tex
+(./java1-presentation-prof.toc) [241
+
+
+
+] (./chapitre-var.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 13.
+
+<../img/Phangan__s_bucket__by_tiboudmiss.jpg, id=5618, 216.81pt x 143.8173pt>
+File: ../img/Phangan__s_bucket__by_tiboudmiss.jpg Graphic file (type jpg)
+
+<use ../img/Phangan__s_bucket__by_tiboudmiss.jpg>
+Package pdftex.def Info: ../img/Phangan__s_bucket__by_tiboudmiss.jpg used on in
+put line 13.
+(pdftex.def)             Requested size: 411.79109pt x 273.14662pt.
+ [242
+
+ <../img/Phangan__s_bucket__by_tiboudmiss.jpg>] [243
+
+]
+<../img/java-data-primitive.pdf, id=5649, 166.6225pt x 91.34125pt>
+File: ../img/java-data-primitive.pdf Graphic file (type pdf)
+
+<use ../img/java-data-primitive.pdf>
+Package pdftex.def Info: ../img/java-data-primitive.pdf used on input line 37.
+(pdftex.def)             Requested size: 66.64781pt x 36.53584pt.
+ [244
+
+ <../img/java-data-primitive.pdf>]
+<../img/java-data-reference.pdf, id=5680, 347.2975pt x 91.34125pt>
+File: ../img/java-data-reference.pdf Graphic file (type pdf)
+
+<use ../img/java-data-reference.pdf>
+Package pdftex.def Info: ../img/java-data-reference.pdf used on input line 48.
+(pdftex.def)             Requested size: 138.91653pt x 36.53584pt.
+ [245
+
+ <../img/java-data-reference.pdf>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+LaTeX Font Info:    Try loading font information for T1+phv on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 7.
+) [246
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [247
+
+] [248
+
+] [249
+
+] [250
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [251
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [252
+
+]
+[253
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [254
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[255
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [256
+
+]) (./chapitre-expr.tex
+
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 10.
+
+
+<../img/expression_by_bogdanboev-d5rs94g.jpg, id=5984, 1027.84pt x 661.47125pt>
+File: ../img/expression_by_bogdanboev-d5rs94g.jpg Graphic file (type jpg)
+<use ../img/expression_by_bogdanboev-d5rs94g.jpg>
+Package pdftex.def Info: ../img/expression_by_bogdanboev-d5rs94g.jpg used on in
+put line 10.
+(pdftex.def)             Requested size: 424.42838pt x 273.14662pt.
+ [257
+
+ <../img/expression_by_bogdanboev-d5rs94g.jpg>] [258
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [259
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [260
+
+] [261
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[262
+
+] [263
+
+] [264
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [265
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [266
+
+] [267
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[268
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [269
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[270
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [271
+
+] [272
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [273
+
+] [274
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[275
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [276
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[277
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [278
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/java-logi-egal1.jpg, id=6462, 403.5075pt x 79.29625pt>
+File: ../img/java-logi-egal1.jpg Graphic file (type jpg)
+
+<use ../img/java-logi-egal1.jpg>
+Package pdftex.def Info: ../img/java-logi-egal1.jpg used on input line 5.
+(pdftex.def)             Requested size: 201.75325pt x 39.64801pt.
+) [279
+
+ <../img/java-logi-egal1.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+<../img/java-logi-egal2.jpg, id=6491, 360.34625pt x 211.79124pt>
+File: ../img/java-logi-egal2.jpg Graphic file (type jpg)
+
+<use ../img/java-logi-egal2.jpg>
+Package pdftex.def Info: ../img/java-logi-egal2.jpg used on input line 5.
+(pdftex.def)             Requested size: 180.17268pt x 105.89536pt.
+) [280
+
+ <../img/java-logi-egal2.jpg>] [281
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [282
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [283
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [284
+
+]
+<../img/Trick_of_Nature-croped.jpg, id=6612, 2031.59pt x 1441.385pt>
+File: ../img/Trick_of_Nature-croped.jpg Graphic file (type jpg)
+
+<use ../img/Trick_of_Nature-croped.jpg>
+Package pdftex.def Info: ../img/Trick_of_Nature-croped.jpg used on input line 3
+96.
+(pdftex.def)             Requested size: 384.98312pt x 273.14662pt.
+ [285
+
+ <../img/Trick_of_Nature-croped.jpg>] [286
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [287
+
+]))
+\openout2 = `seance-11.aux'.
+
+ (./seance-11.tex
+(./java1-presentation-prof.toc) [288
+
+
+
+] (./chapitre-conversion.tex
+<../img/newborn-butterfly.jpg, id=6699, 798.985pt x 776.9025pt>
+File: ../img/newborn-butterfly.jpg Graphic file (type jpg)
+
+<use ../img/newborn-butterfly.jpg>
+Package pdftex.def Info: ../img/newborn-butterfly.jpg used on input line 9.
+(pdftex.def)             Requested size: 364.19536pt x 354.13133pt.
+ [289
+
+ <../img/newborn-butterfly.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+<../img/icon_2783_check.png, id=6704, 1204.5pt x 1204.5pt>
+File: ../img/icon_2783_check.png Graphic file (type png)
+
+<use ../img/icon_2783_check.png>
+Package pdftex.def Info: ../img/icon_2783_check.png used on input line 10.
+(pdftex.def)             Requested size: 10.03754pt x 10.03502pt.
+
+<../img/icon_2909_delete.png, id=6705, 1204.5pt x 1204.5pt>
+File: ../img/icon_2909_delete.png Graphic file (type png)
+
+<use ../img/icon_2909_delete.png>
+Package pdftex.def Info: ../img/icon_2909_delete.png used on input line 12.
+(pdftex.def)             Requested size: 10.03754pt x 10.03502pt.
+) [290
+
+ <../img/icon_2783_check.png> <../img/icon_2909_delete.png>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+<../img/icon_66582_group.png, id=6737, 1204.5pt x 1064.97874pt>
+File: ../img/icon_66582_group.png Graphic file (type png)
+
+<use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 3.
+(pdftex.def)             Requested size: 50.18768pt x 44.36316pt.
+
+<../img/icon_14383_map.png, id=6738, 1204.5pt x 1204.5pt>
+File: ../img/icon_14383_map.png Graphic file (type png)
+
+<use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 5.
+(pdftex.def)             Requested size: 50.18768pt x 50.17513pt.
+) [291
+
+ <../img/icon_66582_group.png> <../img/icon_14383_map.png>] (./java1-presentati
+on-prof.toc) [292
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+File: ../img/icon_14383_map.png Graphic file (type png)
+ <use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 30.10507pt.
+) [293
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+File: ../img/icon_66582_group.png Graphic file (type png)
+ <use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 26.61789pt.
+) [294
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [295
+
+] [296
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[297
+
+] (./java1-presentation-prof.toc) [298
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+File: ../img/icon_14383_map.png Graphic file (type png)
+
+<use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 30.10507pt.
+) [299
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+File: ../img/icon_66582_group.png Graphic file (type png)
+
+<use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 26.61789pt.
+) [300
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[301
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [302
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[303
+
+] (./java1-presentation-prof.toc) [304
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+File: ../img/icon_14383_map.png Graphic file (type png)
+
+<use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 30.10507pt.
+) [305
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [306
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb) [307
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [308
+
+]
+(./java1-presentation-prof.toc) [309
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+File: ../img/icon_14383_map.png Graphic file (type png)
+
+<use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 30.10507pt.
+) [310
+
+] (./java1-presentation-prof.toc) [311
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+
+(./java1-presentation-prof.vrb
+File: ../img/icon_14383_map.png Graphic file (type png)
+ <use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 2.
+(pdftex.def)             Requested size: 30.11261pt x 30.10507pt.
+) [312
+
+]
+File: ../img/icon_66582_group.png Graphic file (type png)
+
+<use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 322.
+(pdftex.def)             Requested size: 30.11261pt x 26.61789pt.
+ [313
+
+] [314
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[315
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [316
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb)
+[317
+
+]
+<../img/stop__by_poisongirl_sts-d2nr150.jpg, id=7504, 1204.5pt x 803.0pt>
+File: ../img/stop__by_poisongirl_sts-d2nr150.jpg Graphic file (type jpg)
+
+<use ../img/stop__by_poisongirl_sts-d2nr150.jpg>
+Package pdftex.def Info: ../img/stop__by_poisongirl_sts-d2nr150.jpg used on inp
+ut line 409.
+(pdftex.def)             Requested size: 409.72676pt x 273.14662pt.
+ [318
+
+ <../img/stop__by_poisongirl_sts-d2nr150.jpg>]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb
+Overfull \hbox (14.9481pt too wide) in paragraph at lines 4--19
+ [] 
+ []
+
+) [319
+
+]
+File: ../img/icon_66582_group.png Graphic file (type png)
+ <use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 447.
+(pdftex.def)             Requested size: 40.15015pt x 35.49052pt.
+ [320
+
+]
+File: ../img/icon_14383_map.png Graphic file (type png)
+
+<use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 460.
+(pdftex.def)             Requested size: 40.15015pt x 40.14009pt.
+ [321
+
+]
+\openout4 = `java1-presentation-prof.vrb'.
+
+ (./java1-presentation-prof.vrb) [322
+
+]))
+File: ../img/icon_15449.png Graphic file (type png)
+
+<use ../img/icon_15449.png>
+Package pdftex.def Info: ../img/icon_15449.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_53620.png Graphic file (type png)
+ <use ../img/icon_53620.png>
+Package pdftex.def Info: ../img/icon_53620.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_39938_transwhite.png Graphic file (type png)
+
+<use ../img/icon_39938_transwhite.png>
+Package pdftex.def Info: ../img/icon_39938_transwhite.png used on input line 92
+.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_2783_check.png Graphic file (type png)
+ <use ../img/icon_2783_check.png>
+Package pdftex.def Info: ../img/icon_2783_check.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_2909_delete.png Graphic file (type png)
+
+<use ../img/icon_2909_delete.png>
+Package pdftex.def Info: ../img/icon_2909_delete.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_14383_map.png Graphic file (type png)
+ <use ../img/icon_14383_map.png>
+Package pdftex.def Info: ../img/icon_14383_map.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 5.0175pt.
+File: ../img/icon_66582_group.png Graphic file (type png)
+
+<use ../img/icon_66582_group.png>
+Package pdftex.def Info: ../img/icon_66582_group.png used on input line 92.
+(pdftex.def)             Requested size: 5.01877pt x 4.43631pt.
+
+<../img/cc-by-nc-sa-80x15.png, id=7634, 80.3pt x 15.05624pt>
+File: ../img/cc-by-nc-sa-80x15.png Graphic file (type png)
+
+<use ../img/cc-by-nc-sa-80x15.png>
+Package pdftex.def Info: ../img/cc-by-nc-sa-80x15.png used on input line 92.
+(pdftex.def)             Requested size: 80.3003pt x 15.05666pt.
+ [323
+
+
+ <../img/cc-by-nc-sa-80x15.png>]
+\tf@nav=\write7
+\openout7 = `java1-presentation-prof.nav'.
+
+\tf@toc=\write8
+\openout8 = `java1-presentation-prof.toc'.
+
+\tf@snm=\write9
+\openout9 = `java1-presentation-prof.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 94.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 94.
+
+(./java1-presentation-prof.aux (./toc.aux) (./seance-1.aux) (./seance-2.aux)
+(./seance-3.aux) (./seance-4.aux) (./seance-5.aux) (./seance-6.aux)
+(./seance-7.aux) (./seance-8.aux) (./seance-9.aux) (./seance-10.aux)
+(./seance-11.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 94.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 94.
+
+
+Package rerunfilecheck Warning: File `java1-presentation-prof.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `java1-presentation-prof.out':
+(rerunfilecheck)             Before: 726B9F2630CEBDE087CB0681E213064E;4614
+(rerunfilecheck)             After:  3696C74A272029928DC204AC61FF1C12;4567.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 94.
+ ) ) 
+Here is how much of TeX's memory you used:
+ 22024 strings out of 493304
+ 387808 string characters out of 6139871
+ 508348 words of memory out of 5000000
+ 23800 multiletter control sequences out of 15000+600000
+ 55183 words of font info for 113 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 50i,17n,67p,440b,1449s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Navigation314} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation296} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation286} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation274} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation272} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation264} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation261} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation250} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation249} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation238} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation221} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation217} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation199} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation190} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation184} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation182} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation177} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation175} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation172} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation168} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation132} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation129} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation105} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation114} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation87} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation86} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation84} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation32} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation19} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation15} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation17} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation27} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/
+texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lci
+rcle1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1440.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1
+200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1440.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfsi2074.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfso1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso14
+40.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso2074.pfb></usr/share/t
+exmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss090
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1728
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2074.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfss2986.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfss3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0600.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfsx2074.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2986.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfsx3583.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sftt2074.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sftt2986.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on java1-presentation-prof.pdf (323 pages, 16888909 bytes).
+PDF statistics:
+ 7942 PDF objects out of 8907 (max. 8388607)
+ 7322 compressed objects within 74 object streams
+ 616 named destinations out of 1000 (max. 500000)
+ 942 words of extra memory for PDF output out of 10000 (max. 10000000)
+

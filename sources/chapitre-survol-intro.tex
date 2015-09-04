@@ -1,0 +1,107 @@
+% === Cours de Java
+% === Chapitre : Survol 
+
+%\subsection{Algorithmes séquentiels (survol)}
+\subsection{Structure générale d'un programme}
+
+\imgfullw{../img/Life_in_a_frame_by_michaelpaleodimos.jpg}
+{}
+{http://michaelpaleodimos.deviantart.com/art/Life-in-a-frame-39596992}
+
+\begin{frame}[fragile]{Structure générale du programme}
+	\texttt{\small\$cat NomClasse.java}
+\begin{Java}
+  public class NomClasse {
+    // insert code here
+  }
+\end{Java}
+\bigskip
+\bigskip
+\emph{Attention} \sigle{Java} est sensible à la casse 
+\end{frame}
+
+\begin{frame}[fragile]{La méthode principale}
+	\texttt{\small\$cat NomClasse.java}
+\begin{Java}
+  public class NomClasse {
+    public static void main(String[] args) {
+      // insert code here     
+    }
+  }
+\end{Java}
+\emph{Exemple}
+\begin{Java}
+  public class NomClasse {
+    public static void main(String[] args) {
+      System.out.println("Bonjour !");     
+    }
+  }
+\end{Java}
+\end{frame}
+
+
+\subsection{Commentaires}
+
+\begin{frame}[fragile]{Le commentaire}
+Plusieurs manières d'ajouter un commentaire 
+  \begin{Java}
+  // Commentaire sur une ligne
+  /* Commentaire sur
+     plusieurs lignes */
+  \end{Java}
+\end{frame}
+
+\subsection{Exemples}
+
+\begin{frame}[fragile]{La méthode principale}
+\emph{Exemples}
+\begin{Java}
+  public class Exercice1 {
+    public static void main(String[] args) {
+      System.out.println(3 + 4);     // Affiche la valeur 7
+    }
+  }
+\end{Java}
+
+\begin{Java}
+  public class Exercice2 {
+    public static void main(String[] args) {
+      System.out.println("3 + 4");	// Affiche la chaine 3 + 4
+    }
+  }
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Math.random()}
+\begin{Java}
+  public class Exercice3 {
+    public static void main(String[] args) {
+    	  // Affiche un nombre réel au hasard entre 0 inclus et 1 exclu
+      System.out.println(Math.random()); 
+    }
+  }
+\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{Math.random()}
+\begin{Java}
+  public class Exercice4 {
+    public static void main(String[] args) {
+      // Affiche un nombre réel au hasard entre 0 inclus et 10
+      System.out.println(Math.random()*10);
+    }
+  }
+\end{Java}
+
+\begin{Java}
+  public class Exercice5 {
+    public static void main(String[] args) {
+      // Affiche un nombre réel au hasard entre 1 inclus et 11 exclu
+      System.out.println(Math.random()*10 + 1);
+    }
+  }
+\end{Java}
+
+\end{frame}
+
+

@@ -1,0 +1,67 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Objectifs, \'evaluations et introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Objectifs}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Moyens}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{\'Evaluations}{8}{0}{1}
+\beamer@subsectionintoc {1}{4}{Concepts}{10}{0}{1}
+\beamer@subsectionintoc {1}{5}{Traduction}{14}{0}{1}
+\beamer@sectionintoc {2}{D\'evelopper en {\ttfamilyFB \bfseries Java}, premier survol}{22}{0}{2}
+\beamer@subsectionintoc {2}{1}{La machine virtuelle}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Les outils de d\'eveloppement}{27}{0}{2}
+\beamer@subsectionintoc {2}{3}{Algorithmes s\'equentiels (survol)}{32}{0}{2}
+\beamer@subsectionintoc {2}{4}{Structure g\'en\'erale d'un programme}{32}{0}{2}
+\beamer@subsectionintoc {2}{5}{Constantes}{41}{0}{2}
+\beamer@subsectionintoc {2}{6}{Conventions}{42}{0}{2}
+\beamer@subsectionintoc {2}{7}{Conventions de noms}{43}{0}{2}
+\beamer@subsectionintoc {2}{8}{Commentaires}{44}{0}{2}
+\beamer@sectionintoc {3}{La gestion des erreurs et le survol des alternatives}{45}{0}{3}
+\beamer@subsectionintoc {3}{1}{L'erreur est humaine}{46}{0}{3}
+\beamer@subsectionintoc {3}{2}{Alternatives (survol)}{53}{0}{3}
+\beamer@sectionintoc {4}{Lisibilit\'e et notions de modules}{63}{0}{4}
+\beamer@subsectionintoc {4}{1}{\'Ecrire du code lisible}{64}{0}{4}
+\beamer@subsectionintoc {4}{2}{\'Ecrire du code illisible}{71}{0}{4}
+\beamer@subsectionintoc {4}{3}{Refactorisation}{74}{0}{4}
+\beamer@subsectionintoc {4}{4}{Code modulaire (survol)}{75}{0}{4}
+\beamer@sectionintoc {5}{Notion de package et survol des structures r\'ep\'etitives}{94}{0}{5}
+\beamer@subsectionintoc {5}{1}{Organiser le code}{95}{0}{5}
+\beamer@subsectionintoc {5}{2}{Les boucles (survol)}{106}{0}{5}
+\beamer@sectionintoc {6}{La gestion des erreurs et les types et les litt\'eraux}{117}{0}{6}
+\beamer@subsectionintoc {6}{1}{\'Ecrire du code robuste}{118}{0}{6}
+\beamer@subsectionintoc {6}{2}{G\'erer les erreurs}{120}{0}{6}
+\beamer@subsectionintoc {6}{3}{Confiner les probl\`emes}{126}{0}{6}
+\beamer@subsectionintoc {6}{4}{Les types et les litt\'eraux}{132}{0}{6}
+\beamer@subsectionintoc {6}{5}{Les types entiers}{135}{0}{6}
+\beamer@subsectionintoc {6}{6}{Les types flottants}{145}{0}{6}
+\beamer@subsectionintoc {6}{7}{Les bool\'eens}{148}{0}{6}
+\beamer@subsectionintoc {6}{8}{La chaine de caract\`eres}{150}{0}{6}
+\beamer@sectionintoc {7}{La javadoc}{152}{0}{7}
+\beamer@subsectionintoc {7}{1}{La documentation Java}{153}{0}{7}
+\beamer@subsectionintoc {7}{2}{javadoc}{157}{0}{7}
+\beamer@subsectionintoc {7}{3}{Les tags}{159}{0}{7}
+\beamer@subsectionintoc {7}{4}{\'Etude de cas}{167}{0}{7}
+\beamer@sectionintoc {8}{Tester son code}{168}{0}{8}
+\beamer@subsectionintoc {8}{1}{Pr\'esentation}{169}{0}{8}
+\beamer@subsectionintoc {8}{2}{Les tests}{174}{0}{8}
+\beamer@subsectionintoc {8}{3}{Plan de tests}{176}{0}{8}
+\beamer@subsectionintoc {8}{4}{JUnit}{181}{0}{8}
+\beamer@subsectionintoc {8}{5}{Conclusion}{195}{0}{8}
+\beamer@sectionintoc {9}{Le survol des tableaux}{197}{0}{9}
+\beamer@subsectionintoc {9}{1}{Les tableaux (survol)}{198}{0}{9}
+\beamer@subsectionintoc {9}{2}{Erreurs fr\'equentes}{221}{0}{9}
+\beamer@sectionintoc {10}{Les variables locales et les expressions}{222}{0}{10}
+\beamer@subsectionintoc {10}{1}{Allocation m\'emoire}{225}{0}{10}
+\beamer@subsectionintoc {10}{2}{D\'eclaration}{227}{0}{10}
+\beamer@subsectionintoc {10}{3}{Conventions sur les noms}{229}{0}{10}
+\beamer@subsectionintoc {10}{4}{Valeur initiale}{230}{0}{10}
+\beamer@subsectionintoc {10}{5}{Le concept de <<port\'ee>>}{232}{0}{10}
+\beamer@subsectionintoc {10}{6}{Constantes}{234}{0}{10}
+\beamer@subsectionintoc {10}{7}{Les expressions}{236}{0}{10}
+\beamer@sectionintoc {11}{Les conversions}{262}{0}{11}
+\beamer@subsectionintoc {11}{1}{Pr\'esentation}{264}{0}{11}
+\beamer@subsectionintoc {11}{2}{Dans les expressions}{266}{0}{11}
+\beamer@subsectionintoc {11}{3}{Lors d'une assignation (et d'un return)}{271}{0}{11}
+\beamer@subsectionintoc {11}{4}{Lors d'un appel de m\'ethode}{277}{0}{11}
+\beamer@subsectionintoc {11}{5}{Avec les chaines de caract\`eres}{282}{0}{11}
+\beamer@subsectionintoc {11}{6}{Le casting}{284}{0}{11}
+\beamer@subsectionintoc {11}{7}{R\'ecapitulatif}{292}{0}{11}
