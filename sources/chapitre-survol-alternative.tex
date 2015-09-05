@@ -78,14 +78,14 @@ Comment traduire cet algorithme ?
 \begin{Code}
 Algorithme test (nombre1 : entier) -> chaine
 	chaineAfficher : chaine
-	chaineAfficher -> nombre1, "est "    
+	chaineAfficher <- nombre1, "est "    
     Si nombre1 > 0 Alors
-        chaineAfficher -> chaineAfficher + "positif"
+        chaineAfficher <- chaineAfficher + "positif"
     Sinon
         Si nombre1 = 0 Alors
-            chaineAfficher -> chaineAfficher + "nul"
+            chaineAfficher <- chaineAfficher + "nul"
         Sinon
-            chaineAfficher -> chaineAfficher + "négatif"
+            chaineAfficher <- chaineAfficher + "négatif"
         Fin Si
     Fin Si
     Retourner chaineAfficher
