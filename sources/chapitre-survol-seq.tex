@@ -14,11 +14,32 @@
 \begin{Java}
   public class NomClasse {
     public static void main(String[] args) {
-      // insert code here     
+      // les instructions viennent ici     
     }
   }
 \end{Java}
+\end{frame}
 
+
+\begin{frame}[fragile]{Méthode}
+	On peut utiliser (appeler) d'autres méthodes
+	\\(cf. \textit{algorithme} au cours d'algorithmique)
+	\medskip
+	\begin{center}
+	\includegraphics[scale=.6]{../img/methode}
+	\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]{Définition d'une méthode}
+	\textbf{Syntaxe}
+	\bigskip
+\begin{Java}
+public static <typeRetour> nomMéthode ([typeDonnée1 nomDonnée1,...]) { 
+    // instructions
+    return <résultat>;  
+}
+\end{Java}
 \end{frame}
 
 
@@ -33,10 +54,6 @@ Chaine & \java|char|, \java|String| \\
 Booléen & \java|boolean| \\  
 \end{tabular} 
 \end{center}
-Exemple de déclaration
-\begin{Java}
-   int nb1;
-\end{Java}
 \end{frame}
 
 \begin{frame}[fragile]{Les calculs}
@@ -47,27 +64,6 @@ Opérateurs :
 \end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Méthode}
-	Une méthode est l'équivalent de votre \textit{algorithme} 
-	au cours d'algorithmique
-	\begin{center}
-	\includegraphics[scale=.6]{../img/methode}
-	\end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Définition d'une méthode}
-	\textbf{Syntaxe}
-	\bigskip
-\begin{Java}
-public static <typeRetour> nomMéthode ([typeDonnée1 nomDonnée1, 
-		typeDonnée2 nomDonnée2, ...]) { 
-    // instructions
-    return <résultat>;  
-}
-\end{Java}
-\bigskip
-Si la méthode ne retourne rien \texttt{void}
-\end{frame}
 
 \begin{frame}[fragile]{Définition d'une méthode}
 	\emph{Exemple} : la moyenne de 2 réels
@@ -87,13 +83,19 @@ public static double moyenne ( double nb1, double nb2 ) {
 	\begin{itemize}
 		\item Appel possible (si dans la même classe)
 \begin{Java}
-  double cote = moyenne(34345, -3213213);
+  System.out.println( moyenne(34345, -3213213) );
 \end{Java}
 	\end{itemize}
 	
 \end{frame}
 
 \begin{frame}[fragile]{Définition d'une méthode}
+Si la méthode ne retourne rien 
+\begin{itemize}
+\item typeRetour : \texttt{void}
+\item pas de \java|return|
+\end{itemize}
+
 \emph{Exemple} :
 \begin{Java}
 public static void présenter (String nomPgm) {
@@ -123,11 +125,8 @@ public static void présenter (String nomPgm) {
     }
     
     public static void main(String[] args) {
-      double moyenne;
-
-	  présenter("qui calcule la moyenne de 2 nombres");
-      moyenne = moyenne(34345, -3213213);    
-      System.out.println(moyenne); 
+      présenter("qui calcule la moyenne de 2 nombres");
+      System.out.println( moyenne(34345, -3213213) ); 
     }
   }
 \end{Java}
@@ -151,15 +150,41 @@ public static void présenter (String nomPgm) {
 %\end{Java}
 %\end{frame}
 
-\begin{frame}[fragile]{L'assignation}
-	L'assignation se fait via le symbole 
-	\begin{center}
-		\huge\java|=|
-	\end{center}
+\begin{frame}[fragile]{Variable}
+	On peut stocker une valeur, le résultat d'un calcul dans une \emph{variable}
+	
+	\bigskip
+	
+	\emph{Déclaration}\\
+\begin{Java}
+   typeVariable nomVariable;
+\end{Java}
+
+	\begin{itemize}
+	\item Exemples :
+\begin{Java}
+   int nb1;
+   String nom;
+\end{Java}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Variable}
+	\emph{Assignation}\\
+	Via le symbole \java|=|
+	\begin{itemize}
+	\item Exemples :
 \begin{Java}
    nb1 = 1;
+   nb1 = 3+4;
+   nom = "Java";
+   moyenne = (nombre1 + nombre2) / 2.0;
+   dé = Math.random() * 6 + 1
 \end{Java}
+	\end{itemize}
 \end{frame}
+
 
 \begin{frame}[fragile]{Définition d'une méthode}
 \emph{Exemple} : Calculer la vitesse (en km/h) d'un véhicule dont on donne la
@@ -167,7 +192,7 @@ durée du parcours (en secondes) et la distance parcourue (en mètres).
 \begin{Java}
 public static double vitesseKMH ( double distanceM, double duréeS ) {  
     double distanceKM;
-    doouble duréeH;
+    double duréeH;
     distanceKM = distanceM/1000;
     duréeH = duréeS/3600;
     return distanceKM/duréeH;
