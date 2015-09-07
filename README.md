@@ -1,16 +1,18 @@
 # HEB-ÉSI DEV1-JAV – Développement, langage Java
 
-Slides et matériel pour le cours de langage Java du premier quadrimestre en BAC1 à l'ÉSI, [HEB-ÉSI](http://www.heb.be/esi)
+Slides et matériel pour le cours de langage Java du premier quadrimestre en
+BAC1 à l'ÉSI, [HEB-ÉSI](http://www.heb.be/esi)
 
+**Version 2015-2016**
 
-**Avertissement. Ces slides sont en construction**
+*Avertissement. Ces slides sont en construction*
 
 
 ## Contribuer
 
 Avant de contribuer, on peut simplement dire merci si l'on utilise les slides.
 Il est relativement facile également d'ouvrir une *issue* pour signaler une
-erreur de typo ou une source flagrante d'incompréhension … ou tout autre « *bug* ». 
+erreur de typo ou une source flagrante d'incompréhension… ou tout autre « *bug* ». 
 
 
 ### Structure  
@@ -30,7 +32,8 @@ structure des  fichiers LaTeX:
 
 * Les images sont dans le dossier *img*
 
-Pour contribuer à une leçon, il vous suffit d'éditer le fichier `chapitre*.tex` correspondant
+Pour contribuer à une leçon, il vous suffit d'éditer le fichier
+`chapitre*.tex` correspondant
 
 
 ### Dépendances  
@@ -50,7 +53,7 @@ Les slides sont créés via un *Makefile*
 
 * `make clean` : efface les fichiers temporaires et les PDF
 * `make chapter` (défaut) : crée les PDF pour chaque leçon (un répertoire
-  "build" doit exister, le créer si necessaire)
+  "build" doit exister, le créer si nécessaire)
 * `make all` : crée en plus le PDF complet en couleur et en N/B pour l'impression
 
 
@@ -69,7 +72,7 @@ Les couleurs utilisées dans les slides sont définies chez
 ##Contacts  
 Marco Codutti <mcodutti@heb.be>  
 Pierre Bettens <pbettens@heb.be>
-
+Catherien Leruste <cleruste@heb.be>
 
 
 [![CC](img/cc-by-nc-sa-80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
