@@ -1,12 +1,16 @@
 % === Cours de Java
 % === Chapitre : Survol 
 
-%\subsection{Algorithmes séquentiels (survol)}
 \subsection{Structure générale d'un programme}
 
 \imgfullw{../img/Life_in_a_frame_by_michaelpaleodimos.jpg}
 {}
 {http://michaelpaleodimos.deviantart.com/art/Life-in-a-frame-39596992}
+
+\note{
+	L'image représente le cadre dans lequel on joue. 
+	Le cadre pour le programme de base. 
+}
 
 \begin{frame}[fragile]{Structure générale du programme}
 	\texttt{\small\$cat NomClasse.java}
@@ -65,8 +69,9 @@ Plusieurs manières d'ajouter un commentaire
 
 \begin{Java}
   public class Exercice2 {
+  	  /* Affiche la chaine 3 + 4 */
     public static void main(String[] args) {
-      System.out.println("3 + 4");	// Affiche la chaine 3 + 4
+      System.out.println("3 + 4");
     }
   }
 \end{Java}
@@ -76,7 +81,10 @@ Plusieurs manières d'ajouter un commentaire
 \begin{Java}
   public class Exercice3 {
     public static void main(String[] args) {
-    	  // Affiche un nombre réel au hasard entre 0 inclus et 1 exclu
+      /* 
+       * Affiche un nombre réel au hasard entre 0 inclus 
+       * et 1 exclu
+       */
       System.out.println(Math.random()); 
     }
   }
