@@ -34,7 +34,9 @@ Si la méthode ne retourne rien
 \item typeRetour : \texttt{void}
 \item pas de \java|return|
 \end{itemize}
+\end{frame}
 
+\begin{frame}[fragile]{Définition d'une méthode}
 \emph{Exemple} :
 \begin{Java}
 public static void présenter (String nomPgm) {
@@ -71,63 +73,15 @@ public static void présenter (String nomPgm) {
 \end{Java}
 \end{frame}
 
-%\begin{frame}[fragile]{Exemple}
-	%\texttt{\small\$cat Moyenne.java}
-%\begin{Java}
-  %public class Moyenne {
-    %public static void main(String[] args) {
-
-      %int nombre1 = 34345;
-      %int nombre2 = -321321;
-      %double moyenne;
-
-      %// division réelle car un des 2 opérandes est réel
-      %moyenne = (nombre1 + nombre2) / 2.0;    
-      %System.out.println("La moyenne est " + moyenne); 
-    %}
-  %}
-%\end{Java}
-%\end{frame}
-
-\begin{frame}[fragile]{Variable}
-	On peut stocker une valeur, le résultat d'un calcul dans une \emph{variable}
-	
-	\bigskip
-	
-	\emph{Déclaration}\\
-\begin{Java}
-   typeVariable nomVariable;
-\end{Java}
-
-	\begin{itemize}
-	\item Exemples :
-\begin{Java}
-   int nb1;
-   String nom;
-\end{Java}
-	\end{itemize}
-\end{frame}
-
-
-\begin{frame}[fragile]{Variable}
-	\emph{Assignation}\\
-	Via le symbole \java|=|
-	\begin{itemize}
-	\item Exemples :
-\begin{Java}
-   nb1 = 1;
-   nb1 = 3+4;
-   nom = "Java";
-   moyenne = (nombre1 + nombre2) / 2.0;
-   dé = Math.random() * 6 + 1
-\end{Java}
-	\end{itemize}
-\end{frame}
+\full[bluepigment]{
+		\color{white}
+		\textbf{Exemple}\\
+		Calculer la vitesse (en km/h) d'un véhicule dont ont donne la durée du
+		parcours (en secondes) et la distance parcourue (en mètres).
+}
 
 
 \begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} : Calculer la vitesse (en km/h) d'un véhicule dont on donne la
-durée du parcours (en secondes) et la distance parcourue (en mètres).
 \begin{Java}
 public static double vitesseKMH ( double distanceM, double duréeS ) {  
     double distanceKM;
@@ -150,6 +104,7 @@ public static double vitesseKMH ( double distanceM, double duréeS ) {
 
 \begin{frame}[fragile]{Lire au clavier}
 	\par\textit{Les applications modernes préfèrent les lectures dans des champs de saisies.}
+	\bigskip
 	\par Dans une console, voici une manière de faire
 	\medskip
 	\par\emph{Exemple}
@@ -256,3 +211,20 @@ Pour une constante :
 Dans tous les cas : être explicite
 \end{frame}
 
+\full[bluepigment]{
+	\begin{center}
+		\Large\color{white}\textbf{Commentaire d'une méthode}
+	\end{center}
+}
+
+\note{
+	Le slide suivant est là pour donner l'envie de venir à la séance suivante
+	où l'on parle de la javadoc. 
+}
+
+\begin{frame}[fragile]{Commentaire d'une méthode}
+	Documentation de \java{Math.abs}
+	\begin{flushright}
+	\includegraphics[width=0.91\textwidth]{../img/screenshot-jdk8-javadoc-abs.png}
+	\end{flushright}
+\end{frame}

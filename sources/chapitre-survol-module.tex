@@ -24,6 +24,41 @@ Opérateurs :
 \end{center}
 \end{frame}
 
+\begin{frame}[fragile]{Variable}
+	On peut stocker une valeur, le résultat d'un calcul dans une \emph{variable}
+	
+	\bigskip
+	
+	\emph{Déclaration}\\
+\begin{Java}
+   typeVariable nomVariable;
+\end{Java}
+
+	\begin{itemize}
+	\item Exemples :
+\begin{Java}
+   int nb1;
+   String nom;
+\end{Java}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Variable}
+	\emph{Assignation}\\
+	Via le symbole \java|=|
+	\begin{itemize}
+	\item Exemples :
+\begin{Java}
+   nb1 = 1;
+   nb1 = 3+4;
+   nom = "Java";
+   moyenne = (nombre1 + nombre2) / 2.0;
+   dé = Math.random() * 6 + 1
+\end{Java}
+	\end{itemize}
+\end{frame}
+
 
 \imgfullh{../img/cut_and_fold_by_alltelleringet-d5jmcpu.jpg}
 	{
@@ -111,162 +146,6 @@ int absolu = Math.abs(nb);
 \end{Java}
 \end{frame}
 
-\begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} : la moyenne de 2 réels
-\begin{Java}
-public static double moyenne ( double nb1, double nb2 ) {  
-    double moyenne = (nb1 + nb2) / 2.0;
-    return moyenne;
-}
-\end{Java}
-\begin{itemize}
-\item Appel possible (si dans la même classe)
-\begin{Java}
-  double cote = moyenne(12.5, 17.5);
-\end{Java}
-\end{itemize}
-\end{frame}
 
-\begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} : la valeur absolue
-\begin{Java}
-public static int absolu ( int nb ) {  
-    int abs;
-    if (nb<0) {
-        abs = -nb;
-    } else {
-        abs = nb;
-    }
-    return abs;
-}
-\end{Java}
-\begin{itemize}
-\item Exemples d'appels dans la même classe
-\begin{Java}
-   int résultat = absolu(4);
-   int écart = -10;
-   int écartAbsolu = absolu(écart);
-\end{Java}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} :
-\begin{Java}
-public static void présenter (String nomPgm) {
-   System.out.println("Programme "+nomPgm);
-} 
-\end{Java}
-\begin{itemize}
-\item Exemple d'appel dans la même classe
-\begin{Java}
-   présenter("moyenne de 2 nombres");
-\end{Java}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Définition d'une méthode}
-\emph{Exemple} :
-\begin{Java}
-public static int lireEntier () {
-    Scanner clavier = new Scanner(System.in);
-    int nb;
-    System.out.println("Entrez un nombre entier!");
-    nb = clavier.nextInt();
-    return nb;
-}
-\end{Java}
-\begin{itemize}
-\item Exemple d'appel dans la même classe
-\begin{Java}
-   int nb = lireEntier();
-\end{Java}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Commentaire d'une méthode}
-	Documentation de \java{Math.abs}
-	\begin{flushright}
-	\includegraphics[width=0.91\textwidth]{../img/screenshot-jdk8-javadoc-abs.png}
-	\end{flushright}
-\end{frame}
-
-\begin{frame}[fragile]{Commentaire d'une méthode}
-Il est essentiel de commenter chaque méthode.
-\medskip
-\emph{Exemple} : la valeur absolue
-\begin{Java}
-/**
- * Calcul de la valeur absolue.
- * @param nb le nombre dont on veut la valeur absolue.
- * @return la valeur absolue de <code>nb</code>
- */
-public static int absolu ( int nb ) {  
-...
-}
-\end{Java}
-\end{frame}
-
-
-\begin{frame}[fragile]{Un exemple complet}
-\begin{Java}[basicstyle=\scriptsize]
-import java.util.Scanner;
-
-public class MaxEntiers { 
-
-  /**
-   * Donne le maximum de 2 nombres.
-   * @param nb1 le premier nombre.
-   * @param nb2 le deuxième nombre.
-   * @return la valeur la plus grande entre <code>nb1</code> et <code>nb2</code>
-   */
-  public static int max ( int nb1, int nb2 ) { 
-       int max=0; 
-       if (nb1 > nb2) {
-           max = nb1;
-       } else {
-           max = nb2;
-       }
-       return max;
-  }
-\end{Java}
-\begin{flushright}
-{\tiny (\dots)}
-\end{flushright}
-\end{frame}
-
-\begin{frame}[fragile]{Un exemple complet}
-\begin{Java}[basicstyle=\scriptsize]
-  /**
-   * Lit un nombre entier. 
-   * Le nombre est lu sur l'entrée standard (le clavier).
-   * @return le nombre entier lu.
-   */
-  public static int lireEntier () {
-      Scanner clavier = new Scanner(System.in);
-      System.out.println("Entrez un nombre entier!");
-      return clavier.nextInt();
-  }
- 
-  /**
-   * Affiche le maximum de 2 nombres entrés au clavier.
-   * @param args pas utilisé.
-   */
-  public static void main ( String[] args ) { 
-      int max;  // Le max des nombres lus
-      int nb1, nb2; // Chacun des nombres lus
-      nb1 = lireEntier();
-      nb2 = lireEntier();
-      max = max(nb1,nb2);
-      System.out.println("max = " + max);
-  }
-}
-\end{Java}
-\end{frame}
-
-\note{
-	On n'insiste pas et on explique pas maintenant le passage de paramètres. On 
-	y reviendra après la séance 6. 
-}
 
 
