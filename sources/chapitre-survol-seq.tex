@@ -2,46 +2,6 @@
 % === Chapitre : Survol 
 
 \subsection{Algorithmes séquentiels (survol)}
-%\subsection{Structure générale d'un programme}
-
-\imgfullw{../img/Life_in_a_frame_by_michaelpaleodimos.jpg}
-{}
-{http://michaelpaleodimos.deviantart.com/art/Life-in-a-frame-39596992}
-
-
-\begin{frame}[fragile]{La méthode principale}
-	\texttt{\small\$cat NomClasse.java}
-\begin{Java}
-  public class NomClasse {
-    public static void main(String[] args) {
-      // les instructions viennent ici     
-    }
-  }
-\end{Java}
-\end{frame}
-
-
-\begin{frame}[fragile]{Méthode}
-	On peut utiliser (appeler) d'autres méthodes
-	\\(cf. \textit{algorithme} au cours d'algorithmique)
-	\medskip
-	\begin{center}
-	\includegraphics[scale=.6]{../img/methode}
-	\end{center}
-\end{frame}
-
-
-\begin{frame}[fragile]{Définition d'une méthode}
-	\textbf{Syntaxe}
-	\bigskip
-\begin{Java}
-public static <typeRetour> nomMéthode ([typeDonnée1 nomDonnée1,...]) { 
-    // instructions
-    return <résultat>;  
-}
-\end{Java}
-\end{frame}
-
 
 \begin{frame}[fragile]{Les variables}
 Les types disponibles
@@ -69,11 +29,12 @@ Opérateurs :
 	\emph{Exemple} : la moyenne de 2 réels
 
 \begin{Java}
-// Méthode qui calcule la moyenne de 2 nombres
-// Données : 
-// 	nb1 : le premier nombre (un réel)
-// 	nb2 : le second nombre (un réel)
-// Résultat : un réel qui représente la moyenne des 2 nombres
+/* Méthode qui calcule la moyenne de 2 nombres
+ * Données : 
+ * 	nb1 : le premier nombre (un réel)
+ * 	nb2 : le second nombre (un réel)
+ * Résultat : un réel qui représente la moyenne des 2 nombres
+ */
 
 public static double moyenne ( double nb1, double nb2 ) {  
     return (nb1 + nb2) / 2.0;
@@ -300,7 +261,6 @@ public static int lireEntier () {
 {\vspace{19mm}\LARGE\bf\color{brickred} Conventions d'écriture}
 {http://nanfe.deviantart.com/art/people-think-theyre-different-201534678}
 
-\subsection{Conventions de noms}
 
 \begin{frame}[fragile]{Conventions de noms}
 Pour une variable :

@@ -1,7 +1,7 @@
 % === Cours de Java
 % === Chapitre : Survol 
 
-\subsection{Code modulaire (survol)}
+\subsection{Code modulaire (premier survol)}
 
 \imgfullh{../img/cut_and_fold_by_alltelleringet-d5jmcpu.jpg}
 	{
@@ -13,29 +13,17 @@
 		}
 	{http://alltelleringet.deviantart.com/art/Cut-and-Fold-335286498}
 
-\begin{frame}{Découper du code}
-\emph{Pourquoi ?}
-\begin{itemize}
-\item Pour le réutiliser 
-\item Pour scinder la difficulté
-\item Pour faciliter le déverminage
-\item Pour accroitre la lisibilité
-\item Pour diviser le travail
-\end{itemize} 
-\end{frame}
+\note{
+	Expliquer pourquoi découper le code. Algo a une volonté d'expliquer que ce 
+    découpage soit \textbf{naturel}. Évitons donc d'écrire des règles. 
 
-\begin{frame}{Découper du code}
-\emph{Comment ?}
-\begin{itemize}
-\item $\exists$ un \emph{nom qui décrit tout ce qu'il fait}
-\item Il résout un \emph{sous-problème} bien précis
-\item Il est \emph{fortement documenté}
-\item Il est le plus \emph{général possible}
-\item Il tient sur une page
-\end{itemize} 
-\medskip
-En \sigle{Java} on dit \emph{méthode} et pas \emph{module}
-\end{frame}
+    L'idée c'est: réutilisabilité, scinder la difficulté, déverminer, lisibilité,
+    répartition du travail.
+
+    On aime qu'une méthode porte un nom explicite, résolve un problème précis et 
+    clairement défini, qu'elle soit documentée, etc.
+	}
+
 
 \full[bluepigment]{
 	\begin{center}
@@ -254,24 +242,9 @@ public class MaxEntiers {
 \end{Java}
 \end{frame}
 
-\imgfullh{../img/Containers_by_g4mbit.jpg}
-{
-	\vspace{4cm}
-	\Large\bf\color{white} Passage de paramètres
-	\vspace{-4cm}
+\note{
+	On n'insiste pas et on explique pas maintenant le passage de paramètres. On 
+	y reviendra après la séance 6. 
 }
-{http://g4mbit.deviantart.com/art/Containers-139196962}
 
-\begin{frame}{Passage de paramètres}
-En algorithmique 3 passages de paramètres :
-  \begin{itemize}
-  \item en entrée, en sortie, en entrée-sortie
-  \end{itemize} 
-\par\bigskip
-En Java, uniquement \emph{par valeur}
-  \begin{itemize}
-  \item = la valeur est copiée dans le paramètre
-  \item $\simeq$ paramètre en entrée
-  \end{itemize} 
-\end{frame}
 
