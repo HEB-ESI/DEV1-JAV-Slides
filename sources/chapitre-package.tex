@@ -76,7 +76,6 @@ On peut y lire le nom du package
 et la description de la méthode
 \begin{center}
 \includegraphics[scale=.6]{../img/api-methode}
-\\{\small \textit{On verra comment produire une \emph{javadoc} similaire pour son code}}
 \end{center}
 \end{frame}
 
@@ -91,9 +90,9 @@ et la description de la méthode
 	Commande: \java|package <nom du paquet>|
 	\bigskip
 \begin{Java}
-package be.heb.esi.java1;
-public class Test { 
-  // Nom complet : be.heb.esi.java1.Test
+package mon.paquet;
+public class NomClasse { 
+  // Nom complet : mon.paquet.NomClasse
 }
 \end{Java}
 \end{frame}
@@ -113,10 +112,20 @@ Qu'est-ce qui va changer en pratique ?
 \bigskip
 Cela a une incidence sur l'endroit où placer le \emph{bytecode}
 
-\note[item]{En profiter pour insister sur la différence entre des appels de méthodes dans la même classe, dans des classes différentes de même package, de packages différents.}
+\note[item]{En profiter pour insister sur la différence entre des appels de méthodes dans la même classe, dans des classes différentes de même package, de packages différents.} 
 \end{frame}
 
-\imgfullh{../img/api}
+\full[bluepigment]{
+	\color{azuremist}
+	Par convention le nom de package correspond au nom de domaine inversé afin de 
+	permettre l'unicité.
+
+	\bigskip
+	\Large\texttt{be.heb.esi.pbt.acme}
+}
+
+
+\imgfullh{../img/api}%
 {	
 	\color{bluepigment}\Large\bf
 	\colorbox{aliceblue}{%
@@ -124,18 +133,8 @@ Cela a une incidence sur l'endroit où placer le \emph{bytecode}
 		\centering Connaitre l'API,\\ c'est gagner du temps ! }
 	}
 }
-{(http://download.oracle.com/javase/7/docs/api/)}
+{(http://download.oracle.com/javase/8/docs/api/)}
 
 
-%%%
-\subsection{Étude de cas}
-\full[bluepigment]{
-	\begin{center}
-		\Large\bf\color{azuremist}
-		\href{http://thenounproject.com/term/consultation/39938/}{%
-			\includegraphics[width=50px]{../img/icon_39938_transwhite.png}}
-		\par\bigskip
-		Étude de cas
-	\end{center}
-}
+
 
