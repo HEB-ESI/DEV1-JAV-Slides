@@ -1,9 +1,9 @@
-# HEB-ÉSI DEV1-JAV – Développement, langage Java
+# HE2B-ÉSI DEV1-JAV – Développement, langage Java
 
 Slides et matériel pour le cours de langage Java du premier quadrimestre en
-BAC1 à l'ÉSI, [HEB-ÉSI](http://www.heb.be/esi)
+BAC1 à l'ÉSI, [HE2B-ÉSI](http://esi-bru.be)
 
-**Version 2015-2016**
+**Version 2016-2017**
 
 *Avertissement. Ces slides sont en construction*
 
@@ -72,7 +72,7 @@ Les couleurs utilisées dans les slides sont définies chez
 ##Contacts  
 Marco Codutti <mcodutti@heb.be>  
 Pierre Bettens <pbettens@heb.be>
-Catherien Leruste <cleruste@heb.be>
+Catherine Leruste <cleruste@heb.be>
 
 
 [![CC](img/cc-by-nc-sa-80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
