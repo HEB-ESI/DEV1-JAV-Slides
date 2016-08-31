@@ -73,6 +73,7 @@ Les couleurs utilisées dans les slides sont définies chez
 Marco Codutti <mcodutti@heb.be>  
 Pierre Bettens <pbettens@heb.be>
 Catherine Leruste <cleruste@heb.be>
+Nicolas Pettiaux <npettiaux@heb.be>
 
 
 [![CC](img/cc-by-nc-sa-80x15.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
