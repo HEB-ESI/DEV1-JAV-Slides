@@ -207,8 +207,8 @@ public static long add( int opérandeGauche, int opérandeDroite) {
 	\end{itemize} 
 	\par \emph{Exemple}
 	\begin{Java}
-	public static int add( int opérandeGauche, int opérandeDroite) {
-    	return opérandeGauche + opérandeDroite;
+public static int add( int opérandeGauche, int opérandeDroite) {
+    return opérandeGauche + opérandeDroite;
 	}
 	\end{Java}
 	\small{les arguments lors de l'appel peuvent être \java|byte|, \java|short|, 
@@ -220,13 +220,13 @@ public static long add( int opérandeGauche, int opérandeDroite) {
 	\\\bigskip
 	\emph{Exemple}
 	\begin{Java}
-	public static int max(long op1, long op2) {...}
-	public static int max(int op1, int op2) {...}
+public static int max(long op1, long op2) {...}
+public static int max(int op1, int op2) {...}
 	\end{Java}
 	Quelle méthode est choisie avec cet appel ?
 	\begin{Java}
-	short s1=1, s2=2;
-	max(s1,s2);
+short s1=1, s2=2;
+max(s1,s2);
 	\end{Java}
 \end{frame}
 
@@ -254,8 +254,8 @@ public static int op( int opérandeGauche, int opérandeDroite) {
 		\item Parfois, il n'y a pas de méthode plus spécifique. 
 		\item \emph{Exemple}
 	\begin{Java}
-	public static int max( int op1, long op2 ) {...}
-	public static int max( long op1, int op2 ) {...}
+public static int max( int op1, long op2 ) {...}
+public static int max( long op1, int op2 ) {...}
 	\end{Java}
 	Accepté mais certains appels seront ambigus
 	\\(erreur à la compilation)
@@ -281,13 +281,13 @@ public static int op( int opérandeGauche, int opérandeDroite) {
 	\begin{itemize}	
 		\item
 	\begin{Java}
-	System.out.println("1+1 = "+2);
-	String s = "Pi = " + 3.1415;
+System.out.println("1+1 = "+2);
+String s = "Pi = " + 3.1415;
 	\end{Java}
 		\item Que donnera ceci ?
 	\begin{Java}
-	System.out.println("1"+2+3);
-	System.out.println(1+2+"3");
+System.out.println("1"+2+3);
+System.out.println(1+2+"3");
 	\end{Java}
 	\end{itemize}
 \end{frame}
@@ -305,8 +305,8 @@ public static int op( int opérandeGauche, int opérandeDroite) {
 	Conversion \emph{explicite}
 	\medskip
 	\begin{grammaire}
-	\nterm{Casting} :
-		\term{(} \nterm{Type} \term{)} \nterm{Expression}
+\nterm{Casting} :
+    \term{(} \nterm{Type} \term{)} \nterm{Expression}
 	\end{grammaire}
 \end{frame}
 
