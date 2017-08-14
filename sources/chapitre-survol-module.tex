@@ -8,10 +8,10 @@ Les types disponibles
 \begin{center}
 \begin{tabular}{r|l}
 En Algorithmique & En  Java \\ \hline
-Entier & \java|int| \\ 
-Réel & \java|double| \\ 
-Chaine & \java|char|, \java|String| \\ 
-Booléen & \java|boolean| \\  
+Entier & \java{int} \\ 
+Réel & \java{double} \\ 
+Chaine & \java{char}, \java{String} \\ 
+Booléen & \java{boolean} \\  
 \end{tabular} 
 \end{center}
 \end{frame}
@@ -20,7 +20,7 @@ Booléen & \java|boolean| \\
 Opérateurs :
 \begin{center}
 	\Large
-    \java|+| \java|-| \java|*| \java|/| \java|%|  
+    \java{+} \java{-} \java{*} \java{/} \java{\%}  
 \end{center}
 \end{frame}
 
@@ -46,7 +46,7 @@ Opérateurs :
 
 \begin{frame}[fragile]{Variable}
 	\emph{Assignation}\\
-	Via le symbole \java|=|
+	Via le symbole \java{=}
 	\begin{itemize}
 	\item Exemples :
 \begin{Java}
@@ -115,7 +115,7 @@ Pour l'utiliser, il faut connaitre\,:
 \begin{frame}[fragile]{Appel d'une méthode}
 À partir du code d'une \emph{autre classe} 
   \begin{itemize}
-  \item \java|NomClasse.nomMéthode(...)|
+  \item \java{NomClasse.nomMéthode(...)}
   \item \emph{Exemples} :
     \begin{Java}
 double racine = Math.sqrt(4.0);
@@ -139,7 +139,7 @@ int absolu = Math.abs(nb);
 	\textbf{Syntaxe}
 	\bigskip
 \begin{Java}
-    public static <typeRetour> <nomMéthode> ([paramètre, param...]) {  
+public static <typeRetour> <nomMéthode> ([paramètre, param...]) {  
     // instructions
     <return résultat>;  
 }

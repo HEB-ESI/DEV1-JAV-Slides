@@ -37,7 +37,7 @@
 \end{frame}
 
 \begin{frame}{Allocation mémoire}
-	Pour un type \emph{référence} (ex: \java|String|, tableau)
+	Pour un type \emph{référence} (ex: String, tableau)
 	\begin{itemize}
 		\item La zone mémoire contient l'\emph{adresse} de la zone mémoire 
 			(sur le tas/{\it heap}) contenant la valeur (indirection)
@@ -72,10 +72,10 @@
 	\par
 	\emph{Exemples} :
 	\begin{itemize}
-		\item \java|int i;|
-		\item \java|String nom, prénom;|
-		\item \java|boolean ok=true, fini;|
-		\item \java|char lettre, chiffre='1';| 
+		\item \java{int i;}
+		\item \java{String nom, prénom;}
+		\item \java{boolean ok=true, fini;}
+		\item \java{char lettre, chiffre='1';}
 	\end{itemize}
 \end{frame}
 
@@ -102,13 +102,12 @@
 	Règles \emph{imposées} par la grammaire
 	\begin{itemize}
 		\item Longueur illimitée
-		\item Composé de \textit{lettres}, de \textit{chiffres}, 
-			\java|$| et \java|_| %$
+		\item Composé de \textit{lettres}, de \textit{chiffres}, dollar et souligné
 		\\(internationalisation)
 		\item Ne commence pas par un chiffre
 		\item $\neq$ \nterm{keyword} ou \nterm{litteral}
 		\item Ex valides : \java|nom|, \java|Nom|, \java|Nom23|, 
-			\java|Unpeu2touT|%$
+			\java|Unpeu2touT|
 		\item Ex invalides : \java|2main|, \java|le total|, \java|for|, 
 			\java|true|, \java|12|
 	\end{itemize}	
@@ -119,7 +118,7 @@
 	\begin{itemize}
 		\item Utilisées dans le monde entier
 		\begin{itemize}
-			\item Eviter \java|$| et \java|_| %$
+			\item Eviter dollar et souligné
 			\item Commence par une minuscule
 			\item Plusieurs mots accollés $\Rightarrow$ les suivants commencent par une majuscule ({\it mixedcase})
 			\item Noms explicites (sauf abréviations courantes)
@@ -170,7 +169,7 @@ int poidsGramme = 1000*poidsKilo; // Erreur à la COMPILATION
 	\par\bigskip
 	Le \textit{scope} d'une variable locale est
 	\begin{itemize}
-		\item le \textit{block} de sa déclaration (entre \java|\{\}|)
+		\item le \textit{block} de sa déclaration (entre \java{\{\}})
 		\item dès sa propre initialisation
 	\end{itemize} 
 \end{frame}
@@ -201,7 +200,7 @@ int poidsGramme = 1000*poidsKilo; // Erreur à la COMPILATION
 
 \begin{frame}[fragile]{Constante}
 	\par
-	{\large \java|final|}
+	{\large \java{final}}
 	\par\bigskip
 	Valeur donnée
 	\begin{itemize}
@@ -222,7 +221,7 @@ int poidsGramme = 1000*poidsKilo; // Erreur à la COMPILATION
 	Convention de nom différente
 	\begin{itemize}
 		\item Tout mettre en \emph{majuscules}
-		\item Utiliser \java|_|  pour séparer les mots
+		\item Utiliser un souligné  pour séparer les mots
 	\end{itemize} 
 	\bigskip
 	\emph{Exemples}

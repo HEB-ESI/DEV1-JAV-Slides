@@ -92,7 +92,7 @@
 \begin{frame}[fragile]{Javadoc}
 	\sigle{\bf javadoc}
 	\begin{itemize}
-		\item Commentaire \sigle{javadoc} identifié par  {\small \code|/** ... */|}
+		\item Commentaire \sigle{javadoc} identifié par  {\small \java{/** ... */}}
 \begin{Java}
 /**
     Calcule et retourne le maximum de 2 nombres.
@@ -135,7 +135,7 @@ public static double sqrt( double nb ) {...}
 \end{Java}
 \begin{itemize}
 \item Les types sont déduits de la signature et ajoutés à la documentation
-\item La première phrase (terminée par un \java|.|) sert de résumé
+\item La première phrase (terminée par un \java{.}) sert de résumé
 \end{itemize}
 \end{frame}
 
@@ -193,10 +193,10 @@ Détail
 \begin{frame}[fragile]{Production de la documentation}
 	Commande \code|javadoc|
 	\begin{itemize}
-		\item \java|javadoc Temps.java|
-		\item \java|javadoc *.java|
-		\item \java|javadoc -d doc *.java |
-		\item \java|javadoc -charset utf-8 *.java |
+		\item \code{javadoc Temps.java}
+		\item \code{javadoc *.java}
+		\item \code{javadoc -d doc *.java}
+		\item \code{javadoc -charset utf-8 *.java}
 		\item \ldots et beaucoup d'autres options
 		\\(cf. documentation de \sigle{javadoc})
 	\end{itemize}

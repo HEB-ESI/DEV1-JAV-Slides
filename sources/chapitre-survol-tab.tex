@@ -44,7 +44,7 @@
 	\par Écriture \emph{compacte} et qui s'\emph{adapte} à la taille
 	\bigskip
 	\par \emph{Exemple} 
-	\par En algorithmique, si \java|tableau| est un tableau de $N$ entiers
+	\par En algorithmique, si "tableau" est un tableau de $N$ entiers
      \begin{Java}
   pour i de 0 à N-1 faire
      afficher tableau[i]
@@ -70,8 +70,8 @@
 \begin{frame}[fragile]{Déclaration}
 	\emph{Exemples}
     \begin{itemize}
-    	\item \java|int[]| est le type \textit{tableau d'entiers}
-	    \item \java|String[]| est le type \textit{tableau de chaines de caractères}
+    	\item \java{int[]} est le type \textit{tableau d'entiers}
+	    \item \java{String[]} est le type \textit{tableau de chaines de caractères}
     \end{itemize}
 	\bigskip
 	\bigskip
@@ -105,8 +105,8 @@
 \begin{frame}[fragile]{Création}
 	\emph{Exemple}
 	\begin{itemize}
-		\item new int[3]
-		\item new String[taille] où taille est défini
+		\item \java{new int[3]}
+		\item \java{new String[taille]} où taille est défini
 	\end{itemize}
 	\bigskip
     \begin{Java}
@@ -116,7 +116,7 @@
     \bigskip
 	\emph{Remarque}
 	\\La déclaration et la création peuvent être combinées
-    \\\java|int[] entiers = new int[3];|
+    \\\java{int[] entiers = new int[3];}
 \end{frame}
 
 \full[bluepigment]{
@@ -133,8 +133,8 @@
 \begin{frame}[fragile]{Initialisation}
 	\emph{Exemple}
 	\begin{itemize}
-		\item new int[] \{42, 17, -5\}
-		\item new String[] \{"foo", "bar"\}
+		\item \java{new int[] \{42, 17, -5\}}
+		\item \java{new String[] \{"foo", "bar"\}}
 	\end{itemize}
 	\bigskip
 	\begin{Java}
@@ -148,8 +148,8 @@ réels = new double[] {4.2, -1};
 	\bigskip
 	\small{
 	\emph{Remarque}
-	\\Par défaut, les éléments sont initialisés à \java|0| (numériques) 
-	ou \java|false| (booléens)
+	\\Par défaut, les éléments sont initialisés à \java{0} (numériques) 
+	ou \java{false} (booléens)
 }
 \end{frame}
 
@@ -365,9 +365,9 @@ Un tableau peut être un paramètre d'une méthode.
 \begin{frame}[fragile]{Erreurs fréquentes}
 	\textbf{Exceptions}
 	\begin{itemize}
-		\item \java|NullPointerException| : si vous essayez d'accéder à un élément d'un tableau qui n'a pas été créé
-		\\(le tableau vaut \java|null| dans ce cas)
-		\item \java|ArrayIndexOutOfBoundsException| : si vous donnez un indice qui n'existe pas (ex: \java|tab[10]| quand il n'y a que 10 éléments dans le tableau)
+		\item \java{NullPointerException} : si vous essayez d'accéder à un élément d'un tableau qui n'a pas été créé
+		\\(le tableau vaut \java{null} dans ce cas)
+		\item \java{ArrayIndexOutOfBoundsException} : si vous donnez un indice qui n'existe pas (ex: \java{tab[10]} quand il n'y a que 10 éléments dans le tableau)
 	\end{itemize}
 \end{frame}
 

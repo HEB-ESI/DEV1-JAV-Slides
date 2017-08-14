@@ -166,7 +166,7 @@
 \begin{frame}{Plan de tests - Exemple}
 	\emph{Exemple}
 	\medskip
-	\\\java|public static int max(int n1, int n2, int n3) {...}| 
+	\\\java{public static int max(int n1, int n2, int n3) {...}}
 	\\qui calcule la valeur maximale de trois nombres
 	\begin{itemize}
 		\item Que tester en plus du cas général ?
@@ -276,9 +276,9 @@ public void max_cas1() {
 	\begin{itemize}
 		\item Reconnu comme un test unitaire grâce à l'\emph{annotation} 
 			\java{@Test}
-		\item Pas de \java|static|
-		\item \java|assertEquals| vérifie que les 2 valeurs sont identiques
-		\item \java|assertTrue(val)|, \java|assertFalse(val)|, \dots
+		\item Pas de \java{static}
+		\item \java{assertEquals} vérifie que les 2 valeurs sont identiques
+		\item \java{assertTrue(val)}, \java{assertFalse(val)}, \dots
 	\end{itemize}
 }
 \end{frame}
@@ -286,8 +286,8 @@ public void max_cas1() {
 \begin{frame}[fragile]{JUnit - En pratique}
 	Comment \emph{lancer} les tests ?
 	\begin{Java}
-	java org.junit.runner.JUnitCore mon.paquet.MaClasseTest
-\end{Java} %$
+java org.junit.runner.JUnitCore mon.paquet.MaClasseTest
+	\end{Java} %$
 	\medskip
 	Résultats\,:
 	\begin{itemize}
@@ -387,7 +387,7 @@ public class OutilTest {
 }
 
 \begin{frame}[fragile]{JUnit - Tester les exceptions}
-	Imaginons une méthode \java|sqrt| pour calculer la racine carrée d'un entier
+	Imaginons une méthode \java{sqrt} pour calculer la racine carrée d'un entier
 	\begin{itemize}
 		\item Hypothèse : elle doit lancer une exception en cas de paramètre négatif
 	\end{itemize}

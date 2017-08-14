@@ -54,13 +54,26 @@
     flexiblecolumns, 
     extendedchars=true
   }
+  \definecolor{javared}{rgb}{0.6,0,0} % for strings
+  \definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+  \definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+  \definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+  
+  \lstset{language=Java,
+  	keywordstyle=\color{javapurple}\bfseries,
+  	stringstyle=\color{javared},
+  	commentstyle=\color{javagreen},
+  	morecomment=[s][\color{javadocblue}]{/**}{*/}}
+  
+\usepackage{realboxes}
+\definecolor{aliceblue}{rgb}{0.94, 0.97, 1.0}
+\usebeamercolor{block body}
+\definecolor{listingback}{named}{bg}
 \lstnewenvironment{Java}[1][]{\lstset{style=lstverb,language=java,#1}}{}
 \lstnewenvironment{Code}[1][]{\lstset{style=lstverb,#1}}{}
 \mode<beamer>{
-  \newcommand{\java}{\lstinline[language=java,basicstyle=\color{blue!70!black}] 
-  } %[
-  \newcommand{\code}{\lstinline[basicstyle=\color{blue!70!black}] 
-  } %[
+  \newcommand{\java}[1]{\Colorbox{listingback}{\lstinline[language=Java]{#1}}}
+  \newcommand{\code}{\lstinline[basicstyle=\color{blue!70!black}]}
 }
 \mode<handout>{
   \newcommand{\java}{\lstinline[language=java,basicstyle=\color{black}]

@@ -19,9 +19,9 @@
 	\bigskip
 	\begin{itemize}
 		\item[{\includegraphics[width=10px]{../img/icon_2783_check.png}}]
-  			\java|double d = 1;| 
+  			\java{double d = 1;}
 		\item[{\includegraphics[width=10px]{../img/icon_2909_delete.png}}]
-			\java|int i = 1.0;| 
+			\java{int i = 1.0;}
   \end{itemize}
 \end{frame}
 
@@ -59,12 +59,12 @@
 \begin{small}
 \begin{center}
 \begin{tabular}{llllll}
-\java|byte| & & & & &\\
-\hfill$\hookrightarrow$ & \java|short| & & \java|char| & &\\
- & \hfill$\hookrightarrow$ & \java|int| & $\hookleftarrow$ \hfill & &\\
-& & \hfill$\hookrightarrow$ & \java|long| & &\\
-& &  & \hfill$\hookrightarrow$ & \java|float| &\\
-& & & & \hfill$\hookrightarrow$ & \java|double| \\
+\java{byte} & & & & &\\
+\hfill$\hookrightarrow$ & \java{short} & & \java{char} & &\\
+ & \hfill$\hookrightarrow$ & \java{int} & $\hookleftarrow$ \hfill & &\\
+& & \hfill$\hookrightarrow$ & \java{long} & &\\
+& &  & \hfill$\hookrightarrow$ & \java{float} &\\
+& & & & \hfill$\hookrightarrow$ & \java{double} \\
 \end{tabular}
 \end{center}
 \end{small}
@@ -73,14 +73,14 @@
 \begin{frame}[fragile]{Les conversions dans les expressions}
 	\begin{itemize}
 		\item Opérateurs binaires, opérateurs unaires
-		\item Le moins large et au minimum \java|int|
+		\item Le moins large et au minimum \java{int}
 	\end{itemize}	
 \end{frame}
 
 \note{
 	Cas des opérateurs \emph{binaires}
 	\\ Si opérandes de types différents \\$\Longrightarrow$ on \textit{élargit} le moins large
-	\\ On élargit au minimum vers \java|int|
+	\\ On élargit au minimum vers \java{int}
 	\\Car les opérateurs n'existent pas en dessous
 }
 
@@ -115,8 +115,8 @@ byte b = 2; short s = 1; char c = '3'; int i = 4;
 	\bigskip
 	\begin{itemize}
 		\item Adapte le type de l'expression au type de la variable
-		\item Opérateurs : \java|=|, \java|+=|, \java|-=|, 
-			\java|*=|, \java|/=|, \java|%=|
+		\item Opérateurs : \java{=}, \java{+=}, \java{-=}, 
+			\java{*=}, \java{/=}, \java{\%=}
 		\item Permet la \emph{conversion élargissante}
 		\item Mais aussi la \emph{conversion arrondissante} 
 	\end{itemize}
@@ -129,12 +129,12 @@ byte b = 2; short s = 1; char c = '3'; int i = 4;
 	\bigskip
 	\begin{center}
 \begin{tabular}{lllllll}
-\java|double| & & & & & &\\
-\hfill$\hookrightarrow$ & \java|float| & & & & &\\
- & \hfill$\hookrightarrow$ & \java|long| & & & &\\
-& & \hfill$\hookrightarrow$ & \java|int| & & & \\
-& & & \hfill$\hookrightarrow$ & \java|short| & $\longleftrightarrow$ & \java|char|\\
-& & & & \hfill$\hookrightarrow$ & \java|byte| & $\swarrow\nearrow$ \\
+\java{double} & & & & & &\\
+\hfill$\hookrightarrow$ & \java{float} & & & & &\\
+ & \hfill$\hookrightarrow$ & \java{long} & & & &\\
+& & \hfill$\hookrightarrow$ & \java{int} & & & \\
+& & & \hfill$\hookrightarrow$ & \java{short} & $\longleftrightarrow$ & \java{char}\\
+& & & & \hfill$\hookrightarrow$ & \java{byte} & $\swarrow\nearrow$ \\
 \end{tabular}
 	\end{center}
 	\par \`A chaque étape : \emph{perte de précision} possible
@@ -146,11 +146,11 @@ byte b = 2; short s = 1; char c = '3'; int i = 4;
 		\item Elles ne sont pas toutes permises
 		\item \emph{si et seulement si}
 		\begin{itemize}
-			\item La variable est de type \java|byte|, \java|short|, ou \java|char|
+			\item La variable est de type \java{byte}, \java{short}, ou \java{char}
 			\item L'expression est 
 			\begin{itemize}
 				\item constante 
-				\item de type \java|byte|, \java|short|, \java|char| ou \java|int|
+				\item de type \java{byte}, \java{short}, \java{char} ou \java{int}
 				\item sa valeur est représentable dans le type de la variable
 			\end{itemize}
 		\end{itemize}
@@ -181,7 +181,7 @@ a = a+1;
 \begin{frame}[fragile]{Conversion de la valeur de retour}
 	Situation similaire pour la \emph{valeur de retour} d'une méthode
 	\begin{itemize}
-		\item Le type de l'expression accompagnant l'instruction \java|return| doit pouvoir être ramené au \nterm{ResultType}
+		\item Le type de l'expression accompagnant l'instruction \java{return} doit pouvoir être ramené au \nterm{ResultType}
 	\end{itemize} 
 	\par \medskip 
 	\emph{Exemple}
@@ -211,8 +211,8 @@ public static int add( int opérandeGauche, int opérandeDroite) {
     return opérandeGauche + opérandeDroite;
 	}
 	\end{Java}
-	\small{les arguments lors de l'appel peuvent être \java|byte|, \java|short|, 
-	\java|char| ou encore \java|int|}
+	\small{les arguments lors de l'appel peuvent être \java{byte}, \java{short}, 
+	\java{char} ou encore \java{int}}
 \end{frame}
 
 \begin{frame}[fragile]{Conversion lors d'un appel de méthode}
@@ -242,9 +242,9 @@ public static int op( int opérandeGauche, int opérandeDroite) {
 }
 	\end{Java}
 	\begin{itemize}
-		\item Que retourne \java|op(3.,2.)| ?
-		\item Que retourne \java|op(3,2)| ?
-		\item Que retourne \java|op(3.,2)| ?
+		\item Que retourne \java{op(3.,2.)} ?
+		\item Que retourne \java{op(3,2)} ?
+		\item Que retourne \java{op(3.,2)} ?
 	\end{itemize} 
 \end{frame}
 
@@ -260,9 +260,9 @@ public static int max( long op1, int op2 ) {...}
 	Accepté mais certains appels seront ambigus
 	\\(erreur à la compilation)
 	\begin{itemize}
-		\item \java|max(1,2L)| // 1ère méthode
-		\item \java|max(1L,2)| // 2ème méthode
-		\item \java|max(1,2)|  // ambigu
+		\item \java{max(1,2L) // 1ère méthode}
+		\item \java{max(1L,2) // 2ème méthode}
+		\item \java{max(1,2)  // ambigu}
 	\end{itemize}
 	\end{itemize} 
 \end{frame}
@@ -276,7 +276,7 @@ public static int max( long op1, int op2 ) {...}
 	\includegraphics[width=30px]{../img/icon_14383_map.png}
 	\;{\Large\bf Chaine}
 	\bigskip\par
-	Opérateur \java|+| avec un opérande de type \java|String|
+	Opérateur \java{+} avec un opérande de type \java{String}
 	\bigskip\par \emph{Exemples}
 	\begin{itemize}	
 		\item
@@ -346,7 +346,7 @@ System.out.println(1+2+"3");
 		0 & 0 & 1 & 0 \\
 		\hline
 		\end{tabular}
-		(\java|int| codé sur 4 bytes)
+		(\java{int} codé sur 4 bytes)
 		\medskip
 		\item $\Longrightarrow$ b = 
 		\begin{tabular}{|c|}
@@ -364,14 +364,14 @@ System.out.println(1+2+"3");
 	\begin{itemize}
 		\item Convertir en chaine
 		\begin{itemize}
-  			\item \java|(String) monEntier| \emph{interdit}
-  			\item Écrire \java|""+monEntier| à la place
+  			\item \java{(String) monEntier} \emph{interdit}
+  			\item Écrire \java{""+monEntier} à la place
   		\end{itemize}
 		\medskip
 		\item Convertir une chaine qui contient un numérique
   		\begin{itemize}
-  			\item \java|(int) "12"| \emph{interdit}
-  			\item Écrire \java|Integer.parseInt("12")| à la place
+  			\item \java{(int) "12"} \emph{interdit}
+  			\item Écrire \java{Integer.parseInt("12")} à la place
   		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -410,22 +410,22 @@ int entier = (byte) (190-(byte)100);
 
 \begin{frame}[fragile]{Tableau des priorités et associativités}
 \begin{center}
-\begin{small}
+\begin{scriptsize}
 \begin{tabular}{c|r|l|c}
 priorité & & & associativité \\ \hline
-forte & post unaires & \java|(params)|, \java|.|, \java|expr++|, \java|expr--| & $\Longrightarrow$ \\ 
-       & pré unaires & \java|(Type)|, \java|++expr|, \java|--expr|,  &  \\
-       &             & \java|-|, \java|+|, \java|!|, \java|new| & $\Longleftarrow$ \\
-       & multiplicatif & \java|*|, \java|/|, \java|%| & $\Longrightarrow$  \\
-       & additif & \java|-|, \java|+|  & $\Longrightarrow$ \\
-       & relationnels & \java|<|, \java|>|, \java|<=|, \java|>=| & $\Longrightarrow$  \\
-       & égalité & \java|==|, \java|!=| & $\Longrightarrow$  \\
-       & et & \java|&&| & $\Longrightarrow$  \\
-       & ou & {\color{bleu} \verb,||,} & $\Longrightarrow$  \\
-       & condition & \java|?:| & $\Longleftarrow$  \\
-faible  & assignations & \java|=|, \java|+=|, \java|-=|, \java|*=|, \java|/=|, \java|%=| & $\Longleftarrow$   \\
+forte & post unaires & \java{(params)}, \java{.}, \java{expr++}, \java{expr--} & $\Longrightarrow$ \\ 
+       & pré unaires & \java{(Type)}, \java{++expr}, \java{--expr},  &  \\
+       &             & \java{-}, \java{+}, \Colorbox{listingback}{\verb|!|}, \java{new} & $\Longleftarrow$ \\
+       & multiplicatif & \java{*}, \java{/}, \java{\%} & $\Longrightarrow$  \\
+       & additif & \java{-}, \java{+}  & $\Longrightarrow$ \\
+       & relationnels & \java{<}, \java{>}, \java{<=}, \java{>=} & $\Longrightarrow$  \\
+       & égalité & \java{==}, \Colorbox{listingback}{\verb|!=|} & $\Longrightarrow$  \\
+       & et & \java{&&} & $\Longrightarrow$  \\
+       & ou & \java{||} & $\Longrightarrow$  \\
+       & condition & \Colorbox{listingback}{\verb|?:|} & $\Longleftarrow$  \\
+faible  & assignations & \java{=}, \java{+=}, \java{-=}, \java{*=}, \java{/=}, \java{\%=} & $\Longleftarrow$   \\
 \end{tabular}
-\end{small}
+\end{scriptsize}
 \end{center}
 \end{frame}
 
