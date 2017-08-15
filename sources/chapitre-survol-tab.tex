@@ -334,7 +334,6 @@ Un tableau peut être un paramètre d'une méthode.
  	Quel que soit l'appel, le tableau que l'on passe en paramètre ne sera pas
  	modifié
 \end{frame}
-
 \note{
 	\par Différencier passage de paramètre par valeur et en entrée-sortie. 
 	Comparer la situation en algorithmique et en java
@@ -371,3 +370,44 @@ Un tableau peut être un paramètre d'une méthode.
 	\end{itemize}
 \end{frame}
 
+\subsection{Paramètres du main}
+
+\begin{frame}[fragile]{Paramètres du main}
+	Vous pouvez maintenant mieux comprendre
+	\begin{Java}[emph={args},emphstyle={\color{burntorange}\bfseries}]
+public static void main(String[] args) {
+	\end{Java}
+	\begin{itemize}
+		\item La méthode principale reçoit un tableau de chaines
+	\end{itemize}
+	\bigskip
+	\emph{D'où vient} ce tableau ?
+	\begin{itemize}
+		\item Il est composé de valeurs données lors du lancement
+		\item \emph{Ex:} \texttt{java MonProgramme par0 par1}
+		\begin{itemize}
+		\item Lance la méthode principale de la classe \texttt{MonProgramme}
+		\item Cette méthode reçoit un tableau de taille 2
+		\item Contenant les valeurs \texttt{par0} et \texttt{par1}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Paramètres du main}
+	\emph{Exemple}
+	\begin{Java}
+public class Reverse {
+	public static void main(String[] args) {
+		for(int i=args.length-1; i>=0; i--) {
+			System.out.print(agrs[i]);
+		}
+		System.out.println();
+	}
+}
+	\end{Java}
+	Que va donner ?
+	\begin{itemize}
+		\item \texttt{java Reverse le début de la fin}
+		\item \texttt{java Reverse \"le début\" de \"la fin\"}
+	\end{itemize}
+\end{frame}
