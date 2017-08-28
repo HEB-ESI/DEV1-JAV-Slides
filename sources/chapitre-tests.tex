@@ -166,29 +166,32 @@
 \begin{frame}{Plan de tests - Exemple}
 	\emph{Exemple}
 	\medskip
-	\\\java{public static int max(int n1, int n2, int n3) {...}}
-	\\qui calcule la valeur maximale de trois nombres
+	\\\java{public static int max(int[] nbs) {...}}
+	\\qui calcule la valeur maximale trouvée dans le tableau
 	\begin{itemize}
 		\item Que tester en plus du cas général ?
   			\begin{itemize}
   			\item Le maximum est la première/dernière valeur
   			\item Présence de nombres négatifs
+  			\item Cas d'un tableau de taille 0
   			\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Plan de tests - Exemple}
+	\small
 	\begin{center}
 		\textbf{Plan de tests de la méthode \textit{max}}
 	\\\bigskip
-	\begin{tabular}{|c|l|c|l|}
+	\begin{tabular}{|c|l|c|p{5cm}|}
 \hline
 \# & nombres & résultat & ce qui est testé\\
 \hline
 1 & $1,3,0$ & $3$ & cas général\\
 2 & $1,-3,-4$ & $1$ & maximum au début\\
-3 & $1,3,11$ & $11$ & maximum à la fin\\
+3 & $7,1,3,11$ & $11$ & maximum à la fin\\
 4 & $-1,-3,-4$ & $-1$ & que des négatifs\\
+5 & tableau vide & \texttt{IAException} & pas de réponse si pas de nombre\\
 \hline
 	\end{tabular}
 	\end{center}
@@ -268,7 +271,7 @@ La classe de test contient \emph{une méthode} de test \emph{par cas}
 	\begin{Java}
 @Test
 public void max_cas1() {
-  int n1 = 1, n2 = 3, n3 = 0;
+  int[] nbs = [1,3,0];
   assertEquals( 3, MaClasse.max(n1, n2, n3) );
 }
 	\end{Java}
@@ -324,16 +327,12 @@ java org.junit.runner.JUnitCore mon.paquet.MaClasseTest
 \begin{Java}
 package be.he2b.esi.java1;
 public class Outil {
-  public static int max(int n1, int n2, int n3) {
+  public static int max(int[] nbs) {
     int max = 0;
-    if (n1 > max){
-    	max = n1;
-    }
-    if (n2 > max){
-    	max = n2;
-    }
-    if (n3 > max){
-    	max = n3;
+    for(int i=1; i<nbs.length; i++) {
+    	if(nbs[i]>max) {
+    		max = nbs[i];
+    	}
     }
     return max;
   }
@@ -341,8 +340,7 @@ public class Outil {
 \end{Java}
 \end{frame}
 
-\begin{frame}[fragile]{JUnit - Exemple}
-	\emph{Exemple} (suite) 
+\begin{frame}[fragile]{JUnit - Exemple (suite)}
 \begin{Java}
 package be.he2b.esi.java1;
 
@@ -350,34 +348,56 @@ import org.junit.Test;
 import static org.junit.Assert.*; 
 
 public class OutilTest {
-  @Test public void max_cas1() {
-    assertEquals(3, Outil.max(1, 3, 0));
-  }
-
-  @Test public void max_cas4() {
-    assertEquals(-1, Outil.max(-1, -3, -4));
-  }
-
-  // + plus les cas 2, 3 et 5
-}
+	
+    @Test
+    public void maxCas1Général() {
+    	int[] nbs = {1, 3, 0};
+    	assertEquals(3, Outil.max(nbs));
+    }
+    
+    @Test
+    public void maxCas2MaxDébut() {
+    	int[] nbs = {1, -3, -4};
+    	assertEquals(1, Outil.max(nbs));
+    }
 \end{Java}
 \end{frame}
 
-\begin{frame}{JUnit - Exemples}
+\begin{frame}[fragile]{JUnit - Exemple (fin)}
+	\begin{Java}			
+    @Test
+    public void maxCas3MaxFin() {
+    	int[] nbs = {7, 1, 3, 11};
+    	assertEquals(11, Outil.max(nbs));
+    }
+    
+    @Test
+    public void maxCas4TousNégatifs() {
+    	int[] nbs = {-1, -3, -4};
+    	assertEquals(11, Outil.max(nbs));
+    }
+}
+	\end{Java}
+\end{frame}
+
+\begin{frame}[fragile]{JUnit - Exemple (résultat)}
 	\tt
 	\$ javac Outil*.java
 	\\\$ java org.junit.runner.JUnitCore 
 	\\\hspace{1cm}be.he2b.esi.java1.OutilTest
+	\begin{center}
+		\includegraphics[width=.95\paperwidth]{../img/junit-result2.pdf}
+	\end{center}
 \end{frame}
 
-\imgfullw{../img/junit-result.png}{
-	\colorbox{white}{%
-		\color{brickred}\tt\bf
-		\parbox{.95\linewidth}{%
-			java.lang.AssertionError: \\expected:<-1> but was:<0>
-		}
-	}
-}{home made}
+%\imgfullw{../img/junit-result2.pdf}{
+%	\colorbox{white}{%
+%		\color{brickred}\tt\bf
+%		\parbox{.95\linewidth}{%
+%			java.lang.AssertionError: \\expected:<-1> but was:<0>
+%		}
+%	}
+%}{home made}
 
 \full[bluepigment]{
 	\begin{center}
@@ -387,33 +407,22 @@ public class OutilTest {
 }
 
 \begin{frame}[fragile]{JUnit - Tester les exceptions}
-	Imaginons une méthode \java{sqrt} pour calculer la racine carrée d'un entier
 	\begin{itemize}
-		\item Hypothèse : elle doit lancer une exception en cas de paramètre négatif
-	\end{itemize}
-	\medskip
-	\begin{Java}
-public static int sqrt(int val) {
-    if (val<0) {
-        throw new IllegalArgumentException(
-            "Pas de racine carrée pour un entier négatif");
+		\item 
+			On ne peut pas tester la valeur de retour\dots
+			\\Il n'y en a pas !
+		\item	
+			Spécifié via un \emph{paramètre} de l'\textbf{annotation}
+			\medskip
+			\begin{Java}
+    @Test(expected = IllegalArgumentException.class)
+    public void maxCas5AucunNombre() {
+    	int[] nbs = {};
+    	Outil.max(nbs);
     }
-    // suite : calcul de la racine carrée
-}
-\end{Java}
-\end{frame}
-
-\begin{frame}[fragile]{JUnit - Tester les exceptions}
-	Utilisation de l'\textbf{annotation}
-	\medskip
-\begin{Java}
-@Test(expected=IllegalArgumentException.class)
-public void sqrt_cas_négatif() {
-  sqrt(-1);
-}
-\end{Java}
-	\begin{itemize}
+			\end{Java}
 		\item Le test est réussi si la méthode lance l'\emph{exception} indiquée
+		\item Ce qui n'est pas le cas dans notre exemple. Pourquoi ?
 	\end{itemize}
 \end{frame}
 
