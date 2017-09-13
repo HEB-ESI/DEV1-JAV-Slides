@@ -1,9 +1,9 @@
-# HE2B-ÉSI DEV1-JAV – Développement, langage Java
+# HE2B-ÉSI DEV1-JAV – Développement I, langage Java
 
 Slides et matériel pour le cours de langage Java du premier quadrimestre en
 BAC1 à l'ÉSI, [HE2B-ÉSI](http://esi-bru.be)
 
-**Version 2016-2017**
+**Version 2017-2018**
 
 *Avertissement. Ces slides sont en construction*
 
